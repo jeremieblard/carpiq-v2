@@ -1,0 +1,66 @@
+---
+/**
+ * ValueProps — section "Pourquoi CarPIQ" en 3 propositions de valeur.
+ *
+ * Source : spec annexe A section 1.5 (3 args : Indépendant, Méthodologie,
+ * Multi-pays Europe).
+ *
+ * Variante de ProcessSteps mais avec un visuel différent : icône au lieu de
+ * numéro, fond gris léger (vs blanc), pour différencier les deux sections.
+ */
+import Icon from '../atoms/Icon.vue';
+import type { IconName } from '../atoms/Icon.vue';
+
+export interface ValueProp {
+  /** Icône (cf. Icon.vue iconMap). */
+  icon: IconName;
+  /** Titre court (h3). */
+  title: string;
+  /** Description (1-2 phrases). */
+  description: string;
+}
+
+export interface Props {
+  /** Titre de la section (h2). */
+  sectionTitle: string;
+  /** Les 3 arguments. */
+  props: ValueProp[];
+}
+
+const { sectionTitle, props } = Astro.props;
+---
+
+<section class="py-16 sm:py-24" style="background: var(--color-bg, #fafaf9);">
+  <div class="max-w-6xl mx-auto px-4 sm:px-8">
+    <h2
+      class="text-3xl sm:text-4xl font-semibold text-center mb-12 text-gray-900"
+      style="font-family: var(--font-display, serif);"
+    >
+      {sectionTitle}
+    </h2>
+
+    <ul class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+      {props.map((p) => (
+        <li class="flex flex-col items-center text-center">
+          <!-- Icône dans rond amber -->
+          <div
+            class="w-14 h-14 rounded-full bg-amber-50
+                   flex items-center justify-center
+                   text-amber-700 mb-4"
+            aria-hidden="true"
+          >
+            <Icon name={p.icon} size={24} />
+          </div>
+
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">
+            {p.title}
+          </h3>
+
+          <p class="text-base text-gray-700 max-w-xs">
+            {p.description}
+          </p>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

@@ -1,13 +1,5 @@
 /**
- * Dictionnaire anglais — doit matcher fr.ts structurellement.
- *
- * Si une clé manque par rapport à fr.ts, le helper `useT` fallback sur fr.
- * TypeScript ne contraint pas la structure (parce que `fr` est `as const`),
- * mais cohérence à vérifier manuellement.
- *
- * Note traductions : pour l'instant je traduis tout en EN moi-même. À terme,
- * spec section 4.5 dit qu'on devra passer par un traducteur professionnel
- * pour les pages méthodologie et institutionnelles.
+ * Dictionnaire anglais — doit matcher fr.ts structurellement (typage strict).
  */
 
 import type { Dictionary } from './index';
@@ -20,8 +12,9 @@ const en: Dictionary = {
   },
 
   meta: {
+    home_title: 'CarPIQ: independent European car comparison platform',
     home_description:
-      'CarPIQ helps you choose the car that truly fits your driving habits and budget, with no advertising or commercial partnerships.',
+      'Calculate the real monthly cost of a car in 3 minutes. Transparent methodology, no advertising, no commercial bias. 7 European countries.',
   },
 
   nav: {
@@ -44,13 +37,90 @@ const en: Dictionary = {
     en: 'English',
   },
 
+  // ───────────────────────────────────────────────────────────────────────────
+  // HOME
+  // ───────────────────────────────────────────────────────────────────────────
   home: {
-    title: 'CarPIQ V2',
-    subtitle: 'Welcome to version 2 — under construction.',
-    cta_explore: 'Explore components',
-    cta_tokens: 'View design tokens',
+    hero: {
+      title: 'Which car should you buy, and what will it really cost?',
+      subtitle:
+        '3 minutes. Personalised calculation based on your driving and vehicle age.',
+      image_alt:
+        'Panoramic view of a European road with cars, illustrating the choice of a car',
+    },
+
+    ctas: {
+      question: 'What would you like to do?',
+      find: {
+        title: 'Find my next car',
+        description:
+          'Personalised analysis based on your budget and your needs',
+        duration: '~3 minutes',
+        button: 'Start',
+        image_alt:
+          'Illustration of a car showroom with several models to compare',
+      },
+      analyze: {
+        title: 'Analyse my current car',
+        description:
+          'Understand the real cost of your current car today',
+        duration: '~2 minutes',
+        button: 'Start',
+        image_alt:
+          'Illustration of a car being analysed with financial data displayed',
+      },
+      hesitating: "I don't know where to start → Guide me",
+    },
+
+    process: {
+      section_title: 'How it works',
+      step_1: {
+        title: 'Your criteria',
+        description:
+          'A few questions about your budget, your trips, your preferences',
+      },
+      step_2: {
+        title: 'Our analysis',
+        description:
+          'Rigorous methodology applied to 500+ European models',
+      },
+      step_3: {
+        title: 'Your recommendation',
+        description:
+          'The car that fits you, with its real monthly cost',
+      },
+    },
+
+    values: {
+      section_title: 'Why CarPIQ',
+      independent: {
+        title: 'Independent and neutral',
+        description:
+          'No advertising, no commercial ties with manufacturers',
+      },
+      transparent: {
+        title: 'Transparent methodology',
+        description:
+          'Open data sources, verifiable calculations, explicit assumptions',
+      },
+      european: {
+        title: 'European vision',
+        description:
+          '7 countries analysed, tax included, real market prices',
+      },
+    },
+
+    methodology_preview: {
+      section_title: 'Our methodology',
+      preview:
+        'The monthly cost of a car includes depreciation, fuel, insurance, tax and maintenance. CarPIQ calculates each of these items based on your profile and compares 500+ European models across 7 countries.',
+      link: 'Discover the full methodology',
+    },
   },
 
+  // ───────────────────────────────────────────────────────────────────────────
+  // TOKENS
+  // ───────────────────────────────────────────────────────────────────────────
   tokens: {
     title: 'CarPIQ V2 Design Tokens',
     intro: 'Visual reference of the tokens defined in global.css',
@@ -75,6 +145,9 @@ const en: Dictionary = {
     back_home: 'Back to home',
   },
 
+  // ───────────────────────────────────────────────────────────────────────────
+  // COMPONENTS
+  // ───────────────────────────────────────────────────────────────────────────
   components: {
     title: 'Atomic components',
     intro:
@@ -87,11 +160,14 @@ const en: Dictionary = {
     paddings: 'Paddings',
     catalog: 'Catalog',
     section_button: 'Button',
-    section_button_desc: '3 variants × 3 sizes + disabled / loading states + icons.',
+    section_button_desc:
+      '3 variants × 3 sizes + disabled / loading states + icons.',
     section_input: 'Input',
-    section_input_desc: 'Text or select field with label, help and error state.',
+    section_input_desc:
+      'Text or select field with label, help and error state.',
     section_badge: 'Badge',
-    section_badge_desc: '6 semantic variants × 2 sizes. Optional icon.',
+    section_badge_desc:
+      '6 semantic variants × 2 sizes. Optional icon.',
     section_icon: 'Icon',
     section_icon_desc_pre: 'Lightweight wrapper around lucide-vue-next.',
     section_icon_desc_post: 'mapped icons.',
@@ -137,7 +213,8 @@ const en: Dictionary = {
     card_default_title: 'Default',
     card_default_desc: 'Light border + subtle shadow. Common usage.',
     card_elevated_title: 'Elevated',
-    card_elevated_desc: 'Stronger shadow. Prominent cards (hero, results).',
+    card_elevated_desc:
+      'Stronger shadow. Prominent cards (hero, results).',
     card_outlined_title: 'Outlined',
     card_outlined_desc: 'Border only, no shadow. More discreet.',
     card_padding_none: 'padding="none"',
