@@ -1,0 +1,63 @@
+---
+/**
+ * Footer — pied de page global.
+ *
+ * Statique (.astro), pas d'interactivité. Contient :
+ *   - Liens vers les pages institutionnelles (méthodologie, à propos, etc.)
+ *   - Mention "pas de pub" (différenciateur CarPIQ)
+ *   - Copyright + langue actuelle
+ *
+ * Les pages méthodologie/à propos/contact n'existent pas encore — les liens
+ * pointent vers des URLs valides du namespace de langue (futur livrable 3-4),
+ * elles renverront du 404 en attendant. C'est OK pour Phase 2 Livrable 2.
+ */
+import { useT, type Lang } from '../../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = useT(lang);
+
+const currentYear = new Date().getFullYear();
+
+const links = [
+  { label: t('footer.methodology'), href: `/${lang}/methodology` },
+  { label: t('footer.about'), href: `/${lang}/about` },
+  { label: t('footer.glossary'), href: `/${lang}/glossary` },
+  { label: t('footer.contact'), href: `/${lang}/contact` },
+  { label: t('footer.legal'), href: `/${lang}/legal` },
+  { label: t('footer.privacy'), href: `/${lang}/privacy` },
+];
+---
+
+<footer
+  class="border-t border-gray-200 bg-gray-50 mt-16"
+  role="contentinfo"
+>
+  <div class="max-w-6xl mx-auto px-4 sm:px-8 py-10">
+    <!-- Liens -->
+    <nav aria-label="Footer" class="mb-6">
+      <ul class="flex flex-wrap items-center gap-x-6 gap-y-2">
+        {links.map(({ label, href }) => (
+          <li>
+            <a
+              href={href}
+              class="text-sm text-gray-700 hover:text-teal-700 hover:underline
+                     focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 rounded"
+            >
+              {label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+
+    <!-- Mention no-ads + copyright -->
+    <div class="border-t border-gray-200 pt-6 flex flex-col sm:flex-row gap-3 justify-between text-xs text-gray-600">
+      <p>{t('footer.no_ads')}</p>
+      <p>&copy; {currentYear} {t('footer.copyright')}</p>
+    </div>
+  </div>
+</footer>

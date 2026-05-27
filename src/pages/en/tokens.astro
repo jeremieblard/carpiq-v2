@@ -1,0 +1,122 @@
+---
+import BaseLayout from '../../components/layouts/BaseLayout.astro';
+import Header from '../../components/molecules/Header.astro';
+import Footer from '../../components/molecules/Footer.astro';
+import { getLangFromUrl, useT } from '../../i18n';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useT(lang);
+---
+<BaseLayout
+  lang={lang}
+  title={`${t('tokens.title')} — ${t('common.site_name')}`}
+  description={t('tokens.intro')}
+>
+  <Header lang={lang} currentPath={Astro.url.pathname} />
+
+  <main class="max-w-6xl mx-auto p-8">
+    <h1 class="text-5xl mb-2">{t('tokens.title')}</h1>
+    <p style="color: var(--color-muted)" class="mb-12">
+      {t('tokens.intro')}
+    </p>
+
+    <!-- COULEURS PRIMAIRES -->
+    <section class="mb-16">
+      <h2 class="text-3xl mb-6 text-teal-700">{t('tokens.primary_colors')}</h2>
+
+      <h3 class="text-xl font-bold mb-3">{t('tokens.teal_label')}</h3>
+      <div class="grid grid-cols-5 md:grid-cols-10 gap-2 mb-8">
+        <div class="bg-teal-50 p-3 text-xs text-teal-900">50</div>
+        <div class="bg-teal-100 p-3 text-xs text-teal-900">100</div>
+        <div class="bg-teal-200 p-3 text-xs text-teal-900">200</div>
+        <div class="bg-teal-300 p-3 text-xs text-teal-900">300</div>
+        <div class="bg-teal-400 p-3 text-xs text-teal-900">400</div>
+        <div class="bg-teal-500 p-3 text-xs text-white">500</div>
+        <div class="bg-teal-600 p-3 text-xs text-white">600</div>
+        <div class="bg-teal-700 p-3 text-xs text-white">700</div>
+        <div class="bg-teal-800 p-3 text-xs text-white">800</div>
+        <div class="bg-teal-900 p-3 text-xs text-white">900</div>
+      </div>
+
+      <h3 class="text-xl font-bold mb-3">{t('tokens.amber_label')}</h3>
+      <div class="grid grid-cols-5 md:grid-cols-10 gap-2">
+        <div class="bg-amber-50 p-3 text-xs text-amber-900">50</div>
+        <div class="bg-amber-100 p-3 text-xs text-amber-900">100</div>
+        <div class="bg-amber-200 p-3 text-xs text-amber-900">200</div>
+        <div class="bg-amber-300 p-3 text-xs text-amber-900">300</div>
+        <div class="bg-amber-400 p-3 text-xs" style="color: var(--color-ink)">400</div>
+        <div class="bg-amber-500 p-3 text-xs" style="color: var(--color-ink)">500</div>
+        <div class="bg-amber-600 p-3 text-xs text-white">600</div>
+        <div class="bg-amber-700 p-3 text-xs text-white">700</div>
+        <div class="bg-amber-800 p-3 text-xs text-white">800</div>
+        <div class="bg-amber-900 p-3 text-xs text-white">900</div>
+      </div>
+    </section>
+
+    <!-- COULEURS SÉMANTIQUES -->
+    <section class="mb-16">
+      <h2 class="text-3xl mb-6 text-teal-700">{t('tokens.semantic_colors')}</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="p-6 rounded-lg border" style="background: var(--color-bg); border-color: var(--color-border)">
+          <div class="font-bold">bg</div>
+          <div class="text-sm" style="color: var(--color-muted)">#FAFAF9</div>
+        </div>
+        <div class="p-6 rounded-lg bg-white border" style="border-color: var(--color-border)">
+          <div class="font-bold">card</div>
+          <div class="text-sm" style="color: var(--color-muted)">#FFFFFF</div>
+        </div>
+        <div class="p-6 rounded-lg" style="background: var(--color-ink); color: white">
+          <div class="font-bold">ink</div>
+          <div class="text-sm">#1A1A1A</div>
+        </div>
+        <div class="p-6 rounded-lg" style="background: var(--color-muted); color: white">
+          <div class="font-bold">muted</div>
+          <div class="text-sm">#6B7280</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TYPOGRAPHIE -->
+    <section class="mb-16">
+      <h2 class="text-3xl mb-6 text-teal-700">{t('tokens.typography')}</h2>
+
+      <div class="mb-8">
+        <h3 class="text-xl font-bold mb-3">{t('tokens.typography_display')}</h3>
+        <p class="text-6xl">{t('tokens.typography_sample_brand')}</p>
+        <p class="text-5xl">{t('tokens.typography_sample_h1')}</p>
+        <p class="text-4xl">{t('tokens.typography_sample_h2')}</p>
+        <p class="text-3xl">{t('tokens.typography_sample_h3')}</p>
+        <p class="text-2xl">{t('tokens.typography_sample_h3')}</p>
+      </div>
+
+      <div style="font-family: var(--font-body)">
+        <h3 class="text-xl font-bold mb-3">{t('tokens.typography_body')}</h3>
+        <p class="text-lg">{t('tokens.typography_sample_body')}</p>
+        <p class="text-base">{t('tokens.typography_sample_body')}</p>
+        <p class="text-sm">{t('tokens.typography_sample_body')}</p>
+        <p class="text-xs">{t('tokens.typography_sample_body')}</p>
+      </div>
+    </section>
+
+    <!-- BOUTONS PROTOTYPES -->
+    <section class="mb-16">
+      <h2 class="text-3xl mb-6 text-teal-700">{t('tokens.buttons_prototype')}</h2>
+      <div class="flex flex-wrap gap-4">
+        <button class="bg-teal-700 hover:bg-teal-800 text-white px-6 py-3 rounded-lg transition-colors">
+          {t('tokens.button_primary_teal')}
+        </button>
+        <button class="bg-amber-700 hover:bg-amber-800 text-white px-6 py-3 rounded-lg transition-colors">
+          {t('tokens.button_accent_amber')}
+        </button>
+        <button class="border-2 border-teal-700 text-teal-700 hover:bg-teal-50 px-6 py-3 rounded-lg transition-colors">
+          {t('tokens.button_secondary')}
+        </button>
+        <button class="text-teal-700 underline hover:text-teal-900 px-6 py-3">
+          {t('tokens.button_tertiary')}
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <Footer lang={lang} />
+</BaseLayout>
