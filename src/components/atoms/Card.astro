@@ -1,0 +1,59 @@
+---
+/**
+ * Card.astro — Conteneur card générique.
+ *
+ * Source de référence : annexe B (composants atomiques). La spec 9.2
+ * "Card véhicule" sera dans organisms/ en Phase 3 (composant spécialisé).
+ * Cette Card-ci est l'atome de base réutilisable partout.
+ *
+ * Statique (.astro) car pas d'interactivité — meilleur pour SEO + perf.
+ * Si besoin d'interactivité (hover state JS, click handler, etc.), wrap
+ * dans un composant Vue parent.
+ *
+ * Variants :
+ *   - default  : fond blanc, bordure légère, ombre subtile
+ *   - elevated : ombre plus marquée (cards prominentes)
+ *   - outlined : juste une bordure, pas d'ombre
+ *
+ * Padding :
+ *   - sm : 16px (cards denses)
+ *   - md : 24px (défaut)
+ *   - lg : 32px (cards hero)
+ */
+
+export type CardVariant = 'default' | 'elevated' | 'outlined';
+export type CardPadding = 'none' | 'sm' | 'md' | 'lg';
+
+export interface Props {
+  variant?: CardVariant;
+  padding?: CardPadding;
+  /** Élément HTML à utiliser (défaut div, peut être article/section). */
+  as?: 'div' | 'article' | 'section' | 'aside';
+  /** Classes additionnelles. */
+  class?: string;
+}
+
+const {
+  variant = 'default',
+  padding = 'md',
+  as: Tag = 'div',
+  class: extraClass = '',
+} = Astro.props;
+
+const variantClass = {
+  default: 'bg-white border border-gray-200 shadow-sm',
+  elevated: 'bg-white shadow-md',
+  outlined: 'bg-white border border-gray-300',
+}[variant];
+
+const paddingClass = {
+  none: '',
+  sm: 'p-4',
+  md: 'p-6',
+  lg: 'p-8',
+}[padding];
+---
+
+<Tag class:list={['rounded-xl', variantClass, paddingClass, extraClass]}>
+  <slot />
+</Tag>

@@ -1,0 +1,295 @@
+---
+/**
+ * /components — Showcase visuel des composants atomiques V2.
+ *
+ * Remplace temporairement Storybook (cf. décision Phase 2 livrable 1 :
+ * Storybook + Astro 6 + Vue 3 trop instable à ce stade).
+ *
+ * Présente chaque composant atomique dans toutes ses variantes pour
+ * documentation visuelle. Pas d'éditeur de props live ; ajouter une
+ * variante = ajouter une instance ci-dessous.
+ */
+import BaseLayout from '../components/layouts/BaseLayout.astro';
+import Button from '../components/atoms/Button.vue';
+import Input from '../components/atoms/Input.vue';
+import Badge from '../components/atoms/Badge.vue';
+import Icon from '../components/atoms/Icon.vue';
+import Card from '../components/atoms/Card.astro';
+
+const iconNames = [
+  'arrow', 'arrow-left',
+  'check', 'close', 'loader',
+  'chevron-down', 'chevron-up', 'chevron-left', 'chevron-right',
+  'menu', 'search',
+  'alert', 'info', 'help', 'external',
+  'plus', 'minus',
+  'car', 'euro', 'zap', 'fuel', 'settings',
+] as const;
+
+const countryOptions = [
+  { value: 'fr', label: 'France' },
+  { value: 'be', label: 'Belgique' },
+  { value: 'ch', label: 'Suisse' },
+  { value: 'de', label: 'Allemagne' },
+  { value: 'nl', label: 'Pays-Bas' },
+  { value: 'it', label: 'Italie' },
+  { value: 'es', label: 'Espagne' },
+];
+---
+
+<BaseLayout
+  title="Composants — CarPIQ V2"
+  description="Showcase visuel des composants atomiques CarPIQ V2."
+>
+  <main class="max-w-6xl mx-auto p-8">
+    <h1 class="text-5xl mb-2">Composants atomiques</h1>
+    <p style="color: var(--color-muted)" class="mb-12">
+      Référence visuelle des 5 composants atomiques de la Phase 2 :
+      <code>Button</code>, <code>Input</code>, <code>Badge</code>,
+      <code>Icon</code>, <code>Card</code>.
+    </p>
+
+    <!-- ============================================================ -->
+    <!-- BUTTON                                                       -->
+    <!-- ============================================================ -->
+    <section class="mb-16">
+      <h2 class="text-3xl mb-2 text-teal-700">Button</h2>
+      <p class="text-sm mb-6" style="color: var(--color-muted)">
+        3 variantes × 3 tailles + états disabled / loading + icônes.
+      </p>
+
+      <!-- Variantes -->
+      <h3 class="text-lg font-semibold mb-3 mt-8">Variantes</h3>
+      <div class="flex flex-wrap items-start gap-4 p-6 rounded-lg" style="background: var(--color-bg)">
+        <Button client:load variant="primary" label="Primaire" icon="arrow" />
+        <Button client:load variant="secondary" label="Secondaire" />
+        <Button client:load variant="ghost" label="Ghost" />
+      </div>
+
+      <!-- Tailles -->
+      <h3 class="text-lg font-semibold mb-3 mt-8">Tailles</h3>
+      <div class="flex flex-wrap items-center gap-4 p-6 rounded-lg" style="background: var(--color-bg)">
+        <Button client:load size="sm" label="Small" />
+        <Button client:load size="md" label="Medium (défaut)" />
+        <Button client:load size="lg" label="Large" icon="arrow" />
+      </div>
+
+      <!-- États -->
+      <h3 class="text-lg font-semibold mb-3 mt-8">États</h3>
+      <div class="flex flex-wrap items-center gap-4 p-6 rounded-lg" style="background: var(--color-bg)">
+        <Button client:load label="Normal" />
+        <Button client:load label="Désactivé" disabled />
+        <Button client:load label="Chargement…" loading />
+      </div>
+
+      <!-- Icônes -->
+      <h3 class="text-lg font-semibold mb-3 mt-8">Avec icônes</h3>
+      <div class="flex flex-wrap items-center gap-4 p-6 rounded-lg" style="background: var(--color-bg)">
+        <Button client:load label="Suivant" icon="arrow" iconPosition="right" />
+        <Button client:load label="Précédent" icon="arrow-left" iconPosition="left" variant="secondary" />
+        <Button client:load label="Valider" icon="check" iconPosition="left" />
+        <Button client:load label="Fermer" icon="close" iconPosition="left" variant="ghost" />
+      </div>
+
+      <!-- Full width -->
+      <h3 class="text-lg font-semibold mb-3 mt-8">Pleine largeur</h3>
+      <div class="p-6 rounded-lg" style="background: var(--color-bg)">
+        <Button client:load label="Bouton pleine largeur" fullWidth icon="arrow" />
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- INPUT                                                        -->
+    <!-- ============================================================ -->
+    <section class="mb-16">
+      <h2 class="text-3xl mb-2 text-teal-700">Input</h2>
+      <p class="text-sm mb-6" style="color: var(--color-muted)">
+        Champ texte ou select avec label, help, error state.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 rounded-lg" style="background: var(--color-bg)">
+        <Input
+          client:load
+          name="email"
+          type="email"
+          label="Adresse email"
+          placeholder="jean.dupont@example.com"
+          help="Nous ne partagerons jamais votre email."
+        />
+
+        <Input
+          client:load
+          name="budget"
+          type="number"
+          label="Budget mensuel (€)"
+          placeholder="500"
+          help="Mensualité maximale acceptable."
+        />
+
+        <Input
+          client:load
+          name="country"
+          type="select"
+          label="Pays"
+          placeholder="— Sélectionnez —"
+          options={countryOptions}
+          required
+        />
+
+        <Input
+          client:load
+          name="email-err"
+          type="email"
+          label="Adresse email"
+          modelValue="invalide"
+          error="Format d'email invalide."
+        />
+
+        <Input
+          client:load
+          name="locked"
+          label="Champ désactivé"
+          modelValue="Valeur figée"
+          disabled
+        />
+
+        <Input
+          client:load
+          name="ref"
+          label="Référence"
+          modelValue="CARPIQ-2026-001"
+          readonly
+          help="Lecture seule."
+        />
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- BADGE                                                        -->
+    <!-- ============================================================ -->
+    <section class="mb-16">
+      <h2 class="text-3xl mb-2 text-teal-700">Badge</h2>
+      <p class="text-sm mb-6" style="color: var(--color-muted)">
+        6 variantes sémantiques × 2 tailles. Icône optionnelle.
+      </p>
+
+      <!-- Variantes -->
+      <h3 class="text-lg font-semibold mb-3 mt-8">Variantes</h3>
+      <div class="flex flex-wrap items-center gap-3 p-6 rounded-lg" style="background: var(--color-bg)">
+        <Badge client:load variant="default">Default</Badge>
+        <Badge client:load variant="primary">Recommandé</Badge>
+        <Badge client:load variant="accent">Nouveau</Badge>
+        <Badge client:load variant="success" icon="check">Validé</Badge>
+        <Badge client:load variant="warning" icon="alert">Attention</Badge>
+        <Badge client:load variant="error" icon="alert">Erreur</Badge>
+      </div>
+
+      <!-- Tailles -->
+      <h3 class="text-lg font-semibold mb-3 mt-8">Tailles</h3>
+      <div class="flex flex-wrap items-center gap-3 p-6 rounded-lg" style="background: var(--color-bg)">
+        <Badge client:load variant="primary" size="sm">Small</Badge>
+        <Badge client:load variant="primary" size="md">Medium</Badge>
+      </div>
+
+      <!-- Avec icônes -->
+      <h3 class="text-lg font-semibold mb-3 mt-8">Avec icônes</h3>
+      <div class="flex flex-wrap items-center gap-3 p-6 rounded-lg" style="background: var(--color-bg)">
+        <Badge client:load variant="primary" icon="zap">Électrique</Badge>
+        <Badge client:load variant="accent" icon="fuel">Essence</Badge>
+        <Badge client:load variant="success" icon="check">Vérifié</Badge>
+        <Badge client:load variant="default" icon="info">Info</Badge>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- ICON                                                         -->
+    <!-- ============================================================ -->
+    <section class="mb-16">
+      <h2 class="text-3xl mb-2 text-teal-700">Icon</h2>
+      <p class="text-sm mb-6" style="color: var(--color-muted)">
+        Wrapper léger autour de lucide-vue-next. {iconNames.length} icônes mappées.
+      </p>
+
+      <!-- Toutes les icônes -->
+      <h3 class="text-lg font-semibold mb-3 mt-8">Catalogue</h3>
+      <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3 p-6 rounded-lg" style="background: var(--color-bg)">
+        {iconNames.map((n) => (
+          <div class="flex flex-col items-center gap-2 p-3 bg-white border border-gray-200 rounded-lg">
+            <Icon client:load name={n} size={24} />
+            <span class="text-xs text-gray-600">{n}</span>
+          </div>
+        ))}
+      </div>
+
+      <!-- Tailles -->
+      <h3 class="text-lg font-semibold mb-3 mt-8">Tailles</h3>
+      <div class="flex items-center gap-6 p-6 rounded-lg" style="background: var(--color-bg)">
+        <Icon client:load name="arrow" size={12} />
+        <Icon client:load name="arrow" size={16} />
+        <Icon client:load name="arrow" size={24} />
+        <Icon client:load name="arrow" size={32} />
+        <Icon client:load name="arrow" size={48} />
+        <Icon client:load name="arrow" size={64} />
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- CARD                                                         -->
+    <!-- ============================================================ -->
+    <section class="mb-16">
+      <h2 class="text-3xl mb-2 text-teal-700">Card</h2>
+      <p class="text-sm mb-6" style="color: var(--color-muted)">
+        3 variantes × 4 paddings. Composant statique <code>.astro</code>.
+      </p>
+
+      <!-- Variantes -->
+      <h3 class="text-lg font-semibold mb-3 mt-8">Variantes</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <Card variant="default">
+          <h4 class="text-lg font-semibold mb-2">Default</h4>
+          <p class="text-sm text-gray-600">
+            Bordure légère + ombre subtile. Usage courant.
+          </p>
+        </Card>
+        <Card variant="elevated">
+          <h4 class="text-lg font-semibold mb-2">Elevated</h4>
+          <p class="text-sm text-gray-600">
+            Ombre plus marquée. Cards prominentes (hero, résultat).
+          </p>
+        </Card>
+        <Card variant="outlined">
+          <h4 class="text-lg font-semibold mb-2">Outlined</h4>
+          <p class="text-sm text-gray-600">
+            Bordure seule, pas d'ombre. Plus discret.
+          </p>
+        </Card>
+      </div>
+
+      <!-- Paddings -->
+      <h3 class="text-lg font-semibold mb-3 mt-8">Paddings</h3>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <Card padding="none">
+          <div class="bg-teal-50 p-2">
+            <p class="text-sm">padding="none"</p>
+          </div>
+        </Card>
+        <Card padding="sm">
+          <p class="text-sm">padding="sm" (16px)</p>
+        </Card>
+        <Card padding="md">
+          <p class="text-sm">padding="md" (24px, défaut)</p>
+        </Card>
+        <Card padding="lg">
+          <p class="text-sm">padding="lg" (32px)</p>
+        </Card>
+      </div>
+    </section>
+
+    <p class="text-center text-sm mt-16" style="color: var(--color-muted)">
+      CarPIQ V2 — Composants atomiques ·
+      <a href="/" class="text-teal-700 underline hover:text-teal-900">Accueil</a>
+      ·
+      <a href="/tokens" class="text-teal-700 underline hover:text-teal-900">Design tokens</a>
+    </p>
+  </main>
+</BaseLayout>
