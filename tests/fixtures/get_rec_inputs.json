@@ -1,0 +1,1020 @@
+[
+  {
+    "id": "rec_001_urban_low_fr_cost",
+    "description": "Urbain FR, budget 500, pref cost",
+    "inputs": {
+      "budget": 500,
+      "km": "u10",
+      "trips": "short",
+      "charging": "no",
+      "body": [
+        "small"
+      ],
+      "pref": "cost",
+      "urban": true,
+      "age": "26-35",
+      "dept": null,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "rec_002_urban_low_fr_eco",
+    "description": "Urbain FR, budget 500, pref eco",
+    "inputs": {
+      "budget": 500,
+      "km": "u10",
+      "trips": "short",
+      "charging": "no",
+      "body": [
+        "small"
+      ],
+      "pref": "eco",
+      "urban": true,
+      "age": "26-35",
+      "dept": null,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "rec_003_urban_low_ch_cost",
+    "description": "Urbain CH, budget 500, pref cost",
+    "inputs": {
+      "budget": 500,
+      "km": "u10",
+      "trips": "short",
+      "charging": "no",
+      "body": [
+        "small"
+      ],
+      "pref": "cost",
+      "urban": true,
+      "age": "26-35",
+      "dept": null,
+      "active_country": "ch"
+    }
+  },
+  {
+    "id": "rec_004_urban_low_ch_eco",
+    "description": "Urbain CH, budget 500, pref eco",
+    "inputs": {
+      "budget": 500,
+      "km": "u10",
+      "trips": "short",
+      "charging": "no",
+      "body": [
+        "small"
+      ],
+      "pref": "eco",
+      "urban": true,
+      "age": "26-35",
+      "dept": null,
+      "active_country": "ch"
+    }
+  },
+  {
+    "id": "rec_005_urban_low_de_cost",
+    "description": "Urbain DE, budget 500, pref cost",
+    "inputs": {
+      "budget": 500,
+      "km": "u10",
+      "trips": "short",
+      "charging": "no",
+      "body": [
+        "small"
+      ],
+      "pref": "cost",
+      "urban": true,
+      "age": "26-35",
+      "dept": null,
+      "active_country": "de"
+    }
+  },
+  {
+    "id": "rec_006_urban_low_de_eco",
+    "description": "Urbain DE, budget 500, pref eco",
+    "inputs": {
+      "budget": 500,
+      "km": "u10",
+      "trips": "short",
+      "charging": "no",
+      "body": [
+        "small"
+      ],
+      "pref": "eco",
+      "urban": true,
+      "age": "26-35",
+      "dept": null,
+      "active_country": "de"
+    }
+  },
+  {
+    "id": "rec_007_family_fr_compact_family",
+    "description": "Famille FR, compact, pref family",
+    "inputs": {
+      "budget": 800,
+      "km": "m20",
+      "trips": "mixed",
+      "charging": "socket",
+      "body": [
+        "compact"
+      ],
+      "pref": "family",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "rec_008_family_fr_compact_cost",
+    "description": "Famille FR, compact, pref cost",
+    "inputs": {
+      "budget": 800,
+      "km": "m20",
+      "trips": "mixed",
+      "charging": "socket",
+      "body": [
+        "compact"
+      ],
+      "pref": "cost",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "rec_009_family_fr_saloon_family",
+    "description": "Famille FR, saloon, pref family",
+    "inputs": {
+      "budget": 800,
+      "km": "m20",
+      "trips": "mixed",
+      "charging": "socket",
+      "body": [
+        "saloon"
+      ],
+      "pref": "family",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "rec_010_family_fr_saloon_cost",
+    "description": "Famille FR, saloon, pref cost",
+    "inputs": {
+      "budget": 800,
+      "km": "m20",
+      "trips": "mixed",
+      "charging": "socket",
+      "body": [
+        "saloon"
+      ],
+      "pref": "cost",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "rec_011_family_fr_suv_family",
+    "description": "Famille FR, suv, pref family",
+    "inputs": {
+      "budget": 800,
+      "km": "m20",
+      "trips": "mixed",
+      "charging": "socket",
+      "body": [
+        "suv"
+      ],
+      "pref": "family",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "rec_012_family_fr_suv_cost",
+    "description": "Famille FR, suv, pref cost",
+    "inputs": {
+      "budget": 800,
+      "km": "m20",
+      "trips": "mixed",
+      "charging": "socket",
+      "body": [
+        "suv"
+      ],
+      "pref": "cost",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "rec_013_family_ch_compact_family",
+    "description": "Famille CH, compact, pref family",
+    "inputs": {
+      "budget": 800,
+      "km": "m20",
+      "trips": "mixed",
+      "charging": "socket",
+      "body": [
+        "compact"
+      ],
+      "pref": "family",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "ch"
+    }
+  },
+  {
+    "id": "rec_014_family_ch_compact_cost",
+    "description": "Famille CH, compact, pref cost",
+    "inputs": {
+      "budget": 800,
+      "km": "m20",
+      "trips": "mixed",
+      "charging": "socket",
+      "body": [
+        "compact"
+      ],
+      "pref": "cost",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "ch"
+    }
+  },
+  {
+    "id": "rec_015_family_ch_saloon_family",
+    "description": "Famille CH, saloon, pref family",
+    "inputs": {
+      "budget": 800,
+      "km": "m20",
+      "trips": "mixed",
+      "charging": "socket",
+      "body": [
+        "saloon"
+      ],
+      "pref": "family",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "ch"
+    }
+  },
+  {
+    "id": "rec_016_family_ch_saloon_cost",
+    "description": "Famille CH, saloon, pref cost",
+    "inputs": {
+      "budget": 800,
+      "km": "m20",
+      "trips": "mixed",
+      "charging": "socket",
+      "body": [
+        "saloon"
+      ],
+      "pref": "cost",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "ch"
+    }
+  },
+  {
+    "id": "rec_017_family_ch_suv_family",
+    "description": "Famille CH, suv, pref family",
+    "inputs": {
+      "budget": 800,
+      "km": "m20",
+      "trips": "mixed",
+      "charging": "socket",
+      "body": [
+        "suv"
+      ],
+      "pref": "family",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "ch"
+    }
+  },
+  {
+    "id": "rec_018_family_ch_suv_cost",
+    "description": "Famille CH, suv, pref cost",
+    "inputs": {
+      "budget": 800,
+      "km": "m20",
+      "trips": "mixed",
+      "charging": "socket",
+      "body": [
+        "suv"
+      ],
+      "pref": "cost",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "ch"
+    }
+  },
+  {
+    "id": "rec_019_family_be_compact_family",
+    "description": "Famille BE, compact, pref family",
+    "inputs": {
+      "budget": 800,
+      "km": "m20",
+      "trips": "mixed",
+      "charging": "socket",
+      "body": [
+        "compact"
+      ],
+      "pref": "family",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "be"
+    }
+  },
+  {
+    "id": "rec_020_family_be_compact_cost",
+    "description": "Famille BE, compact, pref cost",
+    "inputs": {
+      "budget": 800,
+      "km": "m20",
+      "trips": "mixed",
+      "charging": "socket",
+      "body": [
+        "compact"
+      ],
+      "pref": "cost",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "be"
+    }
+  },
+  {
+    "id": "rec_021_family_be_saloon_family",
+    "description": "Famille BE, saloon, pref family",
+    "inputs": {
+      "budget": 800,
+      "km": "m20",
+      "trips": "mixed",
+      "charging": "socket",
+      "body": [
+        "saloon"
+      ],
+      "pref": "family",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "be"
+    }
+  },
+  {
+    "id": "rec_022_family_be_saloon_cost",
+    "description": "Famille BE, saloon, pref cost",
+    "inputs": {
+      "budget": 800,
+      "km": "m20",
+      "trips": "mixed",
+      "charging": "socket",
+      "body": [
+        "saloon"
+      ],
+      "pref": "cost",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "be"
+    }
+  },
+  {
+    "id": "rec_023_family_be_suv_family",
+    "description": "Famille BE, suv, pref family",
+    "inputs": {
+      "budget": 800,
+      "km": "m20",
+      "trips": "mixed",
+      "charging": "socket",
+      "body": [
+        "suv"
+      ],
+      "pref": "family",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "be"
+    }
+  },
+  {
+    "id": "rec_024_family_be_suv_cost",
+    "description": "Famille BE, suv, pref cost",
+    "inputs": {
+      "budget": 800,
+      "km": "m20",
+      "trips": "mixed",
+      "charging": "socket",
+      "body": [
+        "suv"
+      ],
+      "pref": "cost",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "be"
+    }
+  },
+  {
+    "id": "rec_025_commuter_fr_long_cost",
+    "description": "Commuter FR, trips long",
+    "inputs": {
+      "budget": 1000,
+      "km": "o35",
+      "trips": "long",
+      "charging": "socket",
+      "body": [
+        "saloon"
+      ],
+      "pref": "cost",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "rec_026_commuter_fr_long_ratio",
+    "description": "Commuter FR, trips long",
+    "inputs": {
+      "budget": 1000,
+      "km": "o35",
+      "trips": "long",
+      "charging": "socket",
+      "body": [
+        "saloon"
+      ],
+      "pref": "ratio",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "rec_027_commuter_fr_vlong_cost",
+    "description": "Commuter FR, trips vlong",
+    "inputs": {
+      "budget": 1000,
+      "km": "o35",
+      "trips": "vlong",
+      "charging": "socket",
+      "body": [
+        "saloon"
+      ],
+      "pref": "cost",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "rec_028_commuter_fr_vlong_ratio",
+    "description": "Commuter FR, trips vlong",
+    "inputs": {
+      "budget": 1000,
+      "km": "o35",
+      "trips": "vlong",
+      "charging": "socket",
+      "body": [
+        "saloon"
+      ],
+      "pref": "ratio",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "rec_029_commuter_de_long_cost",
+    "description": "Commuter DE, trips long",
+    "inputs": {
+      "budget": 1000,
+      "km": "o35",
+      "trips": "long",
+      "charging": "socket",
+      "body": [
+        "saloon"
+      ],
+      "pref": "cost",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "de"
+    }
+  },
+  {
+    "id": "rec_030_commuter_de_long_ratio",
+    "description": "Commuter DE, trips long",
+    "inputs": {
+      "budget": 1000,
+      "km": "o35",
+      "trips": "long",
+      "charging": "socket",
+      "body": [
+        "saloon"
+      ],
+      "pref": "ratio",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "de"
+    }
+  },
+  {
+    "id": "rec_031_commuter_de_vlong_cost",
+    "description": "Commuter DE, trips vlong",
+    "inputs": {
+      "budget": 1000,
+      "km": "o35",
+      "trips": "vlong",
+      "charging": "socket",
+      "body": [
+        "saloon"
+      ],
+      "pref": "cost",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "de"
+    }
+  },
+  {
+    "id": "rec_032_commuter_de_vlong_ratio",
+    "description": "Commuter DE, trips vlong",
+    "inputs": {
+      "budget": 1000,
+      "km": "o35",
+      "trips": "vlong",
+      "charging": "socket",
+      "body": [
+        "saloon"
+      ],
+      "pref": "ratio",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "de"
+    }
+  },
+  {
+    "id": "rec_033_commuter_nl_long_cost",
+    "description": "Commuter NL, trips long",
+    "inputs": {
+      "budget": 1000,
+      "km": "o35",
+      "trips": "long",
+      "charging": "socket",
+      "body": [
+        "saloon"
+      ],
+      "pref": "cost",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "nl"
+    }
+  },
+  {
+    "id": "rec_034_commuter_nl_long_ratio",
+    "description": "Commuter NL, trips long",
+    "inputs": {
+      "budget": 1000,
+      "km": "o35",
+      "trips": "long",
+      "charging": "socket",
+      "body": [
+        "saloon"
+      ],
+      "pref": "ratio",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "nl"
+    }
+  },
+  {
+    "id": "rec_035_commuter_nl_vlong_cost",
+    "description": "Commuter NL, trips vlong",
+    "inputs": {
+      "budget": 1000,
+      "km": "o35",
+      "trips": "vlong",
+      "charging": "socket",
+      "body": [
+        "saloon"
+      ],
+      "pref": "cost",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "nl"
+    }
+  },
+  {
+    "id": "rec_036_commuter_nl_vlong_ratio",
+    "description": "Commuter NL, trips vlong",
+    "inputs": {
+      "budget": 1000,
+      "km": "o35",
+      "trips": "vlong",
+      "charging": "socket",
+      "body": [
+        "saloon"
+      ],
+      "pref": "ratio",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "nl"
+    }
+  },
+  {
+    "id": "rec_037_premium_ch_premium_saloon",
+    "description": "Premium CH, premium, saloon",
+    "inputs": {
+      "budget": 1500,
+      "km": "m20",
+      "trips": "mixed",
+      "charging": "socket",
+      "body": [
+        "saloon"
+      ],
+      "pref": "premium",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "ch"
+    }
+  },
+  {
+    "id": "rec_038_premium_ch_premium_suv",
+    "description": "Premium CH, premium, suv",
+    "inputs": {
+      "budget": 1500,
+      "km": "m20",
+      "trips": "mixed",
+      "charging": "socket",
+      "body": [
+        "suv"
+      ],
+      "pref": "premium",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "ch"
+    }
+  },
+  {
+    "id": "rec_039_premium_ch_sport_saloon",
+    "description": "Premium CH, sport, saloon",
+    "inputs": {
+      "budget": 1500,
+      "km": "m20",
+      "trips": "mixed",
+      "charging": "socket",
+      "body": [
+        "saloon"
+      ],
+      "pref": "sport",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "ch"
+    }
+  },
+  {
+    "id": "rec_040_premium_ch_sport_suv",
+    "description": "Premium CH, sport, suv",
+    "inputs": {
+      "budget": 1500,
+      "km": "m20",
+      "trips": "mixed",
+      "charging": "socket",
+      "body": [
+        "suv"
+      ],
+      "pref": "sport",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "ch"
+    }
+  },
+  {
+    "id": "rec_041_premium_lu_premium_saloon",
+    "description": "Premium LU, premium, saloon",
+    "inputs": {
+      "budget": 1500,
+      "km": "m20",
+      "trips": "mixed",
+      "charging": "socket",
+      "body": [
+        "saloon"
+      ],
+      "pref": "premium",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "lu"
+    }
+  },
+  {
+    "id": "rec_042_premium_lu_premium_suv",
+    "description": "Premium LU, premium, suv",
+    "inputs": {
+      "budget": 1500,
+      "km": "m20",
+      "trips": "mixed",
+      "charging": "socket",
+      "body": [
+        "suv"
+      ],
+      "pref": "premium",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "lu"
+    }
+  },
+  {
+    "id": "rec_043_premium_lu_sport_saloon",
+    "description": "Premium LU, sport, saloon",
+    "inputs": {
+      "budget": 1500,
+      "km": "m20",
+      "trips": "mixed",
+      "charging": "socket",
+      "body": [
+        "saloon"
+      ],
+      "pref": "sport",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "lu"
+    }
+  },
+  {
+    "id": "rec_044_premium_lu_sport_suv",
+    "description": "Premium LU, sport, suv",
+    "inputs": {
+      "budget": 1500,
+      "km": "m20",
+      "trips": "mixed",
+      "charging": "socket",
+      "body": [
+        "suv"
+      ],
+      "pref": "sport",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "lu"
+    }
+  },
+  {
+    "id": "rec_045_ev_fr_body_any",
+    "description": "EV-friendly FR",
+    "inputs": {
+      "budget": 1200,
+      "km": "m35",
+      "trips": "long",
+      "charging": "socket",
+      "body": [],
+      "pref": "eco",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "rec_046_ev_fr_body_['compact']",
+    "description": "EV-friendly FR",
+    "inputs": {
+      "budget": 1200,
+      "km": "m35",
+      "trips": "long",
+      "charging": "socket",
+      "body": [
+        "compact"
+      ],
+      "pref": "eco",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "rec_047_ev_nl_body_any",
+    "description": "EV-friendly NL",
+    "inputs": {
+      "budget": 1200,
+      "km": "m35",
+      "trips": "long",
+      "charging": "socket",
+      "body": [],
+      "pref": "eco",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "nl"
+    }
+  },
+  {
+    "id": "rec_048_ev_nl_body_['compact']",
+    "description": "EV-friendly NL",
+    "inputs": {
+      "budget": 1200,
+      "km": "m35",
+      "trips": "long",
+      "charging": "socket",
+      "body": [
+        "compact"
+      ],
+      "pref": "eco",
+      "urban": false,
+      "age": "36-50",
+      "dept": null,
+      "active_country": "nl"
+    }
+  },
+  {
+    "id": "rec_049_young_fr_cost",
+    "description": "Jeune conducteur FR, cost",
+    "inputs": {
+      "budget": 400,
+      "km": "u10",
+      "trips": "short",
+      "charging": "no",
+      "body": [
+        "small"
+      ],
+      "pref": "cost",
+      "urban": true,
+      "age": "18-25",
+      "dept": null,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "rec_050_young_fr_sport",
+    "description": "Jeune conducteur FR, sport",
+    "inputs": {
+      "budget": 400,
+      "km": "u10",
+      "trips": "short",
+      "charging": "no",
+      "body": [
+        "small"
+      ],
+      "pref": "sport",
+      "urban": true,
+      "age": "18-25",
+      "dept": null,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "rec_051_young_ch_cost",
+    "description": "Jeune conducteur CH, cost",
+    "inputs": {
+      "budget": 400,
+      "km": "u10",
+      "trips": "short",
+      "charging": "no",
+      "body": [
+        "small"
+      ],
+      "pref": "cost",
+      "urban": true,
+      "age": "18-25",
+      "dept": null,
+      "active_country": "ch"
+    }
+  },
+  {
+    "id": "rec_052_young_ch_sport",
+    "description": "Jeune conducteur CH, sport",
+    "inputs": {
+      "budget": 400,
+      "km": "u10",
+      "trips": "short",
+      "charging": "no",
+      "body": [
+        "small"
+      ],
+      "pref": "sport",
+      "urban": true,
+      "age": "18-25",
+      "dept": null,
+      "active_country": "ch"
+    }
+  },
+  {
+    "id": "rec_053_senior_fr_ratio",
+    "description": "Senior FR",
+    "inputs": {
+      "budget": 600,
+      "km": "u10",
+      "trips": "short",
+      "charging": "maybe",
+      "body": [
+        "compact"
+      ],
+      "pref": "ratio",
+      "urban": true,
+      "age": "65+",
+      "dept": null,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "rec_054_senior_fr_family",
+    "description": "Senior FR",
+    "inputs": {
+      "budget": 600,
+      "km": "u10",
+      "trips": "short",
+      "charging": "maybe",
+      "body": [
+        "compact"
+      ],
+      "pref": "family",
+      "urban": true,
+      "age": "65+",
+      "dept": null,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "rec_edge_minimal_budget",
+    "description": "Budget minimal, no preferences",
+    "inputs": {
+      "budget": 200,
+      "km": "u10",
+      "trips": "short",
+      "charging": "no",
+      "body": [],
+      "pref": null,
+      "urban": true,
+      "age": null,
+      "dept": null,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "rec_edge_maximal_budget",
+    "description": "Budget maximal, EV-friendly Switzerland",
+    "inputs": {
+      "budget": 3000,
+      "km": "o35",
+      "trips": "long",
+      "charging": "socket",
+      "body": [
+        "suv"
+      ],
+      "pref": "eco",
+      "urban": false,
+      "age": "36-50",
+      "dept": "GE",
+      "active_country": "ch"
+    }
+  },
+  {
+    "id": "rec_edge_all_null",
+    "description": "Toutes valeurs null sauf budget et activeCountry",
+    "inputs": {
+      "budget": 800,
+      "km": null,
+      "trips": null,
+      "charging": null,
+      "body": [],
+      "pref": null,
+      "urban": false,
+      "age": null,
+      "dept": null,
+      "active_country": "fr"
+    }
+  }
+]

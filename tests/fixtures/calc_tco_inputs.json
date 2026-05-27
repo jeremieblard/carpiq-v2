@@ -1,0 +1,1346 @@
+[
+  {
+    "id": "calctco_001_ice_p22000_km10000",
+    "inputs": {
+      "pt": "ice",
+      "newP": 22000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 10000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_002_ice_p22000_km25000",
+    "inputs": {
+      "pt": "ice",
+      "newP": 22000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 25000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_003_ice_p35000_km10000",
+    "inputs": {
+      "pt": "ice",
+      "newP": 35000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 10000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_004_ice_p35000_km25000",
+    "inputs": {
+      "pt": "ice",
+      "newP": 35000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 25000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_005_ice_p50000_km10000",
+    "inputs": {
+      "pt": "ice",
+      "newP": 50000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 10000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_006_ice_p50000_km25000",
+    "inputs": {
+      "pt": "ice",
+      "newP": 50000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 25000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_007_hev_p22000_km10000",
+    "inputs": {
+      "pt": "hev",
+      "newP": 22000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 10000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_008_hev_p22000_km25000",
+    "inputs": {
+      "pt": "hev",
+      "newP": 22000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 25000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_009_hev_p35000_km10000",
+    "inputs": {
+      "pt": "hev",
+      "newP": 35000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 10000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_010_hev_p35000_km25000",
+    "inputs": {
+      "pt": "hev",
+      "newP": 35000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 25000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_011_hev_p50000_km10000",
+    "inputs": {
+      "pt": "hev",
+      "newP": 50000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 10000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_012_hev_p50000_km25000",
+    "inputs": {
+      "pt": "hev",
+      "newP": 50000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 25000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_013_phev_p22000_km10000",
+    "inputs": {
+      "pt": "phev",
+      "newP": 22000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 10000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_014_phev_p22000_km25000",
+    "inputs": {
+      "pt": "phev",
+      "newP": 22000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 25000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_015_phev_p35000_km10000",
+    "inputs": {
+      "pt": "phev",
+      "newP": 35000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 10000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_016_phev_p35000_km25000",
+    "inputs": {
+      "pt": "phev",
+      "newP": 35000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 25000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_017_phev_p50000_km10000",
+    "inputs": {
+      "pt": "phev",
+      "newP": 50000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 10000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_018_phev_p50000_km25000",
+    "inputs": {
+      "pt": "phev",
+      "newP": 50000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 25000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_019_bev_p22000_km10000",
+    "inputs": {
+      "pt": "bev",
+      "newP": 22000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 10000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_020_bev_p22000_km25000",
+    "inputs": {
+      "pt": "bev",
+      "newP": 22000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 25000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_021_bev_p35000_km10000",
+    "inputs": {
+      "pt": "bev",
+      "newP": 35000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 10000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_022_bev_p35000_km25000",
+    "inputs": {
+      "pt": "bev",
+      "newP": 35000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 25000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_023_bev_p50000_km10000",
+    "inputs": {
+      "pt": "bev",
+      "newP": 50000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 10000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_024_bev_p50000_km25000",
+    "inputs": {
+      "pt": "bev",
+      "newP": 50000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 25000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_025_die_p22000_km10000",
+    "inputs": {
+      "pt": "die",
+      "newP": 22000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 10000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_026_die_p22000_km25000",
+    "inputs": {
+      "pt": "die",
+      "newP": 22000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 25000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_027_die_p35000_km10000",
+    "inputs": {
+      "pt": "die",
+      "newP": 35000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 10000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_028_die_p35000_km25000",
+    "inputs": {
+      "pt": "die",
+      "newP": 35000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 25000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_029_die_p50000_km10000",
+    "inputs": {
+      "pt": "die",
+      "newP": 50000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 10000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_030_die_p50000_km25000",
+    "inputs": {
+      "pt": "die",
+      "newP": 50000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 25000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_031_ice_age0",
+    "inputs": {
+      "pt": "ice",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_032_ice_age2",
+    "inputs": {
+      "pt": "ice",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 2,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_033_ice_age5",
+    "inputs": {
+      "pt": "ice",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 5,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_034_ice_age8",
+    "inputs": {
+      "pt": "ice",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 8,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_035_hev_age0",
+    "inputs": {
+      "pt": "hev",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_036_hev_age2",
+    "inputs": {
+      "pt": "hev",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 2,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_037_hev_age5",
+    "inputs": {
+      "pt": "hev",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 5,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_038_hev_age8",
+    "inputs": {
+      "pt": "hev",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 8,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_039_bev_age0",
+    "inputs": {
+      "pt": "bev",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_040_bev_age2",
+    "inputs": {
+      "pt": "bev",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 2,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_041_bev_age5",
+    "inputs": {
+      "pt": "bev",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 5,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_042_bev_age8",
+    "inputs": {
+      "pt": "bev",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 8,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_043_ice_trips_short",
+    "inputs": {
+      "pt": "ice",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "short",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_044_ice_trips_mixed",
+    "inputs": {
+      "pt": "ice",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_045_ice_trips_long",
+    "inputs": {
+      "pt": "ice",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "long",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_046_ice_trips_vlong",
+    "inputs": {
+      "pt": "ice",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "vlong",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_047_hev_trips_short",
+    "inputs": {
+      "pt": "hev",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "short",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_048_hev_trips_mixed",
+    "inputs": {
+      "pt": "hev",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_049_hev_trips_long",
+    "inputs": {
+      "pt": "hev",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "long",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_050_hev_trips_vlong",
+    "inputs": {
+      "pt": "hev",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "vlong",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_051_phev_trips_short",
+    "inputs": {
+      "pt": "phev",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "short",
+      "st_charging": "socket",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_052_phev_trips_mixed",
+    "inputs": {
+      "pt": "phev",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "socket",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_053_phev_trips_long",
+    "inputs": {
+      "pt": "phev",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "long",
+      "st_charging": "socket",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_054_phev_trips_vlong",
+    "inputs": {
+      "pt": "phev",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "vlong",
+      "st_charging": "socket",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_055_bev_trips_short",
+    "inputs": {
+      "pt": "bev",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "short",
+      "st_charging": "socket",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_056_bev_trips_mixed",
+    "inputs": {
+      "pt": "bev",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "socket",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_057_bev_trips_long",
+    "inputs": {
+      "pt": "bev",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "long",
+      "st_charging": "socket",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_058_bev_trips_vlong",
+    "inputs": {
+      "pt": "bev",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "vlong",
+      "st_charging": "socket",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_059_die_trips_short",
+    "inputs": {
+      "pt": "die",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "short",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_060_die_trips_mixed",
+    "inputs": {
+      "pt": "die",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_061_die_trips_long",
+    "inputs": {
+      "pt": "die",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "long",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_062_die_trips_vlong",
+    "inputs": {
+      "pt": "die",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "vlong",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_063_bev_chrg_no_urban_True",
+    "inputs": {
+      "pt": "bev",
+      "newP": 35000,
+      "brand": "tesla",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": true,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_064_bev_chrg_no_urban_False",
+    "inputs": {
+      "pt": "bev",
+      "newP": 35000,
+      "brand": "tesla",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_065_bev_chrg_maybe_urban_True",
+    "inputs": {
+      "pt": "bev",
+      "newP": 35000,
+      "brand": "tesla",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "maybe",
+      "st_urban": true,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_066_bev_chrg_maybe_urban_False",
+    "inputs": {
+      "pt": "bev",
+      "newP": 35000,
+      "brand": "tesla",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "maybe",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_067_bev_chrg_socket_urban_True",
+    "inputs": {
+      "pt": "bev",
+      "newP": 35000,
+      "brand": "tesla",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "socket",
+      "st_urban": true,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_068_bev_chrg_socket_urban_False",
+    "inputs": {
+      "pt": "bev",
+      "newP": 35000,
+      "brand": "tesla",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "socket",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_069_phev_chrg_no_urban_True",
+    "inputs": {
+      "pt": "phev",
+      "newP": 35000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": true,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_070_phev_chrg_no_urban_False",
+    "inputs": {
+      "pt": "phev",
+      "newP": 35000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_071_phev_chrg_maybe_urban_True",
+    "inputs": {
+      "pt": "phev",
+      "newP": 35000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "maybe",
+      "st_urban": true,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_072_phev_chrg_maybe_urban_False",
+    "inputs": {
+      "pt": "phev",
+      "newP": 35000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "maybe",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_073_phev_chrg_socket_urban_True",
+    "inputs": {
+      "pt": "phev",
+      "newP": 35000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "socket",
+      "st_urban": true,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_074_phev_chrg_socket_urban_False",
+    "inputs": {
+      "pt": "phev",
+      "newP": 35000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "socket",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_075_ice_country_fr",
+    "inputs": {
+      "pt": "ice",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_076_bev_country_fr",
+    "inputs": {
+      "pt": "bev",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "socket",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_077_ice_country_de",
+    "inputs": {
+      "pt": "ice",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "de"
+    }
+  },
+  {
+    "id": "calctco_078_bev_country_de",
+    "inputs": {
+      "pt": "bev",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "socket",
+      "st_urban": false,
+      "active_country": "de"
+    }
+  },
+  {
+    "id": "calctco_079_ice_country_ch",
+    "inputs": {
+      "pt": "ice",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "ch"
+    }
+  },
+  {
+    "id": "calctco_080_bev_country_ch",
+    "inputs": {
+      "pt": "bev",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "socket",
+      "st_urban": false,
+      "active_country": "ch"
+    }
+  },
+  {
+    "id": "calctco_081_ice_country_be",
+    "inputs": {
+      "pt": "ice",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "be"
+    }
+  },
+  {
+    "id": "calctco_082_bev_country_be",
+    "inputs": {
+      "pt": "bev",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "socket",
+      "st_urban": false,
+      "active_country": "be"
+    }
+  },
+  {
+    "id": "calctco_083_ice_country_nl",
+    "inputs": {
+      "pt": "ice",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "nl"
+    }
+  },
+  {
+    "id": "calctco_084_bev_country_nl",
+    "inputs": {
+      "pt": "bev",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "socket",
+      "st_urban": false,
+      "active_country": "nl"
+    }
+  },
+  {
+    "id": "calctco_085_ice_country_es",
+    "inputs": {
+      "pt": "ice",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "es"
+    }
+  },
+  {
+    "id": "calctco_086_bev_country_es",
+    "inputs": {
+      "pt": "bev",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "socket",
+      "st_urban": false,
+      "active_country": "es"
+    }
+  },
+  {
+    "id": "calctco_087_ice_country_it",
+    "inputs": {
+      "pt": "ice",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "it"
+    }
+  },
+  {
+    "id": "calctco_088_bev_country_it",
+    "inputs": {
+      "pt": "bev",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "socket",
+      "st_urban": false,
+      "active_country": "it"
+    }
+  },
+  {
+    "id": "calctco_089_ice_country_lu",
+    "inputs": {
+      "pt": "ice",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "lu"
+    }
+  },
+  {
+    "id": "calctco_090_bev_country_lu",
+    "inputs": {
+      "pt": "bev",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "socket",
+      "st_urban": false,
+      "active_country": "lu"
+    }
+  },
+  {
+    "id": "calctco_091_ice_country_pt",
+    "inputs": {
+      "pt": "ice",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "pt"
+    }
+  },
+  {
+    "id": "calctco_092_bev_country_pt",
+    "inputs": {
+      "pt": "bev",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 0,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "socket",
+      "st_urban": false,
+      "active_country": "pt"
+    }
+  },
+  {
+    "id": "calctco_edge_minimal_price",
+    "inputs": {
+      "pt": "ice",
+      "newP": 8000,
+      "brand": "renault",
+      "age": 0,
+      "km": 5000,
+      "st_trips": "short",
+      "st_charging": "no",
+      "st_urban": true,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_edge_maximal_price",
+    "inputs": {
+      "pt": "bev",
+      "newP": 120000,
+      "brand": "tesla",
+      "age": 0,
+      "km": 40000,
+      "st_trips": "vlong",
+      "st_charging": "socket",
+      "st_urban": false,
+      "active_country": "ch"
+    }
+  },
+  {
+    "id": "calctco_edge_very_old",
+    "inputs": {
+      "pt": "ice",
+      "newP": 28000,
+      "brand": "toyota",
+      "age": 8,
+      "km": 15000,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  },
+  {
+    "id": "calctco_edge_zero_km",
+    "inputs": {
+      "pt": "hev",
+      "newP": 28340,
+      "brand": "toyota",
+      "age": 0,
+      "km": 1,
+      "st_trips": "mixed",
+      "st_charging": "no",
+      "st_urban": false,
+      "active_country": "fr"
+    }
+  }
+]

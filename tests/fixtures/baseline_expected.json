@@ -1,0 +1,6792 @@
+{
+  "calcTcoCases": [
+    {
+      "id": "calctco_001_ice_p22000_km10000",
+      "inputs": {
+        "pt": "ice",
+        "newP": 22000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 10000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 22000,
+        "saleP": 11000,
+        "depr5": 11000,
+        "yf": 1522.82,
+        "maint": 394,
+        "rep": 33,
+        "mo": 345.82,
+        "risk": 1.2
+      }
+    },
+    {
+      "id": "calctco_002_ice_p22000_km25000",
+      "inputs": {
+        "pt": "ice",
+        "newP": 22000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 25000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 22000,
+        "saleP": 11000,
+        "depr5": 11000,
+        "yf": 3807.05,
+        "maint": 394,
+        "rep": 33,
+        "mo": 536.17,
+        "risk": 1.2
+      }
+    },
+    {
+      "id": "calctco_003_ice_p35000_km10000",
+      "inputs": {
+        "pt": "ice",
+        "newP": 35000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 10000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 35000,
+        "saleP": 17500,
+        "depr5": 17500,
+        "yf": 1522.82,
+        "maint": 394,
+        "rep": 33,
+        "mo": 454.15,
+        "risk": 1.2
+      }
+    },
+    {
+      "id": "calctco_004_ice_p35000_km25000",
+      "inputs": {
+        "pt": "ice",
+        "newP": 35000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 25000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 35000,
+        "saleP": 17500,
+        "depr5": 17500,
+        "yf": 3807.05,
+        "maint": 394,
+        "rep": 33,
+        "mo": 644.5,
+        "risk": 1.2
+      }
+    },
+    {
+      "id": "calctco_005_ice_p50000_km10000",
+      "inputs": {
+        "pt": "ice",
+        "newP": 50000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 10000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 50000,
+        "saleP": 25000,
+        "depr5": 25000,
+        "yf": 1522.82,
+        "maint": 394,
+        "rep": 33,
+        "mo": 579.15,
+        "risk": 1.2
+      }
+    },
+    {
+      "id": "calctco_006_ice_p50000_km25000",
+      "inputs": {
+        "pt": "ice",
+        "newP": 50000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 25000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 50000,
+        "saleP": 25000,
+        "depr5": 25000,
+        "yf": 3807.05,
+        "maint": 394,
+        "rep": 33,
+        "mo": 769.5,
+        "risk": 1.2
+      }
+    },
+    {
+      "id": "calctco_007_hev_p22000_km10000",
+      "inputs": {
+        "pt": "hev",
+        "newP": 22000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 10000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 22000,
+        "saleP": 11880,
+        "depr5": 10120,
+        "yf": 863.99,
+        "maint": 275,
+        "rep": 33,
+        "mo": 266.33,
+        "risk": 1
+      }
+    },
+    {
+      "id": "calctco_008_hev_p22000_km25000",
+      "inputs": {
+        "pt": "hev",
+        "newP": 22000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 25000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 22000,
+        "saleP": 11880,
+        "depr5": 10120,
+        "yf": 2159.98,
+        "maint": 275,
+        "rep": 33,
+        "mo": 374.33,
+        "risk": 1
+      }
+    },
+    {
+      "id": "calctco_009_hev_p35000_km10000",
+      "inputs": {
+        "pt": "hev",
+        "newP": 35000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 10000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 35000,
+        "saleP": 18900,
+        "depr5": 16100,
+        "yf": 863.99,
+        "maint": 275,
+        "rep": 33,
+        "mo": 366,
+        "risk": 1
+      }
+    },
+    {
+      "id": "calctco_010_hev_p35000_km25000",
+      "inputs": {
+        "pt": "hev",
+        "newP": 35000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 25000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 35000,
+        "saleP": 18900,
+        "depr5": 16100,
+        "yf": 2159.98,
+        "maint": 275,
+        "rep": 33,
+        "mo": 474,
+        "risk": 1
+      }
+    },
+    {
+      "id": "calctco_011_hev_p50000_km10000",
+      "inputs": {
+        "pt": "hev",
+        "newP": 50000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 10000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 50000,
+        "saleP": 27000,
+        "depr5": 23000,
+        "yf": 863.99,
+        "maint": 275,
+        "rep": 33,
+        "mo": 481,
+        "risk": 1
+      }
+    },
+    {
+      "id": "calctco_012_hev_p50000_km25000",
+      "inputs": {
+        "pt": "hev",
+        "newP": 50000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 25000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 50000,
+        "saleP": 27000,
+        "depr5": 23000,
+        "yf": 2159.98,
+        "maint": 275,
+        "rep": 33,
+        "mo": 589,
+        "risk": 1
+      }
+    },
+    {
+      "id": "calctco_013_phev_p22000_km10000",
+      "inputs": {
+        "pt": "phev",
+        "newP": 22000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 10000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 22000,
+        "saleP": 10912,
+        "depr5": 11088,
+        "yf": 3660.16,
+        "maint": 332,
+        "rep": 33,
+        "mo": 520.23,
+        "risk": 1.5
+      }
+    },
+    {
+      "id": "calctco_014_phev_p22000_km25000",
+      "inputs": {
+        "pt": "phev",
+        "newP": 22000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 25000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 22000,
+        "saleP": 10912,
+        "depr5": 11088,
+        "yf": 9150.4,
+        "maint": 332,
+        "rep": 33,
+        "mo": 977.75,
+        "risk": 1.5
+      }
+    },
+    {
+      "id": "calctco_015_phev_p35000_km10000",
+      "inputs": {
+        "pt": "phev",
+        "newP": 35000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 10000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 35000,
+        "saleP": 17360,
+        "depr5": 17640,
+        "yf": 3660.16,
+        "maint": 332,
+        "rep": 33,
+        "mo": 629.43,
+        "risk": 1.5
+      }
+    },
+    {
+      "id": "calctco_016_phev_p35000_km25000",
+      "inputs": {
+        "pt": "phev",
+        "newP": 35000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 25000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 35000,
+        "saleP": 17360,
+        "depr5": 17640,
+        "yf": 9150.4,
+        "maint": 332,
+        "rep": 33,
+        "mo": 1086.95,
+        "risk": 1.5
+      }
+    },
+    {
+      "id": "calctco_017_phev_p50000_km10000",
+      "inputs": {
+        "pt": "phev",
+        "newP": 50000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 10000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 50000,
+        "saleP": 24800,
+        "depr5": 25200,
+        "yf": 3660.16,
+        "maint": 332,
+        "rep": 33,
+        "mo": 755.43,
+        "risk": 1.5
+      }
+    },
+    {
+      "id": "calctco_018_phev_p50000_km25000",
+      "inputs": {
+        "pt": "phev",
+        "newP": 50000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 25000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 50000,
+        "saleP": 24800,
+        "depr5": 25200,
+        "yf": 9150.4,
+        "maint": 332,
+        "rep": 33,
+        "mo": 1212.95,
+        "risk": 1.5
+      }
+    },
+    {
+      "id": "calctco_019_bev_p22000_km10000",
+      "inputs": {
+        "pt": "bev",
+        "newP": 22000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 10000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 22000,
+        "saleP": 7040,
+        "depr5": 14960,
+        "yf": 857.02,
+        "maint": 187,
+        "rep": 33,
+        "mo": 339.09,
+        "risk": 0.8
+      }
+    },
+    {
+      "id": "calctco_020_bev_p22000_km25000",
+      "inputs": {
+        "pt": "bev",
+        "newP": 22000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 25000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 22000,
+        "saleP": 7040,
+        "depr5": 14960,
+        "yf": 2142.56,
+        "maint": 187,
+        "rep": 33,
+        "mo": 446.21,
+        "risk": 0.8
+      }
+    },
+    {
+      "id": "calctco_021_bev_p35000_km10000",
+      "inputs": {
+        "pt": "bev",
+        "newP": 35000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 10000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 35000,
+        "saleP": 11200,
+        "depr5": 23800,
+        "yf": 857.02,
+        "maint": 187,
+        "rep": 33,
+        "mo": 486.42,
+        "risk": 0.8
+      }
+    },
+    {
+      "id": "calctco_022_bev_p35000_km25000",
+      "inputs": {
+        "pt": "bev",
+        "newP": 35000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 25000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 35000,
+        "saleP": 11200,
+        "depr5": 23800,
+        "yf": 2142.56,
+        "maint": 187,
+        "rep": 33,
+        "mo": 593.55,
+        "risk": 0.8
+      }
+    },
+    {
+      "id": "calctco_023_bev_p50000_km10000",
+      "inputs": {
+        "pt": "bev",
+        "newP": 50000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 10000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 50000,
+        "saleP": 16000,
+        "depr5": 34000,
+        "yf": 857.02,
+        "maint": 187,
+        "rep": 33,
+        "mo": 656.42,
+        "risk": 0.8
+      }
+    },
+    {
+      "id": "calctco_024_bev_p50000_km25000",
+      "inputs": {
+        "pt": "bev",
+        "newP": 50000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 25000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 50000,
+        "saleP": 16000,
+        "depr5": 34000,
+        "yf": 2142.56,
+        "maint": 187,
+        "rep": 33,
+        "mo": 763.55,
+        "risk": 0.8
+      }
+    },
+    {
+      "id": "calctco_025_die_p22000_km10000",
+      "inputs": {
+        "pt": "die",
+        "newP": 22000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 10000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 22000,
+        "saleP": 10120,
+        "depr5": 11880,
+        "yf": 1278.62,
+        "maint": 470,
+        "rep": 127,
+        "mo": 354.3,
+        "risk": 1
+      }
+    },
+    {
+      "id": "calctco_026_die_p22000_km25000",
+      "inputs": {
+        "pt": "die",
+        "newP": 22000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 25000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 22000,
+        "saleP": 10120,
+        "depr5": 11880,
+        "yf": 3196.56,
+        "maint": 470,
+        "rep": 127,
+        "mo": 514.13,
+        "risk": 1
+      }
+    },
+    {
+      "id": "calctco_027_die_p35000_km10000",
+      "inputs": {
+        "pt": "die",
+        "newP": 35000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 10000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 35000,
+        "saleP": 16100,
+        "depr5": 18900,
+        "yf": 1278.62,
+        "maint": 470,
+        "rep": 127,
+        "mo": 471.3,
+        "risk": 1
+      }
+    },
+    {
+      "id": "calctco_028_die_p35000_km25000",
+      "inputs": {
+        "pt": "die",
+        "newP": 35000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 25000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 35000,
+        "saleP": 16100,
+        "depr5": 18900,
+        "yf": 3196.56,
+        "maint": 470,
+        "rep": 127,
+        "mo": 631.13,
+        "risk": 1
+      }
+    },
+    {
+      "id": "calctco_029_die_p50000_km10000",
+      "inputs": {
+        "pt": "die",
+        "newP": 50000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 10000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 50000,
+        "saleP": 23000,
+        "depr5": 27000,
+        "yf": 1278.62,
+        "maint": 470,
+        "rep": 127,
+        "mo": 606.3,
+        "risk": 1
+      }
+    },
+    {
+      "id": "calctco_030_die_p50000_km25000",
+      "inputs": {
+        "pt": "die",
+        "newP": 50000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 25000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 50000,
+        "saleP": 23000,
+        "depr5": 27000,
+        "yf": 3196.56,
+        "maint": 470,
+        "rep": 127,
+        "mo": 766.13,
+        "risk": 1
+      }
+    },
+    {
+      "id": "calctco_031_ice_age0",
+      "inputs": {
+        "pt": "ice",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 14000,
+        "depr5": 14000,
+        "yf": 2284.23,
+        "maint": 394,
+        "rep": 33,
+        "mo": 459.27,
+        "risk": 1.2
+      }
+    },
+    {
+      "id": "calctco_032_ice_age2",
+      "inputs": {
+        "pt": "ice",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 2,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 18480,
+        "saleP": 12040,
+        "depr5": 6440,
+        "yf": 2284.23,
+        "maint": 414,
+        "rep": 131,
+        "mo": 343.1,
+        "risk": 2.4
+      }
+    },
+    {
+      "id": "calctco_033_ice_age5",
+      "inputs": {
+        "pt": "ice",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 5,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 14000,
+        "saleP": 9800,
+        "depr5": 4200,
+        "yf": 2284.23,
+        "maint": 504,
+        "rep": 523,
+        "mo": 345.94,
+        "risk": 5.8
+      }
+    },
+    {
+      "id": "calctco_034_ice_age8",
+      "inputs": {
+        "pt": "ice",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 8,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 11200,
+        "saleP": 9800,
+        "depr5": 1400,
+        "yf": 2284.23,
+        "maint": 717,
+        "rep": 1209,
+        "mo": 374.19,
+        "risk": 13.2
+      }
+    },
+    {
+      "id": "calctco_035_hev_age0",
+      "inputs": {
+        "pt": "hev",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 15120,
+        "depr5": 12880,
+        "yf": 1295.99,
+        "maint": 275,
+        "rep": 33,
+        "mo": 348.33,
+        "risk": 1
+      }
+    },
+    {
+      "id": "calctco_036_hev_age2",
+      "inputs": {
+        "pt": "hev",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 2,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 20160,
+        "saleP": 12880,
+        "depr5": 7280,
+        "yf": 1295.99,
+        "maint": 289,
+        "rep": 131,
+        "mo": 264.33,
+        "risk": 1.9
+      }
+    },
+    {
+      "id": "calctco_037_hev_age5",
+      "inputs": {
+        "pt": "hev",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 5,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 15120,
+        "saleP": 10640,
+        "depr5": 4480,
+        "yf": 1295.99,
+        "maint": 352,
+        "rep": 523,
+        "mo": 255.58,
+        "risk": 4.5
+      }
+    },
+    {
+      "id": "calctco_038_hev_age8",
+      "inputs": {
+        "pt": "hev",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 8,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 12040,
+        "saleP": 10640,
+        "depr5": 1400,
+        "yf": 1295.99,
+        "maint": 501,
+        "rep": 1209,
+        "mo": 273.83,
+        "risk": 10.2
+      }
+    },
+    {
+      "id": "calctco_039_bev_age0",
+      "inputs": {
+        "pt": "bev",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 8960,
+        "depr5": 19040,
+        "yf": 1285.53,
+        "maint": 187,
+        "rep": 33,
+        "mo": 442.79,
+        "risk": 0.8
+      }
+    },
+    {
+      "id": "calctco_040_bev_age2",
+      "inputs": {
+        "pt": "bev",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 2,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 15120,
+        "saleP": 7000,
+        "depr5": 8120,
+        "yf": 1285.53,
+        "maint": 196,
+        "rep": 131,
+        "mo": 269.71,
+        "risk": 1.5
+      }
+    },
+    {
+      "id": "calctco_041_bev_age5",
+      "inputs": {
+        "pt": "bev",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 5,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 8960,
+        "saleP": 5040,
+        "depr5": 3920,
+        "yf": 1285.53,
+        "maint": 239,
+        "rep": 523,
+        "mo": 235.96,
+        "risk": 3.9
+      }
+    },
+    {
+      "id": "calctco_042_bev_age8",
+      "inputs": {
+        "pt": "bev",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 8,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 6160,
+        "saleP": 5040,
+        "depr5": 1120,
+        "yf": 1285.53,
+        "maint": 340,
+        "rep": 1209,
+        "mo": 254.88,
+        "risk": 9.4
+      }
+    },
+    {
+      "id": "calctco_043_ice_trips_short",
+      "inputs": {
+        "pt": "ice",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "short",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 14000,
+        "depr5": 14000,
+        "yf": 2994.45,
+        "maint": 394,
+        "rep": 33,
+        "mo": 518.45,
+        "risk": 1.2
+      }
+    },
+    {
+      "id": "calctco_044_ice_trips_mixed",
+      "inputs": {
+        "pt": "ice",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 14000,
+        "depr5": 14000,
+        "yf": 2284.23,
+        "maint": 394,
+        "rep": 33,
+        "mo": 459.27,
+        "risk": 1.2
+      }
+    },
+    {
+      "id": "calctco_045_ice_trips_long",
+      "inputs": {
+        "pt": "ice",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "long",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 14000,
+        "depr5": 14000,
+        "yf": 1884.33,
+        "maint": 394,
+        "rep": 33,
+        "mo": 425.94,
+        "risk": 1.2
+      }
+    },
+    {
+      "id": "calctco_046_ice_trips_vlong",
+      "inputs": {
+        "pt": "ice",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "vlong",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 14000,
+        "depr5": 14000,
+        "yf": 1661.02,
+        "maint": 394,
+        "rep": 33,
+        "mo": 407.34,
+        "risk": 1.2
+      }
+    },
+    {
+      "id": "calctco_047_hev_trips_short",
+      "inputs": {
+        "pt": "hev",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "short",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 15120,
+        "depr5": 12880,
+        "yf": 934.61,
+        "maint": 275,
+        "rep": 33,
+        "mo": 318.22,
+        "risk": 1
+      }
+    },
+    {
+      "id": "calctco_048_hev_trips_mixed",
+      "inputs": {
+        "pt": "hev",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 15120,
+        "depr5": 12880,
+        "yf": 1295.99,
+        "maint": 275,
+        "rep": 33,
+        "mo": 348.33,
+        "risk": 1
+      }
+    },
+    {
+      "id": "calctco_049_hev_trips_long",
+      "inputs": {
+        "pt": "hev",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "long",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 15120,
+        "depr5": 12880,
+        "yf": 1696.92,
+        "maint": 275,
+        "rep": 33,
+        "mo": 381.74,
+        "risk": 1
+      }
+    },
+    {
+      "id": "calctco_050_hev_trips_vlong",
+      "inputs": {
+        "pt": "hev",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "vlong",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 15120,
+        "depr5": 12880,
+        "yf": 1982.99,
+        "maint": 275,
+        "rep": 33,
+        "mo": 405.58,
+        "risk": 1
+      }
+    },
+    {
+      "id": "calctco_051_phev_trips_short",
+      "inputs": {
+        "pt": "phev",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "short",
+        "st_charging": "socket",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 13888,
+        "depr5": 14112,
+        "yf": 430.27,
+        "maint": 332,
+        "rep": 33,
+        "mo": 301.47,
+        "risk": 1.5
+      }
+    },
+    {
+      "id": "calctco_052_phev_trips_mixed",
+      "inputs": {
+        "pt": "phev",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "socket",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 13888,
+        "depr5": 14112,
+        "yf": 1050.61,
+        "maint": 332,
+        "rep": 33,
+        "mo": 353.17,
+        "risk": 1.5
+      }
+    },
+    {
+      "id": "calctco_053_phev_trips_long",
+      "inputs": {
+        "pt": "phev",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "long",
+        "st_charging": "socket",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 13888,
+        "depr5": 14112,
+        "yf": 2309.96,
+        "maint": 332,
+        "rep": 33,
+        "mo": 458.11,
+        "risk": 1.5
+      }
+    },
+    {
+      "id": "calctco_054_phev_trips_vlong",
+      "inputs": {
+        "pt": "phev",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "vlong",
+        "st_charging": "socket",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 13888,
+        "depr5": 14112,
+        "yf": 3136.69,
+        "maint": 332,
+        "rep": 33,
+        "mo": 527.01,
+        "risk": 1.5
+      }
+    },
+    {
+      "id": "calctco_055_bev_trips_short",
+      "inputs": {
+        "pt": "bev",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "short",
+        "st_charging": "socket",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 8960,
+        "depr5": 19040,
+        "yf": 868.04,
+        "maint": 187,
+        "rep": 33,
+        "mo": 408,
+        "risk": 0.8
+      }
+    },
+    {
+      "id": "calctco_056_bev_trips_mixed",
+      "inputs": {
+        "pt": "bev",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "socket",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 8960,
+        "depr5": 19040,
+        "yf": 819.82,
+        "maint": 187,
+        "rep": 33,
+        "mo": 403.98,
+        "risk": 0.8
+      }
+    },
+    {
+      "id": "calctco_057_bev_trips_long",
+      "inputs": {
+        "pt": "bev",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "long",
+        "st_charging": "socket",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 8960,
+        "depr5": 19040,
+        "yf": 771.59,
+        "maint": 187,
+        "rep": 33,
+        "mo": 399.97,
+        "risk": 0.8
+      }
+    },
+    {
+      "id": "calctco_058_bev_trips_vlong",
+      "inputs": {
+        "pt": "bev",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "vlong",
+        "st_charging": "socket",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 8960,
+        "depr5": 19040,
+        "yf": 747.48,
+        "maint": 187,
+        "rep": 33,
+        "mo": 397.96,
+        "risk": 0.8
+      }
+    },
+    {
+      "id": "calctco_059_die_trips_short",
+      "inputs": {
+        "pt": "die",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "short",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 12880,
+        "depr5": 15120,
+        "yf": 2813.77,
+        "maint": 470,
+        "rep": 183,
+        "mo": 540.9,
+        "risk": 1
+      }
+    },
+    {
+      "id": "calctco_060_die_trips_mixed",
+      "inputs": {
+        "pt": "die",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 12880,
+        "depr5": 15120,
+        "yf": 1917.94,
+        "maint": 470,
+        "rep": 127,
+        "mo": 461.58,
+        "risk": 1
+      }
+    },
+    {
+      "id": "calctco_061_die_trips_long",
+      "inputs": {
+        "pt": "die",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "long",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 12880,
+        "depr5": 15120,
+        "yf": 1427.93,
+        "maint": 470,
+        "rep": 108,
+        "mo": 419.16,
+        "risk": 1
+      }
+    },
+    {
+      "id": "calctco_062_die_trips_vlong",
+      "inputs": {
+        "pt": "die",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "vlong",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 12880,
+        "depr5": 15120,
+        "yf": 1269.81,
+        "maint": 470,
+        "rep": 108,
+        "mo": 405.98,
+        "risk": 1
+      }
+    },
+    {
+      "id": "calctco_063_bev_chrg_no_urban_True",
+      "inputs": {
+        "pt": "bev",
+        "newP": 35000,
+        "brand": "tesla",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": true,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 35000,
+        "saleP": 11200,
+        "depr5": 23800,
+        "yf": 1285.53,
+        "maint": 209,
+        "rep": 46,
+        "mo": 525.04,
+        "risk": 0.8
+      }
+    },
+    {
+      "id": "calctco_064_bev_chrg_no_urban_False",
+      "inputs": {
+        "pt": "bev",
+        "newP": 35000,
+        "brand": "tesla",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 35000,
+        "saleP": 11200,
+        "depr5": 23800,
+        "yf": 1285.53,
+        "maint": 209,
+        "rep": 46,
+        "mo": 525.04,
+        "risk": 0.8
+      }
+    },
+    {
+      "id": "calctco_065_bev_chrg_maybe_urban_True",
+      "inputs": {
+        "pt": "bev",
+        "newP": 35000,
+        "brand": "tesla",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "maybe",
+        "st_urban": true,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 35000,
+        "saleP": 11200,
+        "depr5": 23800,
+        "yf": 1116.18,
+        "maint": 209,
+        "rep": 46,
+        "mo": 510.93,
+        "risk": 0.8
+      }
+    },
+    {
+      "id": "calctco_066_bev_chrg_maybe_urban_False",
+      "inputs": {
+        "pt": "bev",
+        "newP": 35000,
+        "brand": "tesla",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "maybe",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 35000,
+        "saleP": 11200,
+        "depr5": 23800,
+        "yf": 1116.18,
+        "maint": 209,
+        "rep": 46,
+        "mo": 510.93,
+        "risk": 0.8
+      }
+    },
+    {
+      "id": "calctco_067_bev_chrg_socket_urban_True",
+      "inputs": {
+        "pt": "bev",
+        "newP": 35000,
+        "brand": "tesla",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "socket",
+        "st_urban": true,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 35000,
+        "saleP": 11200,
+        "depr5": 23800,
+        "yf": 819.82,
+        "maint": 209,
+        "rep": 46,
+        "mo": 486.23,
+        "risk": 0.8
+      }
+    },
+    {
+      "id": "calctco_068_bev_chrg_socket_urban_False",
+      "inputs": {
+        "pt": "bev",
+        "newP": 35000,
+        "brand": "tesla",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "socket",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 35000,
+        "saleP": 11200,
+        "depr5": 23800,
+        "yf": 819.82,
+        "maint": 209,
+        "rep": 46,
+        "mo": 486.23,
+        "risk": 0.8
+      }
+    },
+    {
+      "id": "calctco_069_phev_chrg_no_urban_True",
+      "inputs": {
+        "pt": "phev",
+        "newP": 35000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": true,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 35000,
+        "saleP": 17360,
+        "depr5": 17640,
+        "yf": 5490.24,
+        "maint": 332,
+        "rep": 33,
+        "mo": 781.94,
+        "risk": 1.5
+      }
+    },
+    {
+      "id": "calctco_070_phev_chrg_no_urban_False",
+      "inputs": {
+        "pt": "phev",
+        "newP": 35000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 35000,
+        "saleP": 17360,
+        "depr5": 17640,
+        "yf": 5490.24,
+        "maint": 332,
+        "rep": 33,
+        "mo": 781.94,
+        "risk": 1.5
+      }
+    },
+    {
+      "id": "calctco_071_phev_chrg_maybe_urban_True",
+      "inputs": {
+        "pt": "phev",
+        "newP": 35000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "maybe",
+        "st_urban": true,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 35000,
+        "saleP": 17360,
+        "depr5": 17640,
+        "yf": 1508.81,
+        "maint": 332,
+        "rep": 33,
+        "mo": 450.15,
+        "risk": 1.5
+      }
+    },
+    {
+      "id": "calctco_072_phev_chrg_maybe_urban_False",
+      "inputs": {
+        "pt": "phev",
+        "newP": 35000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "maybe",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 35000,
+        "saleP": 17360,
+        "depr5": 17640,
+        "yf": 1508.81,
+        "maint": 332,
+        "rep": 33,
+        "mo": 450.15,
+        "risk": 1.5
+      }
+    },
+    {
+      "id": "calctco_073_phev_chrg_socket_urban_True",
+      "inputs": {
+        "pt": "phev",
+        "newP": 35000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "socket",
+        "st_urban": true,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 35000,
+        "saleP": 17360,
+        "depr5": 17640,
+        "yf": 1050.61,
+        "maint": 332,
+        "rep": 33,
+        "mo": 411.97,
+        "risk": 1.5
+      }
+    },
+    {
+      "id": "calctco_074_phev_chrg_socket_urban_False",
+      "inputs": {
+        "pt": "phev",
+        "newP": 35000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "socket",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 35000,
+        "saleP": 17360,
+        "depr5": 17640,
+        "yf": 1050.61,
+        "maint": 332,
+        "rep": 33,
+        "mo": 411.97,
+        "risk": 1.5
+      }
+    },
+    {
+      "id": "calctco_075_ice_country_fr",
+      "inputs": {
+        "pt": "ice",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 14000,
+        "depr5": 14000,
+        "yf": 2284.23,
+        "maint": 394,
+        "rep": 33,
+        "mo": 459.27,
+        "risk": 1.2
+      }
+    },
+    {
+      "id": "calctco_076_bev_country_fr",
+      "inputs": {
+        "pt": "bev",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "socket",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 8960,
+        "depr5": 19040,
+        "yf": 819.82,
+        "maint": 187,
+        "rep": 33,
+        "mo": 403.98,
+        "risk": 0.8
+      }
+    },
+    {
+      "id": "calctco_077_ice_country_de",
+      "inputs": {
+        "pt": "ice",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "de"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 14000,
+        "depr5": 14000,
+        "yf": 2284.23,
+        "maint": 394,
+        "rep": 33,
+        "mo": 459.27,
+        "risk": 1.2
+      }
+    },
+    {
+      "id": "calctco_078_bev_country_de",
+      "inputs": {
+        "pt": "bev",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "socket",
+        "st_urban": false,
+        "active_country": "de"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 8960,
+        "depr5": 19040,
+        "yf": 819.82,
+        "maint": 187,
+        "rep": 33,
+        "mo": 403.98,
+        "risk": 0.8
+      }
+    },
+    {
+      "id": "calctco_079_ice_country_ch",
+      "inputs": {
+        "pt": "ice",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "ch"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 14000,
+        "depr5": 14000,
+        "yf": 2284.23,
+        "maint": 394,
+        "rep": 33,
+        "mo": 459.27,
+        "risk": 1.2
+      }
+    },
+    {
+      "id": "calctco_080_bev_country_ch",
+      "inputs": {
+        "pt": "bev",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "socket",
+        "st_urban": false,
+        "active_country": "ch"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 8960,
+        "depr5": 19040,
+        "yf": 819.82,
+        "maint": 187,
+        "rep": 33,
+        "mo": 403.98,
+        "risk": 0.8
+      }
+    },
+    {
+      "id": "calctco_081_ice_country_be",
+      "inputs": {
+        "pt": "ice",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "be"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 14000,
+        "depr5": 14000,
+        "yf": 2284.23,
+        "maint": 394,
+        "rep": 33,
+        "mo": 459.27,
+        "risk": 1.2
+      }
+    },
+    {
+      "id": "calctco_082_bev_country_be",
+      "inputs": {
+        "pt": "bev",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "socket",
+        "st_urban": false,
+        "active_country": "be"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 8960,
+        "depr5": 19040,
+        "yf": 819.82,
+        "maint": 187,
+        "rep": 33,
+        "mo": 403.98,
+        "risk": 0.8
+      }
+    },
+    {
+      "id": "calctco_083_ice_country_nl",
+      "inputs": {
+        "pt": "ice",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "nl"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 14000,
+        "depr5": 14000,
+        "yf": 2284.23,
+        "maint": 394,
+        "rep": 33,
+        "mo": 459.27,
+        "risk": 1.2
+      }
+    },
+    {
+      "id": "calctco_084_bev_country_nl",
+      "inputs": {
+        "pt": "bev",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "socket",
+        "st_urban": false,
+        "active_country": "nl"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 8960,
+        "depr5": 19040,
+        "yf": 819.82,
+        "maint": 187,
+        "rep": 33,
+        "mo": 403.98,
+        "risk": 0.8
+      }
+    },
+    {
+      "id": "calctco_085_ice_country_es",
+      "inputs": {
+        "pt": "ice",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "es"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 14000,
+        "depr5": 14000,
+        "yf": 2284.23,
+        "maint": 394,
+        "rep": 33,
+        "mo": 459.27,
+        "risk": 1.2
+      }
+    },
+    {
+      "id": "calctco_086_bev_country_es",
+      "inputs": {
+        "pt": "bev",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "socket",
+        "st_urban": false,
+        "active_country": "es"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 8960,
+        "depr5": 19040,
+        "yf": 819.82,
+        "maint": 187,
+        "rep": 33,
+        "mo": 403.98,
+        "risk": 0.8
+      }
+    },
+    {
+      "id": "calctco_087_ice_country_it",
+      "inputs": {
+        "pt": "ice",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "it"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 14000,
+        "depr5": 14000,
+        "yf": 2284.23,
+        "maint": 394,
+        "rep": 33,
+        "mo": 459.27,
+        "risk": 1.2
+      }
+    },
+    {
+      "id": "calctco_088_bev_country_it",
+      "inputs": {
+        "pt": "bev",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "socket",
+        "st_urban": false,
+        "active_country": "it"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 8960,
+        "depr5": 19040,
+        "yf": 819.82,
+        "maint": 187,
+        "rep": 33,
+        "mo": 403.98,
+        "risk": 0.8
+      }
+    },
+    {
+      "id": "calctco_089_ice_country_lu",
+      "inputs": {
+        "pt": "ice",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "lu"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 14000,
+        "depr5": 14000,
+        "yf": 2284.23,
+        "maint": 394,
+        "rep": 33,
+        "mo": 459.27,
+        "risk": 1.2
+      }
+    },
+    {
+      "id": "calctco_090_bev_country_lu",
+      "inputs": {
+        "pt": "bev",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "socket",
+        "st_urban": false,
+        "active_country": "lu"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 8960,
+        "depr5": 19040,
+        "yf": 819.82,
+        "maint": 187,
+        "rep": 33,
+        "mo": 403.98,
+        "risk": 0.8
+      }
+    },
+    {
+      "id": "calctco_091_ice_country_pt",
+      "inputs": {
+        "pt": "ice",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "pt"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 14000,
+        "depr5": 14000,
+        "yf": 2284.23,
+        "maint": 394,
+        "rep": 33,
+        "mo": 459.27,
+        "risk": 1.2
+      }
+    },
+    {
+      "id": "calctco_092_bev_country_pt",
+      "inputs": {
+        "pt": "bev",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 0,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "socket",
+        "st_urban": false,
+        "active_country": "pt"
+      },
+      "output": {
+        "purchP": 28000,
+        "saleP": 8960,
+        "depr5": 19040,
+        "yf": 819.82,
+        "maint": 187,
+        "rep": 33,
+        "mo": 403.98,
+        "risk": 0.8
+      }
+    },
+    {
+      "id": "calctco_edge_minimal_price",
+      "inputs": {
+        "pt": "ice",
+        "newP": 8000,
+        "brand": "renault",
+        "age": 0,
+        "km": 5000,
+        "st_trips": "short",
+        "st_charging": "no",
+        "st_urban": true,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 8000,
+        "saleP": 4000,
+        "depr5": 4000,
+        "yf": 998.15,
+        "maint": 324,
+        "rep": 27,
+        "mo": 179.1,
+        "risk": 1.2
+      }
+    },
+    {
+      "id": "calctco_edge_maximal_price",
+      "inputs": {
+        "pt": "bev",
+        "newP": 120000,
+        "brand": "tesla",
+        "age": 0,
+        "km": 40000,
+        "st_trips": "vlong",
+        "st_charging": "socket",
+        "st_urban": false,
+        "active_country": "ch"
+      },
+      "output": {
+        "purchP": 120000,
+        "saleP": 38400,
+        "depr5": 81600,
+        "yf": 1993.28,
+        "maint": 209,
+        "rep": 46,
+        "mo": 1547.36,
+        "risk": 0.8
+      }
+    },
+    {
+      "id": "calctco_edge_very_old",
+      "inputs": {
+        "pt": "ice",
+        "newP": 28000,
+        "brand": "toyota",
+        "age": 8,
+        "km": 15000,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 11200,
+        "saleP": 9800,
+        "depr5": 1400,
+        "yf": 2284.23,
+        "maint": 717,
+        "rep": 1209,
+        "mo": 374.19,
+        "risk": 13.2
+      }
+    },
+    {
+      "id": "calctco_edge_zero_km",
+      "inputs": {
+        "pt": "hev",
+        "newP": 28340,
+        "brand": "toyota",
+        "age": 0,
+        "km": 1,
+        "st_trips": "mixed",
+        "st_charging": "no",
+        "st_urban": false,
+        "active_country": "fr"
+      },
+      "output": {
+        "purchP": 28340,
+        "saleP": 15304,
+        "depr5": 13036,
+        "yf": 0.09,
+        "maint": 275,
+        "rep": 33,
+        "mo": 242.94,
+        "risk": 1
+      }
+    }
+  ],
+  "getRecCases": [
+    {
+      "id": "rec_001_urban_low_fr_cost",
+      "description": "Urbain FR, budget 500, pref cost",
+      "inputs": {
+        "budget": 500,
+        "km": "u10",
+        "trips": "short",
+        "charging": "no",
+        "body": [
+          "small"
+        ],
+        "pref": "cost",
+        "urban": true,
+        "age": "26-35",
+        "dept": null,
+        "active_country": "fr"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "yaris_hev",
+          "name": "Toyota Yaris Hybrid",
+          "brand": "toyota",
+          "pt": "hev",
+          "newP": 28340,
+          "seg": [
+            "small"
+          ]
+        },
+        "bTco": {
+          "purchP": 28340,
+          "saleP": 15304,
+          "depr5": 13036,
+          "yf": 498.46,
+          "maint": 275,
+          "rep": 33,
+          "mo": 284.47,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 1597.04,
+          "mo": 489.5
+        },
+        "bodySegs": [
+          "small",
+          "mini"
+        ],
+        "warnCount": 1,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 414.59,
+            "gp": 42114,
+            "name": "Hyundai Tucson ICE"
+          },
+          {
+            "pt": "hev",
+            "mo": 425.04,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 441.09,
+            "gp": 36097,
+            "name": "Hyundai Tucson PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 391.78,
+            "gp": 28085,
+            "name": "Fiat Grande Panda BEV"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_002_urban_low_fr_eco",
+      "description": "Urbain FR, budget 500, pref eco",
+      "inputs": {
+        "budget": 500,
+        "km": "u10",
+        "trips": "short",
+        "charging": "no",
+        "body": [
+          "small"
+        ],
+        "pref": "eco",
+        "urban": true,
+        "age": "26-35",
+        "dept": null,
+        "active_country": "fr"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "yaris_hev",
+          "name": "Toyota Yaris Hybrid",
+          "brand": "toyota",
+          "pt": "hev",
+          "newP": 28340,
+          "seg": [
+            "small"
+          ]
+        },
+        "bTco": {
+          "purchP": 28340,
+          "saleP": 15304,
+          "depr5": 13036,
+          "yf": 498.46,
+          "maint": 275,
+          "rep": 33,
+          "mo": 284.47,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 1597.04,
+          "mo": 489.5
+        },
+        "bodySegs": [
+          "small",
+          "mini"
+        ],
+        "warnCount": 1,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 726,
+            "gp": 98838,
+            "name": "Audi A6 55 TFSI"
+          },
+          {
+            "pt": "hev",
+            "mo": 410.87,
+            "gp": 43739,
+            "name": "Lexus NX Hybride"
+          },
+          {
+            "pt": "phev",
+            "mo": 704.66,
+            "gp": 65957,
+            "name": "Mercedes Gle Class Phev"
+          },
+          {
+            "pt": "bev",
+            "mo": 706.9,
+            "gp": 57269,
+            "name": "Volkswagen ID.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_003_urban_low_ch_cost",
+      "description": "Urbain CH, budget 500, pref cost",
+      "inputs": {
+        "budget": 500,
+        "km": "u10",
+        "trips": "short",
+        "charging": "no",
+        "body": [
+          "small"
+        ],
+        "pref": "cost",
+        "urban": true,
+        "age": "26-35",
+        "dept": null,
+        "active_country": "ch"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "yaris_hev",
+          "name": "Toyota Yaris Hybrid",
+          "brand": "toyota",
+          "pt": "hev",
+          "newP": 28340,
+          "seg": [
+            "small"
+          ]
+        },
+        "bTco": {
+          "purchP": 28340,
+          "saleP": 15304,
+          "depr5": 13036,
+          "yf": 498.46,
+          "maint": 275,
+          "rep": 33,
+          "mo": 284.47,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 1597.04,
+          "mo": 489.5
+        },
+        "bodySegs": [
+          "small",
+          "mini"
+        ],
+        "warnCount": 1,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 414.59,
+            "gp": 42114,
+            "name": "Hyundai Tucson ICE"
+          },
+          {
+            "pt": "hev",
+            "mo": 425.04,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 441.09,
+            "gp": 36097,
+            "name": "Hyundai Tucson PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 391.78,
+            "gp": 28085,
+            "name": "Fiat Grande Panda BEV"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_004_urban_low_ch_eco",
+      "description": "Urbain CH, budget 500, pref eco",
+      "inputs": {
+        "budget": 500,
+        "km": "u10",
+        "trips": "short",
+        "charging": "no",
+        "body": [
+          "small"
+        ],
+        "pref": "eco",
+        "urban": true,
+        "age": "26-35",
+        "dept": null,
+        "active_country": "ch"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "yaris_hev",
+          "name": "Toyota Yaris Hybrid",
+          "brand": "toyota",
+          "pt": "hev",
+          "newP": 28340,
+          "seg": [
+            "small"
+          ]
+        },
+        "bTco": {
+          "purchP": 28340,
+          "saleP": 15304,
+          "depr5": 13036,
+          "yf": 498.46,
+          "maint": 275,
+          "rep": 33,
+          "mo": 284.47,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 1597.04,
+          "mo": 489.5
+        },
+        "bodySegs": [
+          "small",
+          "mini"
+        ],
+        "warnCount": 1,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 726,
+            "gp": 98838,
+            "name": "Audi A6 55 TFSI"
+          },
+          {
+            "pt": "hev",
+            "mo": 410.87,
+            "gp": 43739,
+            "name": "Lexus NX Hybride"
+          },
+          {
+            "pt": "phev",
+            "mo": 704.66,
+            "gp": 65957,
+            "name": "Mercedes Gle Class Phev"
+          },
+          {
+            "pt": "bev",
+            "mo": 706.9,
+            "gp": 57269,
+            "name": "Volkswagen ID.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_005_urban_low_de_cost",
+      "description": "Urbain DE, budget 500, pref cost",
+      "inputs": {
+        "budget": 500,
+        "km": "u10",
+        "trips": "short",
+        "charging": "no",
+        "body": [
+          "small"
+        ],
+        "pref": "cost",
+        "urban": true,
+        "age": "26-35",
+        "dept": null,
+        "active_country": "de"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "yaris_hev",
+          "name": "Toyota Yaris Hybrid",
+          "brand": "toyota",
+          "pt": "hev",
+          "newP": 28340,
+          "seg": [
+            "small"
+          ]
+        },
+        "bTco": {
+          "purchP": 28340,
+          "saleP": 15304,
+          "depr5": 13036,
+          "yf": 498.46,
+          "maint": 275,
+          "rep": 33,
+          "mo": 284.47,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 1597.04,
+          "mo": 489.5
+        },
+        "bodySegs": [
+          "small",
+          "mini"
+        ],
+        "warnCount": 1,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 414.59,
+            "gp": 42114,
+            "name": "Hyundai Tucson ICE"
+          },
+          {
+            "pt": "hev",
+            "mo": 425.04,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 441.09,
+            "gp": 36097,
+            "name": "Hyundai Tucson PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 391.78,
+            "gp": 28085,
+            "name": "Fiat Grande Panda BEV"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_006_urban_low_de_eco",
+      "description": "Urbain DE, budget 500, pref eco",
+      "inputs": {
+        "budget": 500,
+        "km": "u10",
+        "trips": "short",
+        "charging": "no",
+        "body": [
+          "small"
+        ],
+        "pref": "eco",
+        "urban": true,
+        "age": "26-35",
+        "dept": null,
+        "active_country": "de"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "yaris_hev",
+          "name": "Toyota Yaris Hybrid",
+          "brand": "toyota",
+          "pt": "hev",
+          "newP": 28340,
+          "seg": [
+            "small"
+          ]
+        },
+        "bTco": {
+          "purchP": 28340,
+          "saleP": 15304,
+          "depr5": 13036,
+          "yf": 498.46,
+          "maint": 275,
+          "rep": 33,
+          "mo": 284.47,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 1597.04,
+          "mo": 489.5
+        },
+        "bodySegs": [
+          "small",
+          "mini"
+        ],
+        "warnCount": 1,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 726,
+            "gp": 98838,
+            "name": "Audi A6 55 TFSI"
+          },
+          {
+            "pt": "hev",
+            "mo": 410.87,
+            "gp": 43739,
+            "name": "Lexus NX Hybride"
+          },
+          {
+            "pt": "phev",
+            "mo": 704.66,
+            "gp": 65957,
+            "name": "Mercedes Gle Class Phev"
+          },
+          {
+            "pt": "bev",
+            "mo": 706.9,
+            "gp": 57269,
+            "name": "Volkswagen ID.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_007_family_fr_compact_family",
+      "description": "Famille FR, compact, pref family",
+      "inputs": {
+        "budget": 800,
+        "km": "m20",
+        "trips": "mixed",
+        "charging": "socket",
+        "body": [
+          "compact"
+        ],
+        "pref": "family",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "fr"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "corolla",
+          "name": "Toyota Corolla Hybrid",
+          "brand": "toyota",
+          "pt": "hev",
+          "newP": 31900,
+          "seg": [
+            "compact",
+            "compact_break"
+          ]
+        },
+        "bTco": {
+          "purchP": 31900,
+          "saleP": 17226,
+          "depr5": 14674,
+          "yf": 1295.99,
+          "maint": 275,
+          "rep": 33,
+          "mo": 378.23,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 2284.23,
+          "mo": 546.77
+        },
+        "bodySegs": [
+          "compact",
+          "saloon"
+        ],
+        "warnCount": 0,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 768.45,
+            "gp": 65443,
+            "name": "Å koda Superb"
+          },
+          {
+            "pt": "hev",
+            "mo": 491.5,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 587.53,
+            "gp": 54133,
+            "name": "Toyota RAV4 PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 762.5,
+            "gp": 58997,
+            "name": "Hyundai Ioniq 6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_008_family_fr_compact_cost",
+      "description": "Famille FR, compact, pref cost",
+      "inputs": {
+        "budget": 800,
+        "km": "m20",
+        "trips": "mixed",
+        "charging": "socket",
+        "body": [
+          "compact"
+        ],
+        "pref": "cost",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "fr"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "corolla",
+          "name": "Toyota Corolla Hybrid",
+          "brand": "toyota",
+          "pt": "hev",
+          "newP": 31900,
+          "seg": [
+            "compact",
+            "compact_break"
+          ]
+        },
+        "bTco": {
+          "purchP": 31900,
+          "saleP": 17226,
+          "depr5": 14674,
+          "yf": 1295.99,
+          "maint": 275,
+          "rep": 33,
+          "mo": 378.23,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 2284.23,
+          "mo": 546.77
+        },
+        "bodySegs": [
+          "compact",
+          "saloon"
+        ],
+        "warnCount": 0,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 471.85,
+            "gp": 42114,
+            "name": "Hyundai Tucson ICE"
+          },
+          {
+            "pt": "hev",
+            "mo": 491.5,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 425.1,
+            "gp": 36097,
+            "name": "Hyundai Tucson PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 399.6,
+            "gp": 28085,
+            "name": "Fiat Grande Panda BEV"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_009_family_fr_saloon_family",
+      "description": "Famille FR, saloon, pref family",
+      "inputs": {
+        "budget": 800,
+        "km": "m20",
+        "trips": "mixed",
+        "charging": "socket",
+        "body": [
+          "saloon"
+        ],
+        "pref": "family",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "fr"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "408h",
+          "name": "Peugeot 408 Hybrid",
+          "brand": "peugeot",
+          "pt": "hev",
+          "newP": 42900,
+          "seg": [
+            "compact",
+            "saloon",
+            "coupe_sport"
+          ]
+        },
+        "bTco": {
+          "purchP": 42900,
+          "saleP": 23166,
+          "depr5": 19734,
+          "yf": 1295.99,
+          "maint": 242,
+          "rep": 27,
+          "mo": 459.32,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 2284.23,
+          "mo": 546.77
+        },
+        "bodySegs": [
+          "saloon"
+        ],
+        "warnCount": 0,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 768.45,
+            "gp": 65443,
+            "name": "Å koda Superb"
+          },
+          {
+            "pt": "hev",
+            "mo": 491.5,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 587.53,
+            "gp": 54133,
+            "name": "Toyota RAV4 PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 762.5,
+            "gp": 58997,
+            "name": "Hyundai Ioniq 6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_010_family_fr_saloon_cost",
+      "description": "Famille FR, saloon, pref cost",
+      "inputs": {
+        "budget": 800,
+        "km": "m20",
+        "trips": "mixed",
+        "charging": "socket",
+        "body": [
+          "saloon"
+        ],
+        "pref": "cost",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "fr"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "408h",
+          "name": "Peugeot 408 Hybrid",
+          "brand": "peugeot",
+          "pt": "hev",
+          "newP": 42900,
+          "seg": [
+            "compact",
+            "saloon",
+            "coupe_sport"
+          ]
+        },
+        "bTco": {
+          "purchP": 42900,
+          "saleP": 23166,
+          "depr5": 19734,
+          "yf": 1295.99,
+          "maint": 242,
+          "rep": 27,
+          "mo": 459.32,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 2284.23,
+          "mo": 546.77
+        },
+        "bodySegs": [
+          "saloon"
+        ],
+        "warnCount": 0,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 471.85,
+            "gp": 42114,
+            "name": "Hyundai Tucson ICE"
+          },
+          {
+            "pt": "hev",
+            "mo": 491.5,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 425.1,
+            "gp": 36097,
+            "name": "Hyundai Tucson PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 399.6,
+            "gp": 28085,
+            "name": "Fiat Grande Panda BEV"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_011_family_fr_suv_family",
+      "description": "Famille FR, suv, pref family",
+      "inputs": {
+        "budget": 800,
+        "km": "m20",
+        "trips": "mixed",
+        "charging": "socket",
+        "body": [
+          "suv"
+        ],
+        "pref": "family",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "fr"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "yaris_hev",
+          "name": "Toyota Yaris Hybrid",
+          "brand": "toyota",
+          "pt": "hev",
+          "newP": 28340,
+          "seg": [
+            "small"
+          ]
+        },
+        "bTco": {
+          "purchP": 28340,
+          "saleP": 15304,
+          "depr5": 13036,
+          "yf": 1295.99,
+          "maint": 275,
+          "rep": 33,
+          "mo": 350.93,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 2284.23,
+          "mo": 546.77
+        },
+        "bodySegs": [],
+        "warnCount": 0,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 768.45,
+            "gp": 65443,
+            "name": "Å koda Superb"
+          },
+          {
+            "pt": "hev",
+            "mo": 491.5,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 587.53,
+            "gp": 54133,
+            "name": "Toyota RAV4 PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 762.5,
+            "gp": 58997,
+            "name": "Hyundai Ioniq 6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_012_family_fr_suv_cost",
+      "description": "Famille FR, suv, pref cost",
+      "inputs": {
+        "budget": 800,
+        "km": "m20",
+        "trips": "mixed",
+        "charging": "socket",
+        "body": [
+          "suv"
+        ],
+        "pref": "cost",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "fr"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "yaris_hev",
+          "name": "Toyota Yaris Hybrid",
+          "brand": "toyota",
+          "pt": "hev",
+          "newP": 28340,
+          "seg": [
+            "small"
+          ]
+        },
+        "bTco": {
+          "purchP": 28340,
+          "saleP": 15304,
+          "depr5": 13036,
+          "yf": 1295.99,
+          "maint": 275,
+          "rep": 33,
+          "mo": 350.93,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 2284.23,
+          "mo": 546.77
+        },
+        "bodySegs": [],
+        "warnCount": 0,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 471.85,
+            "gp": 42114,
+            "name": "Hyundai Tucson ICE"
+          },
+          {
+            "pt": "hev",
+            "mo": 491.5,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 425.1,
+            "gp": 36097,
+            "name": "Hyundai Tucson PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 399.6,
+            "gp": 28085,
+            "name": "Fiat Grande Panda BEV"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_013_family_ch_compact_family",
+      "description": "Famille CH, compact, pref family",
+      "inputs": {
+        "budget": 800,
+        "km": "m20",
+        "trips": "mixed",
+        "charging": "socket",
+        "body": [
+          "compact"
+        ],
+        "pref": "family",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "ch"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "corolla",
+          "name": "Toyota Corolla Hybrid",
+          "brand": "toyota",
+          "pt": "hev",
+          "newP": 31900,
+          "seg": [
+            "compact",
+            "compact_break"
+          ]
+        },
+        "bTco": {
+          "purchP": 31900,
+          "saleP": 17226,
+          "depr5": 14674,
+          "yf": 1295.99,
+          "maint": 275,
+          "rep": 33,
+          "mo": 378.23,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 2284.23,
+          "mo": 546.77
+        },
+        "bodySegs": [
+          "compact",
+          "saloon"
+        ],
+        "warnCount": 0,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 768.45,
+            "gp": 65443,
+            "name": "Å koda Superb"
+          },
+          {
+            "pt": "hev",
+            "mo": 491.5,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 587.53,
+            "gp": 54133,
+            "name": "Toyota RAV4 PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 762.5,
+            "gp": 58997,
+            "name": "Hyundai Ioniq 6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_014_family_ch_compact_cost",
+      "description": "Famille CH, compact, pref cost",
+      "inputs": {
+        "budget": 800,
+        "km": "m20",
+        "trips": "mixed",
+        "charging": "socket",
+        "body": [
+          "compact"
+        ],
+        "pref": "cost",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "ch"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "corolla",
+          "name": "Toyota Corolla Hybrid",
+          "brand": "toyota",
+          "pt": "hev",
+          "newP": 31900,
+          "seg": [
+            "compact",
+            "compact_break"
+          ]
+        },
+        "bTco": {
+          "purchP": 31900,
+          "saleP": 17226,
+          "depr5": 14674,
+          "yf": 1295.99,
+          "maint": 275,
+          "rep": 33,
+          "mo": 378.23,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 2284.23,
+          "mo": 546.77
+        },
+        "bodySegs": [
+          "compact",
+          "saloon"
+        ],
+        "warnCount": 0,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 471.85,
+            "gp": 42114,
+            "name": "Hyundai Tucson ICE"
+          },
+          {
+            "pt": "hev",
+            "mo": 491.5,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 425.1,
+            "gp": 36097,
+            "name": "Hyundai Tucson PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 399.6,
+            "gp": 28085,
+            "name": "Fiat Grande Panda BEV"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_015_family_ch_saloon_family",
+      "description": "Famille CH, saloon, pref family",
+      "inputs": {
+        "budget": 800,
+        "km": "m20",
+        "trips": "mixed",
+        "charging": "socket",
+        "body": [
+          "saloon"
+        ],
+        "pref": "family",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "ch"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "408h",
+          "name": "Peugeot 408 Hybrid",
+          "brand": "peugeot",
+          "pt": "hev",
+          "newP": 42900,
+          "seg": [
+            "compact",
+            "saloon",
+            "coupe_sport"
+          ]
+        },
+        "bTco": {
+          "purchP": 42900,
+          "saleP": 23166,
+          "depr5": 19734,
+          "yf": 1295.99,
+          "maint": 242,
+          "rep": 27,
+          "mo": 459.32,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 2284.23,
+          "mo": 546.77
+        },
+        "bodySegs": [
+          "saloon"
+        ],
+        "warnCount": 0,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 768.45,
+            "gp": 65443,
+            "name": "Å koda Superb"
+          },
+          {
+            "pt": "hev",
+            "mo": 491.5,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 587.53,
+            "gp": 54133,
+            "name": "Toyota RAV4 PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 762.5,
+            "gp": 58997,
+            "name": "Hyundai Ioniq 6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_016_family_ch_saloon_cost",
+      "description": "Famille CH, saloon, pref cost",
+      "inputs": {
+        "budget": 800,
+        "km": "m20",
+        "trips": "mixed",
+        "charging": "socket",
+        "body": [
+          "saloon"
+        ],
+        "pref": "cost",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "ch"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "408h",
+          "name": "Peugeot 408 Hybrid",
+          "brand": "peugeot",
+          "pt": "hev",
+          "newP": 42900,
+          "seg": [
+            "compact",
+            "saloon",
+            "coupe_sport"
+          ]
+        },
+        "bTco": {
+          "purchP": 42900,
+          "saleP": 23166,
+          "depr5": 19734,
+          "yf": 1295.99,
+          "maint": 242,
+          "rep": 27,
+          "mo": 459.32,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 2284.23,
+          "mo": 546.77
+        },
+        "bodySegs": [
+          "saloon"
+        ],
+        "warnCount": 0,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 471.85,
+            "gp": 42114,
+            "name": "Hyundai Tucson ICE"
+          },
+          {
+            "pt": "hev",
+            "mo": 491.5,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 425.1,
+            "gp": 36097,
+            "name": "Hyundai Tucson PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 399.6,
+            "gp": 28085,
+            "name": "Fiat Grande Panda BEV"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_017_family_ch_suv_family",
+      "description": "Famille CH, suv, pref family",
+      "inputs": {
+        "budget": 800,
+        "km": "m20",
+        "trips": "mixed",
+        "charging": "socket",
+        "body": [
+          "suv"
+        ],
+        "pref": "family",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "ch"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "yaris_hev",
+          "name": "Toyota Yaris Hybrid",
+          "brand": "toyota",
+          "pt": "hev",
+          "newP": 28340,
+          "seg": [
+            "small"
+          ]
+        },
+        "bTco": {
+          "purchP": 28340,
+          "saleP": 15304,
+          "depr5": 13036,
+          "yf": 1295.99,
+          "maint": 275,
+          "rep": 33,
+          "mo": 350.93,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 2284.23,
+          "mo": 546.77
+        },
+        "bodySegs": [],
+        "warnCount": 0,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 768.45,
+            "gp": 65443,
+            "name": "Å koda Superb"
+          },
+          {
+            "pt": "hev",
+            "mo": 491.5,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 587.53,
+            "gp": 54133,
+            "name": "Toyota RAV4 PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 762.5,
+            "gp": 58997,
+            "name": "Hyundai Ioniq 6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_018_family_ch_suv_cost",
+      "description": "Famille CH, suv, pref cost",
+      "inputs": {
+        "budget": 800,
+        "km": "m20",
+        "trips": "mixed",
+        "charging": "socket",
+        "body": [
+          "suv"
+        ],
+        "pref": "cost",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "ch"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "yaris_hev",
+          "name": "Toyota Yaris Hybrid",
+          "brand": "toyota",
+          "pt": "hev",
+          "newP": 28340,
+          "seg": [
+            "small"
+          ]
+        },
+        "bTco": {
+          "purchP": 28340,
+          "saleP": 15304,
+          "depr5": 13036,
+          "yf": 1295.99,
+          "maint": 275,
+          "rep": 33,
+          "mo": 350.93,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 2284.23,
+          "mo": 546.77
+        },
+        "bodySegs": [],
+        "warnCount": 0,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 471.85,
+            "gp": 42114,
+            "name": "Hyundai Tucson ICE"
+          },
+          {
+            "pt": "hev",
+            "mo": 491.5,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 425.1,
+            "gp": 36097,
+            "name": "Hyundai Tucson PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 399.6,
+            "gp": 28085,
+            "name": "Fiat Grande Panda BEV"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_019_family_be_compact_family",
+      "description": "Famille BE, compact, pref family",
+      "inputs": {
+        "budget": 800,
+        "km": "m20",
+        "trips": "mixed",
+        "charging": "socket",
+        "body": [
+          "compact"
+        ],
+        "pref": "family",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "be"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "corolla",
+          "name": "Toyota Corolla Hybrid",
+          "brand": "toyota",
+          "pt": "hev",
+          "newP": 31900,
+          "seg": [
+            "compact",
+            "compact_break"
+          ]
+        },
+        "bTco": {
+          "purchP": 31900,
+          "saleP": 17226,
+          "depr5": 14674,
+          "yf": 1295.99,
+          "maint": 275,
+          "rep": 33,
+          "mo": 378.23,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 2284.23,
+          "mo": 546.77
+        },
+        "bodySegs": [
+          "compact",
+          "saloon"
+        ],
+        "warnCount": 0,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 768.45,
+            "gp": 65443,
+            "name": "Å koda Superb"
+          },
+          {
+            "pt": "hev",
+            "mo": 491.5,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 587.53,
+            "gp": 54133,
+            "name": "Toyota RAV4 PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 762.5,
+            "gp": 58997,
+            "name": "Hyundai Ioniq 6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_020_family_be_compact_cost",
+      "description": "Famille BE, compact, pref cost",
+      "inputs": {
+        "budget": 800,
+        "km": "m20",
+        "trips": "mixed",
+        "charging": "socket",
+        "body": [
+          "compact"
+        ],
+        "pref": "cost",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "be"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "corolla",
+          "name": "Toyota Corolla Hybrid",
+          "brand": "toyota",
+          "pt": "hev",
+          "newP": 31900,
+          "seg": [
+            "compact",
+            "compact_break"
+          ]
+        },
+        "bTco": {
+          "purchP": 31900,
+          "saleP": 17226,
+          "depr5": 14674,
+          "yf": 1295.99,
+          "maint": 275,
+          "rep": 33,
+          "mo": 378.23,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 2284.23,
+          "mo": 546.77
+        },
+        "bodySegs": [
+          "compact",
+          "saloon"
+        ],
+        "warnCount": 0,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 471.85,
+            "gp": 42114,
+            "name": "Hyundai Tucson ICE"
+          },
+          {
+            "pt": "hev",
+            "mo": 491.5,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 425.1,
+            "gp": 36097,
+            "name": "Hyundai Tucson PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 399.6,
+            "gp": 28085,
+            "name": "Fiat Grande Panda BEV"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_021_family_be_saloon_family",
+      "description": "Famille BE, saloon, pref family",
+      "inputs": {
+        "budget": 800,
+        "km": "m20",
+        "trips": "mixed",
+        "charging": "socket",
+        "body": [
+          "saloon"
+        ],
+        "pref": "family",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "be"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "408h",
+          "name": "Peugeot 408 Hybrid",
+          "brand": "peugeot",
+          "pt": "hev",
+          "newP": 42900,
+          "seg": [
+            "compact",
+            "saloon",
+            "coupe_sport"
+          ]
+        },
+        "bTco": {
+          "purchP": 42900,
+          "saleP": 23166,
+          "depr5": 19734,
+          "yf": 1295.99,
+          "maint": 242,
+          "rep": 27,
+          "mo": 459.32,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 2284.23,
+          "mo": 546.77
+        },
+        "bodySegs": [
+          "saloon"
+        ],
+        "warnCount": 0,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 768.45,
+            "gp": 65443,
+            "name": "Å koda Superb"
+          },
+          {
+            "pt": "hev",
+            "mo": 491.5,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 587.53,
+            "gp": 54133,
+            "name": "Toyota RAV4 PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 762.5,
+            "gp": 58997,
+            "name": "Hyundai Ioniq 6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_022_family_be_saloon_cost",
+      "description": "Famille BE, saloon, pref cost",
+      "inputs": {
+        "budget": 800,
+        "km": "m20",
+        "trips": "mixed",
+        "charging": "socket",
+        "body": [
+          "saloon"
+        ],
+        "pref": "cost",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "be"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "408h",
+          "name": "Peugeot 408 Hybrid",
+          "brand": "peugeot",
+          "pt": "hev",
+          "newP": 42900,
+          "seg": [
+            "compact",
+            "saloon",
+            "coupe_sport"
+          ]
+        },
+        "bTco": {
+          "purchP": 42900,
+          "saleP": 23166,
+          "depr5": 19734,
+          "yf": 1295.99,
+          "maint": 242,
+          "rep": 27,
+          "mo": 459.32,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 2284.23,
+          "mo": 546.77
+        },
+        "bodySegs": [
+          "saloon"
+        ],
+        "warnCount": 0,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 471.85,
+            "gp": 42114,
+            "name": "Hyundai Tucson ICE"
+          },
+          {
+            "pt": "hev",
+            "mo": 491.5,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 425.1,
+            "gp": 36097,
+            "name": "Hyundai Tucson PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 399.6,
+            "gp": 28085,
+            "name": "Fiat Grande Panda BEV"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_023_family_be_suv_family",
+      "description": "Famille BE, suv, pref family",
+      "inputs": {
+        "budget": 800,
+        "km": "m20",
+        "trips": "mixed",
+        "charging": "socket",
+        "body": [
+          "suv"
+        ],
+        "pref": "family",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "be"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "yaris_hev",
+          "name": "Toyota Yaris Hybrid",
+          "brand": "toyota",
+          "pt": "hev",
+          "newP": 28340,
+          "seg": [
+            "small"
+          ]
+        },
+        "bTco": {
+          "purchP": 28340,
+          "saleP": 15304,
+          "depr5": 13036,
+          "yf": 1295.99,
+          "maint": 275,
+          "rep": 33,
+          "mo": 350.93,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 2284.23,
+          "mo": 546.77
+        },
+        "bodySegs": [],
+        "warnCount": 0,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 768.45,
+            "gp": 65443,
+            "name": "Å koda Superb"
+          },
+          {
+            "pt": "hev",
+            "mo": 491.5,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 587.53,
+            "gp": 54133,
+            "name": "Toyota RAV4 PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 762.5,
+            "gp": 58997,
+            "name": "Hyundai Ioniq 6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_024_family_be_suv_cost",
+      "description": "Famille BE, suv, pref cost",
+      "inputs": {
+        "budget": 800,
+        "km": "m20",
+        "trips": "mixed",
+        "charging": "socket",
+        "body": [
+          "suv"
+        ],
+        "pref": "cost",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "be"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "yaris_hev",
+          "name": "Toyota Yaris Hybrid",
+          "brand": "toyota",
+          "pt": "hev",
+          "newP": 28340,
+          "seg": [
+            "small"
+          ]
+        },
+        "bTco": {
+          "purchP": 28340,
+          "saleP": 15304,
+          "depr5": 13036,
+          "yf": 1295.99,
+          "maint": 275,
+          "rep": 33,
+          "mo": 350.93,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 2284.23,
+          "mo": 546.77
+        },
+        "bodySegs": [],
+        "warnCount": 0,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 471.85,
+            "gp": 42114,
+            "name": "Hyundai Tucson ICE"
+          },
+          {
+            "pt": "hev",
+            "mo": 491.5,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 425.1,
+            "gp": 36097,
+            "name": "Hyundai Tucson PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 399.6,
+            "gp": 28085,
+            "name": "Fiat Grande Panda BEV"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_025_commuter_fr_long_cost",
+      "description": "Commuter FR, trips long",
+      "inputs": {
+        "budget": 1000,
+        "km": "o35",
+        "trips": "long",
+        "charging": "socket",
+        "body": [
+          "saloon"
+        ],
+        "pref": "cost",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "fr"
+      },
+      "output": {
+        "best": "bev",
+        "refCar": {
+          "id": "ioniq6",
+          "name": "Hyundai Ioniq 6",
+          "brand": "hyundai",
+          "pt": "bev",
+          "newP": 59795,
+          "seg": [
+            "compact",
+            "compact_break",
+            "saloon",
+            "saloon_break"
+          ]
+        },
+        "bTco": {
+          "purchP": 59795,
+          "saleP": 19134,
+          "depr5": 40661,
+          "yf": 2160.46,
+          "maint": 171,
+          "rep": 27,
+          "mo": 874.22,
+          "risk": 0.8
+        },
+        "iceTco": {
+          "yf": 5276.12,
+          "mo": 796.09
+        },
+        "bodySegs": [
+          "saloon"
+        ],
+        "warnCount": 1,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 721.18,
+            "gp": 42114,
+            "name": "Hyundai Tucson ICE"
+          },
+          {
+            "pt": "hev",
+            "mo": 779.45,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 876.54,
+            "gp": 36097,
+            "name": "Hyundai Tucson PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 511.32,
+            "gp": 28085,
+            "name": "Fiat Grande Panda BEV"
+          },
+          {
+            "pt": "die",
+            "mo": 632.33,
+            "gp": 28266,
+            "name": "Ford Kuga Diesel"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_026_commuter_fr_long_ratio",
+      "description": "Commuter FR, trips long",
+      "inputs": {
+        "budget": 1000,
+        "km": "o35",
+        "trips": "long",
+        "charging": "socket",
+        "body": [
+          "saloon"
+        ],
+        "pref": "ratio",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "fr"
+      },
+      "output": {
+        "best": "bev",
+        "refCar": {
+          "id": "ioniq6",
+          "name": "Hyundai Ioniq 6",
+          "brand": "hyundai",
+          "pt": "bev",
+          "newP": 59795,
+          "seg": [
+            "compact",
+            "compact_break",
+            "saloon",
+            "saloon_break"
+          ]
+        },
+        "bTco": {
+          "purchP": 59795,
+          "saleP": 19134,
+          "depr5": 40661,
+          "yf": 2160.46,
+          "maint": 171,
+          "rep": 27,
+          "mo": 874.22,
+          "risk": 0.8
+        },
+        "iceTco": {
+          "yf": 5276.12,
+          "mo": 796.09
+        },
+        "bodySegs": [
+          "saloon"
+        ],
+        "warnCount": 1,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 766.09,
+            "gp": 35095,
+            "name": "Toyota RAV4 ICE"
+          },
+          {
+            "pt": "hev",
+            "mo": 779.45,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 1038.97,
+            "gp": 54133,
+            "name": "Toyota RAV4 PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 707.24,
+            "gp": 38551,
+            "name": "Toyota bZ4X BEV"
+          },
+          {
+            "pt": "die",
+            "mo": 690.68,
+            "gp": 34658,
+            "name": "Mazda CX-5 Diesel"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_027_commuter_fr_vlong_cost",
+      "description": "Commuter FR, trips vlong",
+      "inputs": {
+        "budget": 1000,
+        "km": "o35",
+        "trips": "vlong",
+        "charging": "socket",
+        "body": [
+          "saloon"
+        ],
+        "pref": "cost",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "fr"
+      },
+      "output": {
+        "best": "die",
+        "refCar": {
+          "id": "a4_tdi",
+          "name": "Audi A4 TDI Quattro",
+          "brand": "audi",
+          "pt": "die",
+          "newP": 52900,
+          "seg": [
+            "compact",
+            "saloon"
+          ]
+        },
+        "bTco": {
+          "purchP": 52900,
+          "saleP": 24334,
+          "depr5": 28566,
+          "yf": 3555.46,
+          "maint": 650,
+          "rep": 144,
+          "mo": 838.55,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 4650.87,
+          "mo": 743.99
+        },
+        "bodySegs": [
+          "saloon"
+        ],
+        "warnCount": 1,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 669.07,
+            "gp": 42114,
+            "name": "Hyundai Tucson ICE"
+          },
+          {
+            "pt": "hev",
+            "mo": 846.2,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 1069.44,
+            "gp": 36097,
+            "name": "Hyundai Tucson PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 505.7,
+            "gp": 28085,
+            "name": "Fiat Grande Panda BEV"
+          },
+          {
+            "pt": "die",
+            "mo": 595.44,
+            "gp": 28266,
+            "name": "Ford Kuga Diesel"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_028_commuter_fr_vlong_ratio",
+      "description": "Commuter FR, trips vlong",
+      "inputs": {
+        "budget": 1000,
+        "km": "o35",
+        "trips": "vlong",
+        "charging": "socket",
+        "body": [
+          "saloon"
+        ],
+        "pref": "ratio",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "fr"
+      },
+      "output": {
+        "best": "die",
+        "refCar": {
+          "id": "a4_tdi",
+          "name": "Audi A4 TDI Quattro",
+          "brand": "audi",
+          "pt": "die",
+          "newP": 52900,
+          "seg": [
+            "compact",
+            "saloon"
+          ]
+        },
+        "bTco": {
+          "purchP": 52900,
+          "saleP": 24334,
+          "depr5": 28566,
+          "yf": 3555.46,
+          "maint": 650,
+          "rep": 144,
+          "mo": 838.55,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 4650.87,
+          "mo": 743.99
+        },
+        "bodySegs": [
+          "saloon"
+        ],
+        "warnCount": 1,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 713.99,
+            "gp": 35095,
+            "name": "Toyota RAV4 ICE"
+          },
+          {
+            "pt": "hev",
+            "mo": 846.2,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 1231.88,
+            "gp": 54133,
+            "name": "Toyota RAV4 PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 701.61,
+            "gp": 38551,
+            "name": "Toyota bZ4X BEV"
+          },
+          {
+            "pt": "die",
+            "mo": 653.79,
+            "gp": 34658,
+            "name": "Mazda CX-5 Diesel"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_029_commuter_de_long_cost",
+      "description": "Commuter DE, trips long",
+      "inputs": {
+        "budget": 1000,
+        "km": "o35",
+        "trips": "long",
+        "charging": "socket",
+        "body": [
+          "saloon"
+        ],
+        "pref": "cost",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "de"
+      },
+      "output": {
+        "best": "bev",
+        "refCar": {
+          "id": "ioniq6",
+          "name": "Hyundai Ioniq 6",
+          "brand": "hyundai",
+          "pt": "bev",
+          "newP": 59795,
+          "seg": [
+            "compact",
+            "compact_break",
+            "saloon",
+            "saloon_break"
+          ]
+        },
+        "bTco": {
+          "purchP": 59795,
+          "saleP": 19134,
+          "depr5": 40661,
+          "yf": 2160.46,
+          "maint": 171,
+          "rep": 27,
+          "mo": 874.22,
+          "risk": 0.8
+        },
+        "iceTco": {
+          "yf": 5276.12,
+          "mo": 796.09
+        },
+        "bodySegs": [
+          "saloon"
+        ],
+        "warnCount": 1,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 721.18,
+            "gp": 42114,
+            "name": "Hyundai Tucson ICE"
+          },
+          {
+            "pt": "hev",
+            "mo": 779.45,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 876.54,
+            "gp": 36097,
+            "name": "Hyundai Tucson PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 511.32,
+            "gp": 28085,
+            "name": "Fiat Grande Panda BEV"
+          },
+          {
+            "pt": "die",
+            "mo": 632.33,
+            "gp": 28266,
+            "name": "Ford Kuga Diesel"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_030_commuter_de_long_ratio",
+      "description": "Commuter DE, trips long",
+      "inputs": {
+        "budget": 1000,
+        "km": "o35",
+        "trips": "long",
+        "charging": "socket",
+        "body": [
+          "saloon"
+        ],
+        "pref": "ratio",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "de"
+      },
+      "output": {
+        "best": "bev",
+        "refCar": {
+          "id": "ioniq6",
+          "name": "Hyundai Ioniq 6",
+          "brand": "hyundai",
+          "pt": "bev",
+          "newP": 59795,
+          "seg": [
+            "compact",
+            "compact_break",
+            "saloon",
+            "saloon_break"
+          ]
+        },
+        "bTco": {
+          "purchP": 59795,
+          "saleP": 19134,
+          "depr5": 40661,
+          "yf": 2160.46,
+          "maint": 171,
+          "rep": 27,
+          "mo": 874.22,
+          "risk": 0.8
+        },
+        "iceTco": {
+          "yf": 5276.12,
+          "mo": 796.09
+        },
+        "bodySegs": [
+          "saloon"
+        ],
+        "warnCount": 1,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 766.09,
+            "gp": 35095,
+            "name": "Toyota RAV4 ICE"
+          },
+          {
+            "pt": "hev",
+            "mo": 779.45,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 1038.97,
+            "gp": 54133,
+            "name": "Toyota RAV4 PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 707.24,
+            "gp": 38551,
+            "name": "Toyota bZ4X BEV"
+          },
+          {
+            "pt": "die",
+            "mo": 690.68,
+            "gp": 34658,
+            "name": "Mazda CX-5 Diesel"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_031_commuter_de_vlong_cost",
+      "description": "Commuter DE, trips vlong",
+      "inputs": {
+        "budget": 1000,
+        "km": "o35",
+        "trips": "vlong",
+        "charging": "socket",
+        "body": [
+          "saloon"
+        ],
+        "pref": "cost",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "de"
+      },
+      "output": {
+        "best": "die",
+        "refCar": {
+          "id": "a4_tdi",
+          "name": "Audi A4 TDI Quattro",
+          "brand": "audi",
+          "pt": "die",
+          "newP": 52900,
+          "seg": [
+            "compact",
+            "saloon"
+          ]
+        },
+        "bTco": {
+          "purchP": 52900,
+          "saleP": 24334,
+          "depr5": 28566,
+          "yf": 3555.46,
+          "maint": 650,
+          "rep": 144,
+          "mo": 838.55,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 4650.87,
+          "mo": 743.99
+        },
+        "bodySegs": [
+          "saloon"
+        ],
+        "warnCount": 1,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 669.07,
+            "gp": 42114,
+            "name": "Hyundai Tucson ICE"
+          },
+          {
+            "pt": "hev",
+            "mo": 846.2,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 1069.44,
+            "gp": 36097,
+            "name": "Hyundai Tucson PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 505.7,
+            "gp": 28085,
+            "name": "Fiat Grande Panda BEV"
+          },
+          {
+            "pt": "die",
+            "mo": 595.44,
+            "gp": 28266,
+            "name": "Ford Kuga Diesel"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_032_commuter_de_vlong_ratio",
+      "description": "Commuter DE, trips vlong",
+      "inputs": {
+        "budget": 1000,
+        "km": "o35",
+        "trips": "vlong",
+        "charging": "socket",
+        "body": [
+          "saloon"
+        ],
+        "pref": "ratio",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "de"
+      },
+      "output": {
+        "best": "die",
+        "refCar": {
+          "id": "a4_tdi",
+          "name": "Audi A4 TDI Quattro",
+          "brand": "audi",
+          "pt": "die",
+          "newP": 52900,
+          "seg": [
+            "compact",
+            "saloon"
+          ]
+        },
+        "bTco": {
+          "purchP": 52900,
+          "saleP": 24334,
+          "depr5": 28566,
+          "yf": 3555.46,
+          "maint": 650,
+          "rep": 144,
+          "mo": 838.55,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 4650.87,
+          "mo": 743.99
+        },
+        "bodySegs": [
+          "saloon"
+        ],
+        "warnCount": 1,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 713.99,
+            "gp": 35095,
+            "name": "Toyota RAV4 ICE"
+          },
+          {
+            "pt": "hev",
+            "mo": 846.2,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 1231.88,
+            "gp": 54133,
+            "name": "Toyota RAV4 PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 701.61,
+            "gp": 38551,
+            "name": "Toyota bZ4X BEV"
+          },
+          {
+            "pt": "die",
+            "mo": 653.79,
+            "gp": 34658,
+            "name": "Mazda CX-5 Diesel"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_033_commuter_nl_long_cost",
+      "description": "Commuter NL, trips long",
+      "inputs": {
+        "budget": 1000,
+        "km": "o35",
+        "trips": "long",
+        "charging": "socket",
+        "body": [
+          "saloon"
+        ],
+        "pref": "cost",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "nl"
+      },
+      "output": {
+        "best": "bev",
+        "refCar": {
+          "id": "ioniq6",
+          "name": "Hyundai Ioniq 6",
+          "brand": "hyundai",
+          "pt": "bev",
+          "newP": 59795,
+          "seg": [
+            "compact",
+            "compact_break",
+            "saloon",
+            "saloon_break"
+          ]
+        },
+        "bTco": {
+          "purchP": 59795,
+          "saleP": 19134,
+          "depr5": 40661,
+          "yf": 2160.46,
+          "maint": 171,
+          "rep": 27,
+          "mo": 874.22,
+          "risk": 0.8
+        },
+        "iceTco": {
+          "yf": 5276.12,
+          "mo": 796.09
+        },
+        "bodySegs": [
+          "saloon"
+        ],
+        "warnCount": 1,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 721.18,
+            "gp": 42114,
+            "name": "Hyundai Tucson ICE"
+          },
+          {
+            "pt": "hev",
+            "mo": 779.45,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 876.54,
+            "gp": 36097,
+            "name": "Hyundai Tucson PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 511.32,
+            "gp": 28085,
+            "name": "Fiat Grande Panda BEV"
+          },
+          {
+            "pt": "die",
+            "mo": 632.33,
+            "gp": 28266,
+            "name": "Ford Kuga Diesel"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_034_commuter_nl_long_ratio",
+      "description": "Commuter NL, trips long",
+      "inputs": {
+        "budget": 1000,
+        "km": "o35",
+        "trips": "long",
+        "charging": "socket",
+        "body": [
+          "saloon"
+        ],
+        "pref": "ratio",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "nl"
+      },
+      "output": {
+        "best": "bev",
+        "refCar": {
+          "id": "ioniq6",
+          "name": "Hyundai Ioniq 6",
+          "brand": "hyundai",
+          "pt": "bev",
+          "newP": 59795,
+          "seg": [
+            "compact",
+            "compact_break",
+            "saloon",
+            "saloon_break"
+          ]
+        },
+        "bTco": {
+          "purchP": 59795,
+          "saleP": 19134,
+          "depr5": 40661,
+          "yf": 2160.46,
+          "maint": 171,
+          "rep": 27,
+          "mo": 874.22,
+          "risk": 0.8
+        },
+        "iceTco": {
+          "yf": 5276.12,
+          "mo": 796.09
+        },
+        "bodySegs": [
+          "saloon"
+        ],
+        "warnCount": 1,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 766.09,
+            "gp": 35095,
+            "name": "Toyota RAV4 ICE"
+          },
+          {
+            "pt": "hev",
+            "mo": 779.45,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 1038.97,
+            "gp": 54133,
+            "name": "Toyota RAV4 PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 707.24,
+            "gp": 38551,
+            "name": "Toyota bZ4X BEV"
+          },
+          {
+            "pt": "die",
+            "mo": 690.68,
+            "gp": 34658,
+            "name": "Mazda CX-5 Diesel"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_035_commuter_nl_vlong_cost",
+      "description": "Commuter NL, trips vlong",
+      "inputs": {
+        "budget": 1000,
+        "km": "o35",
+        "trips": "vlong",
+        "charging": "socket",
+        "body": [
+          "saloon"
+        ],
+        "pref": "cost",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "nl"
+      },
+      "output": {
+        "best": "die",
+        "refCar": {
+          "id": "a4_tdi",
+          "name": "Audi A4 TDI Quattro",
+          "brand": "audi",
+          "pt": "die",
+          "newP": 52900,
+          "seg": [
+            "compact",
+            "saloon"
+          ]
+        },
+        "bTco": {
+          "purchP": 52900,
+          "saleP": 24334,
+          "depr5": 28566,
+          "yf": 3555.46,
+          "maint": 650,
+          "rep": 144,
+          "mo": 838.55,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 4650.87,
+          "mo": 743.99
+        },
+        "bodySegs": [
+          "saloon"
+        ],
+        "warnCount": 1,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 669.07,
+            "gp": 42114,
+            "name": "Hyundai Tucson ICE"
+          },
+          {
+            "pt": "hev",
+            "mo": 846.2,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 1069.44,
+            "gp": 36097,
+            "name": "Hyundai Tucson PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 505.7,
+            "gp": 28085,
+            "name": "Fiat Grande Panda BEV"
+          },
+          {
+            "pt": "die",
+            "mo": 595.44,
+            "gp": 28266,
+            "name": "Ford Kuga Diesel"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_036_commuter_nl_vlong_ratio",
+      "description": "Commuter NL, trips vlong",
+      "inputs": {
+        "budget": 1000,
+        "km": "o35",
+        "trips": "vlong",
+        "charging": "socket",
+        "body": [
+          "saloon"
+        ],
+        "pref": "ratio",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "nl"
+      },
+      "output": {
+        "best": "die",
+        "refCar": {
+          "id": "a4_tdi",
+          "name": "Audi A4 TDI Quattro",
+          "brand": "audi",
+          "pt": "die",
+          "newP": 52900,
+          "seg": [
+            "compact",
+            "saloon"
+          ]
+        },
+        "bTco": {
+          "purchP": 52900,
+          "saleP": 24334,
+          "depr5": 28566,
+          "yf": 3555.46,
+          "maint": 650,
+          "rep": 144,
+          "mo": 838.55,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 4650.87,
+          "mo": 743.99
+        },
+        "bodySegs": [
+          "saloon"
+        ],
+        "warnCount": 1,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 713.99,
+            "gp": 35095,
+            "name": "Toyota RAV4 ICE"
+          },
+          {
+            "pt": "hev",
+            "mo": 846.2,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 1231.88,
+            "gp": 54133,
+            "name": "Toyota RAV4 PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 701.61,
+            "gp": 38551,
+            "name": "Toyota bZ4X BEV"
+          },
+          {
+            "pt": "die",
+            "mo": 653.79,
+            "gp": 34658,
+            "name": "Mazda CX-5 Diesel"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_037_premium_ch_premium_saloon",
+      "description": "Premium CH, premium, saloon",
+      "inputs": {
+        "budget": 1500,
+        "km": "m20",
+        "trips": "mixed",
+        "charging": "socket",
+        "body": [
+          "saloon"
+        ],
+        "pref": "premium",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "ch"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "408h",
+          "name": "Peugeot 408 Hybrid",
+          "brand": "peugeot",
+          "pt": "hev",
+          "newP": 42900,
+          "seg": [
+            "compact",
+            "saloon",
+            "coupe_sport"
+          ]
+        },
+        "bTco": {
+          "purchP": 42900,
+          "saleP": 23166,
+          "depr5": 19734,
+          "yf": 1295.99,
+          "maint": 242,
+          "rep": 27,
+          "mo": 459.32,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 2284.23,
+          "mo": 546.77
+        },
+        "bodySegs": [
+          "saloon"
+        ],
+        "warnCount": 0,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 971.94,
+            "gp": 92223,
+            "name": "BMW X5 xDrive40i"
+          },
+          {
+            "pt": "hev",
+            "mo": 1046.68,
+            "gp": 117828,
+            "name": "BMW X6 Hev"
+          },
+          {
+            "pt": "phev",
+            "mo": 795.05,
+            "gp": 80745,
+            "name": "Volvo XC90 T8 Recharge PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 1853.98,
+            "gp": 178250,
+            "name": "Mercedes-Benz Classe G G 580 EQ Technology"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_038_premium_ch_premium_suv",
+      "description": "Premium CH, premium, suv",
+      "inputs": {
+        "budget": 1500,
+        "km": "m20",
+        "trips": "mixed",
+        "charging": "socket",
+        "body": [
+          "suv"
+        ],
+        "pref": "premium",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "ch"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "yaris_hev",
+          "name": "Toyota Yaris Hybrid",
+          "brand": "toyota",
+          "pt": "hev",
+          "newP": 28340,
+          "seg": [
+            "small"
+          ]
+        },
+        "bTco": {
+          "purchP": 28340,
+          "saleP": 15304,
+          "depr5": 13036,
+          "yf": 1295.99,
+          "maint": 275,
+          "rep": 33,
+          "mo": 350.93,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 2284.23,
+          "mo": 546.77
+        },
+        "bodySegs": [],
+        "warnCount": 0,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 971.94,
+            "gp": 92223,
+            "name": "BMW X5 xDrive40i"
+          },
+          {
+            "pt": "hev",
+            "mo": 1046.68,
+            "gp": 117828,
+            "name": "BMW X6 Hev"
+          },
+          {
+            "pt": "phev",
+            "mo": 795.05,
+            "gp": 80745,
+            "name": "Volvo XC90 T8 Recharge PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 1853.98,
+            "gp": 178250,
+            "name": "Mercedes-Benz Classe G G 580 EQ Technology"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_039_premium_ch_sport_saloon",
+      "description": "Premium CH, sport, saloon",
+      "inputs": {
+        "budget": 1500,
+        "km": "m20",
+        "trips": "mixed",
+        "charging": "socket",
+        "body": [
+          "saloon"
+        ],
+        "pref": "sport",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "ch"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "408h",
+          "name": "Peugeot 408 Hybrid",
+          "brand": "peugeot",
+          "pt": "hev",
+          "newP": 42900,
+          "seg": [
+            "compact",
+            "saloon",
+            "coupe_sport"
+          ]
+        },
+        "bTco": {
+          "purchP": 42900,
+          "saleP": 23166,
+          "depr5": 19734,
+          "yf": 1295.99,
+          "maint": 242,
+          "rep": 27,
+          "mo": 459.32,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 2284.23,
+          "mo": 546.77
+        },
+        "bodySegs": [
+          "saloon"
+        ],
+        "warnCount": 0,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 971.94,
+            "gp": 92223,
+            "name": "BMW X5 xDrive40i"
+          },
+          {
+            "pt": "hev",
+            "mo": 1046.68,
+            "gp": 117828,
+            "name": "BMW X6 Hev"
+          },
+          {
+            "pt": "phev",
+            "mo": 691.02,
+            "gp": 69861,
+            "name": "BMW X3 xDrive30e (old)"
+          },
+          {
+            "pt": "bev",
+            "mo": 1215.8,
+            "gp": 99373,
+            "name": "Tesla Model X BEV"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_040_premium_ch_sport_suv",
+      "description": "Premium CH, sport, suv",
+      "inputs": {
+        "budget": 1500,
+        "km": "m20",
+        "trips": "mixed",
+        "charging": "socket",
+        "body": [
+          "suv"
+        ],
+        "pref": "sport",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "ch"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "yaris_hev",
+          "name": "Toyota Yaris Hybrid",
+          "brand": "toyota",
+          "pt": "hev",
+          "newP": 28340,
+          "seg": [
+            "small"
+          ]
+        },
+        "bTco": {
+          "purchP": 28340,
+          "saleP": 15304,
+          "depr5": 13036,
+          "yf": 1295.99,
+          "maint": 275,
+          "rep": 33,
+          "mo": 350.93,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 2284.23,
+          "mo": 546.77
+        },
+        "bodySegs": [],
+        "warnCount": 0,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 971.94,
+            "gp": 92223,
+            "name": "BMW X5 xDrive40i"
+          },
+          {
+            "pt": "hev",
+            "mo": 1046.68,
+            "gp": 117828,
+            "name": "BMW X6 Hev"
+          },
+          {
+            "pt": "phev",
+            "mo": 691.02,
+            "gp": 69861,
+            "name": "BMW X3 xDrive30e (old)"
+          },
+          {
+            "pt": "bev",
+            "mo": 1215.8,
+            "gp": 99373,
+            "name": "Tesla Model X BEV"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_041_premium_lu_premium_saloon",
+      "description": "Premium LU, premium, saloon",
+      "inputs": {
+        "budget": 1500,
+        "km": "m20",
+        "trips": "mixed",
+        "charging": "socket",
+        "body": [
+          "saloon"
+        ],
+        "pref": "premium",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "lu"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "408h",
+          "name": "Peugeot 408 Hybrid",
+          "brand": "peugeot",
+          "pt": "hev",
+          "newP": 42900,
+          "seg": [
+            "compact",
+            "saloon",
+            "coupe_sport"
+          ]
+        },
+        "bTco": {
+          "purchP": 42900,
+          "saleP": 23166,
+          "depr5": 19734,
+          "yf": 1295.99,
+          "maint": 242,
+          "rep": 27,
+          "mo": 459.32,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 2284.23,
+          "mo": 546.77
+        },
+        "bodySegs": [
+          "saloon"
+        ],
+        "warnCount": 0,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 971.94,
+            "gp": 92223,
+            "name": "BMW X5 xDrive40i"
+          },
+          {
+            "pt": "hev",
+            "mo": 1046.68,
+            "gp": 117828,
+            "name": "BMW X6 Hev"
+          },
+          {
+            "pt": "phev",
+            "mo": 795.05,
+            "gp": 80745,
+            "name": "Volvo XC90 T8 Recharge PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 1853.98,
+            "gp": 178250,
+            "name": "Mercedes-Benz Classe G G 580 EQ Technology"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_042_premium_lu_premium_suv",
+      "description": "Premium LU, premium, suv",
+      "inputs": {
+        "budget": 1500,
+        "km": "m20",
+        "trips": "mixed",
+        "charging": "socket",
+        "body": [
+          "suv"
+        ],
+        "pref": "premium",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "lu"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "yaris_hev",
+          "name": "Toyota Yaris Hybrid",
+          "brand": "toyota",
+          "pt": "hev",
+          "newP": 28340,
+          "seg": [
+            "small"
+          ]
+        },
+        "bTco": {
+          "purchP": 28340,
+          "saleP": 15304,
+          "depr5": 13036,
+          "yf": 1295.99,
+          "maint": 275,
+          "rep": 33,
+          "mo": 350.93,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 2284.23,
+          "mo": 546.77
+        },
+        "bodySegs": [],
+        "warnCount": 0,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 971.94,
+            "gp": 92223,
+            "name": "BMW X5 xDrive40i"
+          },
+          {
+            "pt": "hev",
+            "mo": 1046.68,
+            "gp": 117828,
+            "name": "BMW X6 Hev"
+          },
+          {
+            "pt": "phev",
+            "mo": 795.05,
+            "gp": 80745,
+            "name": "Volvo XC90 T8 Recharge PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 1853.98,
+            "gp": 178250,
+            "name": "Mercedes-Benz Classe G G 580 EQ Technology"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_043_premium_lu_sport_saloon",
+      "description": "Premium LU, sport, saloon",
+      "inputs": {
+        "budget": 1500,
+        "km": "m20",
+        "trips": "mixed",
+        "charging": "socket",
+        "body": [
+          "saloon"
+        ],
+        "pref": "sport",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "lu"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "408h",
+          "name": "Peugeot 408 Hybrid",
+          "brand": "peugeot",
+          "pt": "hev",
+          "newP": 42900,
+          "seg": [
+            "compact",
+            "saloon",
+            "coupe_sport"
+          ]
+        },
+        "bTco": {
+          "purchP": 42900,
+          "saleP": 23166,
+          "depr5": 19734,
+          "yf": 1295.99,
+          "maint": 242,
+          "rep": 27,
+          "mo": 459.32,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 2284.23,
+          "mo": 546.77
+        },
+        "bodySegs": [
+          "saloon"
+        ],
+        "warnCount": 0,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 971.94,
+            "gp": 92223,
+            "name": "BMW X5 xDrive40i"
+          },
+          {
+            "pt": "hev",
+            "mo": 1046.68,
+            "gp": 117828,
+            "name": "BMW X6 Hev"
+          },
+          {
+            "pt": "phev",
+            "mo": 691.02,
+            "gp": 69861,
+            "name": "BMW X3 xDrive30e (old)"
+          },
+          {
+            "pt": "bev",
+            "mo": 1215.8,
+            "gp": 99373,
+            "name": "Tesla Model X BEV"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_044_premium_lu_sport_suv",
+      "description": "Premium LU, sport, suv",
+      "inputs": {
+        "budget": 1500,
+        "km": "m20",
+        "trips": "mixed",
+        "charging": "socket",
+        "body": [
+          "suv"
+        ],
+        "pref": "sport",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "lu"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "yaris_hev",
+          "name": "Toyota Yaris Hybrid",
+          "brand": "toyota",
+          "pt": "hev",
+          "newP": 28340,
+          "seg": [
+            "small"
+          ]
+        },
+        "bTco": {
+          "purchP": 28340,
+          "saleP": 15304,
+          "depr5": 13036,
+          "yf": 1295.99,
+          "maint": 275,
+          "rep": 33,
+          "mo": 350.93,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 2284.23,
+          "mo": 546.77
+        },
+        "bodySegs": [],
+        "warnCount": 0,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 971.94,
+            "gp": 92223,
+            "name": "BMW X5 xDrive40i"
+          },
+          {
+            "pt": "hev",
+            "mo": 1046.68,
+            "gp": 117828,
+            "name": "BMW X6 Hev"
+          },
+          {
+            "pt": "phev",
+            "mo": 691.02,
+            "gp": 69861,
+            "name": "BMW X3 xDrive30e (old)"
+          },
+          {
+            "pt": "bev",
+            "mo": 1215.8,
+            "gp": 99373,
+            "name": "Tesla Model X BEV"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_045_ev_fr_body_any",
+      "description": "EV-friendly FR",
+      "inputs": {
+        "budget": 1200,
+        "km": "m35",
+        "trips": "long",
+        "charging": "socket",
+        "body": [],
+        "pref": "eco",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "fr"
+      },
+      "output": {
+        "best": "bev",
+        "refCar": {
+          "id": "spring",
+          "name": "Dacia Spring",
+          "brand": "dacia",
+          "pt": "bev",
+          "newP": 13420,
+          "seg": [
+            "mini"
+          ]
+        },
+        "bTco": {
+          "purchP": 13420,
+          "saleP": 4294,
+          "depr5": 9126,
+          "yf": 1388.87,
+          "maint": 149,
+          "rep": 27,
+          "mo": 282.51,
+          "risk": 0.8
+        },
+        "iceTco": {
+          "yf": 3391.79,
+          "mo": 639.07
+        },
+        "bodySegs": [],
+        "warnCount": 1,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 875.57,
+            "gp": 98838,
+            "name": "Audi A6 55 TFSI"
+          },
+          {
+            "pt": "hev",
+            "mo": 623.87,
+            "gp": 43739,
+            "name": "Lexus NX Hybride"
+          },
+          {
+            "pt": "phev",
+            "mo": 947.61,
+            "gp": 65957,
+            "name": "Mercedes Gle Class Phev"
+          },
+          {
+            "pt": "bev",
+            "mo": 762.14,
+            "gp": 57269,
+            "name": "Volkswagen ID.4"
+          },
+          {
+            "pt": "die",
+            "mo": 513.34,
+            "gp": 28266,
+            "name": "Ford Kuga Diesel"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_046_ev_fr_body_['compact']",
+      "description": "EV-friendly FR",
+      "inputs": {
+        "budget": 1200,
+        "km": "m35",
+        "trips": "long",
+        "charging": "socket",
+        "body": [
+          "compact"
+        ],
+        "pref": "eco",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "fr"
+      },
+      "output": {
+        "best": "bev",
+        "refCar": {
+          "id": "megane_e",
+          "name": "Renault Mégane E-Tech",
+          "brand": "renault",
+          "pt": "bev",
+          "newP": 35900,
+          "seg": [
+            "compact",
+            "compact_break"
+          ]
+        },
+        "bTco": {
+          "purchP": 35900,
+          "saleP": 11488,
+          "depr5": 24412,
+          "yf": 1388.87,
+          "maint": 154,
+          "rep": 27,
+          "mo": 537.69,
+          "risk": 0.8
+        },
+        "iceTco": {
+          "yf": 3391.79,
+          "mo": 639.07
+        },
+        "bodySegs": [
+          "compact",
+          "saloon"
+        ],
+        "warnCount": 1,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 875.57,
+            "gp": 98838,
+            "name": "Audi A6 55 TFSI"
+          },
+          {
+            "pt": "hev",
+            "mo": 623.87,
+            "gp": 43739,
+            "name": "Lexus NX Hybride"
+          },
+          {
+            "pt": "phev",
+            "mo": 947.61,
+            "gp": 65957,
+            "name": "Mercedes Gle Class Phev"
+          },
+          {
+            "pt": "bev",
+            "mo": 762.14,
+            "gp": 57269,
+            "name": "Volkswagen ID.4"
+          },
+          {
+            "pt": "die",
+            "mo": 513.34,
+            "gp": 28266,
+            "name": "Ford Kuga Diesel"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_047_ev_nl_body_any",
+      "description": "EV-friendly NL",
+      "inputs": {
+        "budget": 1200,
+        "km": "m35",
+        "trips": "long",
+        "charging": "socket",
+        "body": [],
+        "pref": "eco",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "nl"
+      },
+      "output": {
+        "best": "bev",
+        "refCar": {
+          "id": "spring",
+          "name": "Dacia Spring",
+          "brand": "dacia",
+          "pt": "bev",
+          "newP": 13420,
+          "seg": [
+            "mini"
+          ]
+        },
+        "bTco": {
+          "purchP": 13420,
+          "saleP": 4294,
+          "depr5": 9126,
+          "yf": 1388.87,
+          "maint": 149,
+          "rep": 27,
+          "mo": 282.51,
+          "risk": 0.8
+        },
+        "iceTco": {
+          "yf": 3391.79,
+          "mo": 639.07
+        },
+        "bodySegs": [],
+        "warnCount": 1,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 875.57,
+            "gp": 98838,
+            "name": "Audi A6 55 TFSI"
+          },
+          {
+            "pt": "hev",
+            "mo": 623.87,
+            "gp": 43739,
+            "name": "Lexus NX Hybride"
+          },
+          {
+            "pt": "phev",
+            "mo": 947.61,
+            "gp": 65957,
+            "name": "Mercedes Gle Class Phev"
+          },
+          {
+            "pt": "bev",
+            "mo": 762.14,
+            "gp": 57269,
+            "name": "Volkswagen ID.4"
+          },
+          {
+            "pt": "die",
+            "mo": 513.34,
+            "gp": 28266,
+            "name": "Ford Kuga Diesel"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_048_ev_nl_body_['compact']",
+      "description": "EV-friendly NL",
+      "inputs": {
+        "budget": 1200,
+        "km": "m35",
+        "trips": "long",
+        "charging": "socket",
+        "body": [
+          "compact"
+        ],
+        "pref": "eco",
+        "urban": false,
+        "age": "36-50",
+        "dept": null,
+        "active_country": "nl"
+      },
+      "output": {
+        "best": "bev",
+        "refCar": {
+          "id": "megane_e",
+          "name": "Renault Mégane E-Tech",
+          "brand": "renault",
+          "pt": "bev",
+          "newP": 35900,
+          "seg": [
+            "compact",
+            "compact_break"
+          ]
+        },
+        "bTco": {
+          "purchP": 35900,
+          "saleP": 11488,
+          "depr5": 24412,
+          "yf": 1388.87,
+          "maint": 154,
+          "rep": 27,
+          "mo": 537.69,
+          "risk": 0.8
+        },
+        "iceTco": {
+          "yf": 3391.79,
+          "mo": 639.07
+        },
+        "bodySegs": [
+          "compact",
+          "saloon"
+        ],
+        "warnCount": 1,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 875.57,
+            "gp": 98838,
+            "name": "Audi A6 55 TFSI"
+          },
+          {
+            "pt": "hev",
+            "mo": 623.87,
+            "gp": 43739,
+            "name": "Lexus NX Hybride"
+          },
+          {
+            "pt": "phev",
+            "mo": 947.61,
+            "gp": 65957,
+            "name": "Mercedes Gle Class Phev"
+          },
+          {
+            "pt": "bev",
+            "mo": 762.14,
+            "gp": 57269,
+            "name": "Volkswagen ID.4"
+          },
+          {
+            "pt": "die",
+            "mo": 513.34,
+            "gp": 28266,
+            "name": "Ford Kuga Diesel"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_049_young_fr_cost",
+      "description": "Jeune conducteur FR, cost",
+      "inputs": {
+        "budget": 400,
+        "km": "u10",
+        "trips": "short",
+        "charging": "no",
+        "body": [
+          "small"
+        ],
+        "pref": "cost",
+        "urban": true,
+        "age": "18-25",
+        "dept": null,
+        "active_country": "fr"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "yaris_hev",
+          "name": "Toyota Yaris Hybrid",
+          "brand": "toyota",
+          "pt": "hev",
+          "newP": 28340,
+          "seg": [
+            "small"
+          ]
+        },
+        "bTco": {
+          "purchP": 28340,
+          "saleP": 15304,
+          "depr5": 13036,
+          "yf": 498.46,
+          "maint": 275,
+          "rep": 33,
+          "mo": 284.47,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 1597.04,
+          "mo": 489.5
+        },
+        "bodySegs": [
+          "small",
+          "mini"
+        ],
+        "warnCount": 1,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 414.59,
+            "gp": 42114,
+            "name": "Hyundai Tucson ICE"
+          },
+          {
+            "pt": "hev",
+            "mo": 425.04,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 441.09,
+            "gp": 36097,
+            "name": "Hyundai Tucson PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 391.78,
+            "gp": 28085,
+            "name": "Fiat Grande Panda BEV"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_050_young_fr_sport",
+      "description": "Jeune conducteur FR, sport",
+      "inputs": {
+        "budget": 400,
+        "km": "u10",
+        "trips": "short",
+        "charging": "no",
+        "body": [
+          "small"
+        ],
+        "pref": "sport",
+        "urban": true,
+        "age": "18-25",
+        "dept": null,
+        "active_country": "fr"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "yaris_hev",
+          "name": "Toyota Yaris Hybrid",
+          "brand": "toyota",
+          "pt": "hev",
+          "newP": 28340,
+          "seg": [
+            "small"
+          ]
+        },
+        "bTco": {
+          "purchP": 28340,
+          "saleP": 15304,
+          "depr5": 13036,
+          "yf": 498.46,
+          "maint": 275,
+          "rep": 33,
+          "mo": 284.47,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 1597.04,
+          "mo": 489.5
+        },
+        "bodySegs": [
+          "small",
+          "mini"
+        ],
+        "warnCount": 1,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 914.67,
+            "gp": 92223,
+            "name": "BMW X5 xDrive40i"
+          },
+          {
+            "pt": "hev",
+            "mo": 980.22,
+            "gp": 117828,
+            "name": "BMW X6 Hev"
+          },
+          {
+            "pt": "phev",
+            "mo": 707.01,
+            "gp": 69861,
+            "name": "BMW X3 xDrive30e (old)"
+          },
+          {
+            "pt": "bev",
+            "mo": 1207.98,
+            "gp": 99373,
+            "name": "Tesla Model X BEV"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_051_young_ch_cost",
+      "description": "Jeune conducteur CH, cost",
+      "inputs": {
+        "budget": 400,
+        "km": "u10",
+        "trips": "short",
+        "charging": "no",
+        "body": [
+          "small"
+        ],
+        "pref": "cost",
+        "urban": true,
+        "age": "18-25",
+        "dept": null,
+        "active_country": "ch"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "yaris_hev",
+          "name": "Toyota Yaris Hybrid",
+          "brand": "toyota",
+          "pt": "hev",
+          "newP": 28340,
+          "seg": [
+            "small"
+          ]
+        },
+        "bTco": {
+          "purchP": 28340,
+          "saleP": 15304,
+          "depr5": 13036,
+          "yf": 498.46,
+          "maint": 275,
+          "rep": 33,
+          "mo": 284.47,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 1597.04,
+          "mo": 489.5
+        },
+        "bodySegs": [
+          "small",
+          "mini"
+        ],
+        "warnCount": 1,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 414.59,
+            "gp": 42114,
+            "name": "Hyundai Tucson ICE"
+          },
+          {
+            "pt": "hev",
+            "mo": 425.04,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 441.09,
+            "gp": 36097,
+            "name": "Hyundai Tucson PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 391.78,
+            "gp": 28085,
+            "name": "Fiat Grande Panda BEV"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_052_young_ch_sport",
+      "description": "Jeune conducteur CH, sport",
+      "inputs": {
+        "budget": 400,
+        "km": "u10",
+        "trips": "short",
+        "charging": "no",
+        "body": [
+          "small"
+        ],
+        "pref": "sport",
+        "urban": true,
+        "age": "18-25",
+        "dept": null,
+        "active_country": "ch"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "yaris_hev",
+          "name": "Toyota Yaris Hybrid",
+          "brand": "toyota",
+          "pt": "hev",
+          "newP": 28340,
+          "seg": [
+            "small"
+          ]
+        },
+        "bTco": {
+          "purchP": 28340,
+          "saleP": 15304,
+          "depr5": 13036,
+          "yf": 498.46,
+          "maint": 275,
+          "rep": 33,
+          "mo": 284.47,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 1597.04,
+          "mo": 489.5
+        },
+        "bodySegs": [
+          "small",
+          "mini"
+        ],
+        "warnCount": 1,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 914.67,
+            "gp": 92223,
+            "name": "BMW X5 xDrive40i"
+          },
+          {
+            "pt": "hev",
+            "mo": 980.22,
+            "gp": 117828,
+            "name": "BMW X6 Hev"
+          },
+          {
+            "pt": "phev",
+            "mo": 707.01,
+            "gp": 69861,
+            "name": "BMW X3 xDrive30e (old)"
+          },
+          {
+            "pt": "bev",
+            "mo": 1207.98,
+            "gp": 99373,
+            "name": "Tesla Model X BEV"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_053_senior_fr_ratio",
+      "description": "Senior FR",
+      "inputs": {
+        "budget": 600,
+        "km": "u10",
+        "trips": "short",
+        "charging": "maybe",
+        "body": [
+          "compact"
+        ],
+        "pref": "ratio",
+        "urban": true,
+        "age": "65+",
+        "dept": null,
+        "active_country": "fr"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "corolla",
+          "name": "Toyota Corolla Hybrid",
+          "brand": "toyota",
+          "pt": "hev",
+          "newP": 31900,
+          "seg": [
+            "compact",
+            "compact_break"
+          ]
+        },
+        "bTco": {
+          "purchP": 31900,
+          "saleP": 17226,
+          "depr5": 14674,
+          "yf": 498.46,
+          "maint": 275,
+          "rep": 33,
+          "mo": 311.77,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 1597.04,
+          "mo": 489.5
+        },
+        "bodySegs": [
+          "compact",
+          "saloon"
+        ],
+        "warnCount": 1,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 459.5,
+            "gp": 35095,
+            "name": "Toyota RAV4 ICE"
+          },
+          {
+            "pt": "hev",
+            "mo": 425.04,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 528.02,
+            "gp": 54133,
+            "name": "Toyota RAV4 PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 579.73,
+            "gp": 38551,
+            "name": "Toyota bZ4X BEV"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_054_senior_fr_family",
+      "description": "Senior FR",
+      "inputs": {
+        "budget": 600,
+        "km": "u10",
+        "trips": "short",
+        "charging": "maybe",
+        "body": [
+          "compact"
+        ],
+        "pref": "family",
+        "urban": true,
+        "age": "65+",
+        "dept": null,
+        "active_country": "fr"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "corolla",
+          "name": "Toyota Corolla Hybrid",
+          "brand": "toyota",
+          "pt": "hev",
+          "newP": 31900,
+          "seg": [
+            "compact",
+            "compact_break"
+          ]
+        },
+        "bTco": {
+          "purchP": 31900,
+          "saleP": 17226,
+          "depr5": 14674,
+          "yf": 498.46,
+          "maint": 275,
+          "rep": 33,
+          "mo": 311.77,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 1597.04,
+          "mo": 489.5
+        },
+        "bodySegs": [
+          "compact",
+          "saloon"
+        ],
+        "warnCount": 1,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 711.19,
+            "gp": 65443,
+            "name": "Å koda Superb"
+          },
+          {
+            "pt": "hev",
+            "mo": 425.04,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 528.02,
+            "gp": 54133,
+            "name": "Toyota RAV4 PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 746.71,
+            "gp": 58997,
+            "name": "Hyundai Ioniq 6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_edge_minimal_budget",
+      "description": "Budget minimal, no preferences",
+      "inputs": {
+        "budget": 200,
+        "km": "u10",
+        "trips": "short",
+        "charging": "no",
+        "body": [],
+        "pref": null,
+        "urban": true,
+        "age": null,
+        "dept": null,
+        "active_country": "fr"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "yaris_hev",
+          "name": "Toyota Yaris Hybrid",
+          "brand": "toyota",
+          "pt": "hev",
+          "newP": 28340,
+          "seg": [
+            "small"
+          ]
+        },
+        "bTco": {
+          "purchP": 28340,
+          "saleP": 15304,
+          "depr5": 13036,
+          "yf": 498.46,
+          "maint": 275,
+          "rep": 33,
+          "mo": 284.47,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 1597.04,
+          "mo": 489.5
+        },
+        "bodySegs": [],
+        "warnCount": 1,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 914.67,
+            "gp": 92223,
+            "name": "BMW X5 xDrive40i"
+          },
+          {
+            "pt": "hev",
+            "mo": 425.04,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 603.53,
+            "gp": 54133,
+            "name": "Toyota RAV4 PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 1846.16,
+            "gp": 178250,
+            "name": "Mercedes-Benz Classe G G 580 EQ Technology"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_edge_maximal_budget",
+      "description": "Budget maximal, EV-friendly Switzerland",
+      "inputs": {
+        "budget": 3000,
+        "km": "o35",
+        "trips": "long",
+        "charging": "socket",
+        "body": [
+          "suv"
+        ],
+        "pref": "eco",
+        "urban": false,
+        "age": "36-50",
+        "dept": "GE",
+        "active_country": "ch"
+      },
+      "output": {
+        "best": "bev",
+        "refCar": {
+          "id": "spring",
+          "name": "Dacia Spring",
+          "brand": "dacia",
+          "pt": "bev",
+          "newP": 13420,
+          "seg": [
+            "mini"
+          ]
+        },
+        "bTco": {
+          "purchP": 13420,
+          "saleP": 4294,
+          "depr5": 9126,
+          "yf": 2160.46,
+          "maint": 149,
+          "rep": 27,
+          "mo": 346.8,
+          "risk": 0.8
+        },
+        "iceTco": {
+          "yf": 5276.12,
+          "mo": 796.09
+        },
+        "bodySegs": [],
+        "warnCount": 1,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 1032.59,
+            "gp": 98838,
+            "name": "Audi A6 55 TFSI"
+          },
+          {
+            "pt": "hev",
+            "mo": 765.28,
+            "gp": 43739,
+            "name": "Lexus NX Hybride"
+          },
+          {
+            "pt": "phev",
+            "mo": 1140.11,
+            "gp": 65957,
+            "name": "Mercedes Gle Class Phev"
+          },
+          {
+            "pt": "bev",
+            "mo": 826.44,
+            "gp": 57269,
+            "name": "Volkswagen ID.4"
+          },
+          {
+            "pt": "die",
+            "mo": 632.33,
+            "gp": 28266,
+            "name": "Ford Kuga Diesel"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rec_edge_all_null",
+      "description": "Toutes valeurs null sauf budget et activeCountry",
+      "inputs": {
+        "budget": 800,
+        "km": null,
+        "trips": null,
+        "charging": null,
+        "body": [],
+        "pref": null,
+        "urban": false,
+        "age": null,
+        "dept": null,
+        "active_country": "fr"
+      },
+      "output": {
+        "best": "hev",
+        "refCar": {
+          "id": "yaris_hev",
+          "name": "Toyota Yaris Hybrid",
+          "brand": "toyota",
+          "pt": "hev",
+          "newP": 28340,
+          "seg": [
+            "small"
+          ]
+        },
+        "bTco": {
+          "purchP": 28340,
+          "saleP": 15304,
+          "depr5": 13036,
+          "yf": 1295.99,
+          "maint": 275,
+          "rep": 33,
+          "mo": 350.93,
+          "risk": 1
+        },
+        "iceTco": {
+          "yf": 2284.23,
+          "mo": 546.77
+        },
+        "bodySegs": [],
+        "warnCount": 0,
+        "ptComp": [
+          {
+            "pt": "ice",
+            "mo": 971.94,
+            "gp": 92223,
+            "name": "BMW X5 xDrive40i"
+          },
+          {
+            "pt": "hev",
+            "mo": 491.5,
+            "gp": 64809,
+            "name": "Hyundai Santa Fe HEV"
+          },
+          {
+            "pt": "phev",
+            "mo": 957.5,
+            "gp": 54133,
+            "name": "Toyota RAV4 PHEV"
+          },
+          {
+            "pt": "bev",
+            "mo": 1892.79,
+            "gp": 178250,
+            "name": "Mercedes-Benz Classe G G 580 EQ Technology"
+          }
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "timestamp": "2026-05-27T08:59:41.928Z",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+    "carpiqVersion": "v1-prod",
+    "snapshot": {
+      "st": {
+        "pref": null,
+        "budget": null,
+        "km": null,
+        "trips": null,
+        "charging": null,
+        "body": [],
+        "bodyMod": [],
+        "dept": null,
+        "urban": false,
+        "age": null,
+        "relFilter": "",
+        "originFilter": {},
+        "networkFilter": "",
+        "style_preference": null,
+        "age_equip_tradeoff": null,
+        "brand_prefs": {
+          "favorites": [],
+          "excluded": []
+        },
+        "required_features": [],
+        "physical_constraints": {
+          "max_length_cm": null,
+          "max_width_cm": null,
+          "max_height_cm": null
+        },
+        "guided": {
+          "active": false,
+          "step": 1,
+          "startedAt": null,
+          "stepStartedAt": null,
+          "usage_contexts": [],
+          "visual_attractions": [],
+          "dilemma_answer": null,
+          "ownership_horizon": null,
+          "step_durations": [],
+          "had_backtrack": false,
+          "step4_skipped": false,
+          "inferred_driver": null,
+          "driver_accepted": null,
+          "inference_result": null,
+          "inferred_body": null,
+          "_pendingOverride": null
+        },
+        "subjectiveProfile": {
+          "source": "tunnel_principal",
+          "enabled": false,
+          "offered": false,
+          "completedAt": null,
+          "_advOpen": false,
+          "dimensions": {
+            "socialImage": "neutral",
+            "designStyle": [],
+            "drivingExperience": "neutral",
+            "brandOrigin": [],
+            "environmental": "neutral",
+            "brandCharacter": "neutral"
+          }
+        }
+      },
+      "activeCountry": "ch",
+      "lang": "fr"
+    }
+  }
+}

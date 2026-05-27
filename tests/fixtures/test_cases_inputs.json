@@ -1,0 +1,1173 @@
+[
+  {
+    "id": "urban_fr_001",
+    "description": "Urbain Paris, budget 300€, priorité economy",
+    "inputs": {
+      "country": "fr",
+      "budget": 300,
+      "km": 8000,
+      "trips": 0,
+      "charging": "none",
+      "criteria": "economy",
+      "body": [
+        "compact"
+      ],
+      "age": "26-35",
+      "urban": true,
+      "dept": "75"
+    }
+  },
+  {
+    "id": "urban_fr_002",
+    "description": "Urbain Paris, budget 300€, priorité ecology",
+    "inputs": {
+      "country": "fr",
+      "budget": 300,
+      "km": 8000,
+      "trips": 0,
+      "charging": "none",
+      "criteria": "ecology",
+      "body": [
+        "compact"
+      ],
+      "age": "26-35",
+      "urban": true,
+      "dept": "75"
+    }
+  },
+  {
+    "id": "urban_fr_003",
+    "description": "Urbain Paris, budget 500€, priorité economy",
+    "inputs": {
+      "country": "fr",
+      "budget": 500,
+      "km": 8000,
+      "trips": 0,
+      "charging": "none",
+      "criteria": "economy",
+      "body": [
+        "compact"
+      ],
+      "age": "26-35",
+      "urban": true,
+      "dept": "75"
+    }
+  },
+  {
+    "id": "urban_fr_004",
+    "description": "Urbain Paris, budget 500€, priorité ecology",
+    "inputs": {
+      "country": "fr",
+      "budget": 500,
+      "km": 8000,
+      "trips": 0,
+      "charging": "none",
+      "criteria": "ecology",
+      "body": [
+        "compact"
+      ],
+      "age": "26-35",
+      "urban": true,
+      "dept": "75"
+    }
+  },
+  {
+    "id": "urban_fr_005",
+    "description": "Urbain Paris, budget 800€, priorité economy",
+    "inputs": {
+      "country": "fr",
+      "budget": 800,
+      "km": 8000,
+      "trips": 0,
+      "charging": "none",
+      "criteria": "economy",
+      "body": [
+        "compact"
+      ],
+      "age": "26-35",
+      "urban": true,
+      "dept": "75"
+    }
+  },
+  {
+    "id": "urban_fr_006",
+    "description": "Urbain Paris, budget 800€, priorité ecology",
+    "inputs": {
+      "country": "fr",
+      "budget": 800,
+      "km": 8000,
+      "trips": 0,
+      "charging": "none",
+      "criteria": "ecology",
+      "body": [
+        "compact"
+      ],
+      "age": "26-35",
+      "urban": true,
+      "dept": "75"
+    }
+  },
+  {
+    "id": "suburban_ch_007",
+    "description": "Famille banlieue Suisse, budget 800CHF",
+    "inputs": {
+      "country": "ch",
+      "budget": 800,
+      "km": 15000,
+      "trips": 5,
+      "charging": "fast",
+      "criteria": "comfort",
+      "body": [
+        "suv"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "GE"
+    }
+  },
+  {
+    "id": "suburban_ch_008",
+    "description": "Famille banlieue Suisse, budget 800CHF",
+    "inputs": {
+      "country": "ch",
+      "budget": 800,
+      "km": 15000,
+      "trips": 5,
+      "charging": "fast",
+      "criteria": "space",
+      "body": [
+        "suv"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "GE"
+    }
+  },
+  {
+    "id": "suburban_ch_009",
+    "description": "Famille banlieue Suisse, budget 800CHF",
+    "inputs": {
+      "country": "ch",
+      "budget": 800,
+      "km": 15000,
+      "trips": 5,
+      "charging": "fast",
+      "criteria": "safety",
+      "body": [
+        "suv"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "GE"
+    }
+  },
+  {
+    "id": "suburban_ch_010",
+    "description": "Famille banlieue Suisse, budget 800CHF",
+    "inputs": {
+      "country": "ch",
+      "budget": 800,
+      "km": 15000,
+      "trips": 5,
+      "charging": "fast",
+      "criteria": "comfort",
+      "body": [
+        "berline"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "GE"
+    }
+  },
+  {
+    "id": "suburban_ch_011",
+    "description": "Famille banlieue Suisse, budget 800CHF",
+    "inputs": {
+      "country": "ch",
+      "budget": 800,
+      "km": 15000,
+      "trips": 5,
+      "charging": "fast",
+      "criteria": "space",
+      "body": [
+        "berline"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "GE"
+    }
+  },
+  {
+    "id": "suburban_ch_012",
+    "description": "Famille banlieue Suisse, budget 800CHF",
+    "inputs": {
+      "country": "ch",
+      "budget": 800,
+      "km": 15000,
+      "trips": 5,
+      "charging": "fast",
+      "criteria": "safety",
+      "body": [
+        "berline"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "GE"
+    }
+  },
+  {
+    "id": "suburban_ch_013",
+    "description": "Famille banlieue Suisse, budget 800CHF",
+    "inputs": {
+      "country": "ch",
+      "budget": 800,
+      "km": 15000,
+      "trips": 5,
+      "charging": "fast",
+      "criteria": "comfort",
+      "body": [
+        "compact",
+        "berline"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "GE"
+    }
+  },
+  {
+    "id": "suburban_ch_014",
+    "description": "Famille banlieue Suisse, budget 800CHF",
+    "inputs": {
+      "country": "ch",
+      "budget": 800,
+      "km": 15000,
+      "trips": 5,
+      "charging": "fast",
+      "criteria": "space",
+      "body": [
+        "compact",
+        "berline"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "GE"
+    }
+  },
+  {
+    "id": "suburban_ch_015",
+    "description": "Famille banlieue Suisse, budget 800CHF",
+    "inputs": {
+      "country": "ch",
+      "budget": 800,
+      "km": 15000,
+      "trips": 5,
+      "charging": "fast",
+      "criteria": "safety",
+      "body": [
+        "compact",
+        "berline"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "GE"
+    }
+  },
+  {
+    "id": "suburban_ch_016",
+    "description": "Famille banlieue Suisse, budget 1200CHF",
+    "inputs": {
+      "country": "ch",
+      "budget": 1200,
+      "km": 15000,
+      "trips": 5,
+      "charging": "fast",
+      "criteria": "comfort",
+      "body": [
+        "suv"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "GE"
+    }
+  },
+  {
+    "id": "suburban_ch_017",
+    "description": "Famille banlieue Suisse, budget 1200CHF",
+    "inputs": {
+      "country": "ch",
+      "budget": 1200,
+      "km": 15000,
+      "trips": 5,
+      "charging": "fast",
+      "criteria": "space",
+      "body": [
+        "suv"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "GE"
+    }
+  },
+  {
+    "id": "suburban_ch_018",
+    "description": "Famille banlieue Suisse, budget 1200CHF",
+    "inputs": {
+      "country": "ch",
+      "budget": 1200,
+      "km": 15000,
+      "trips": 5,
+      "charging": "fast",
+      "criteria": "safety",
+      "body": [
+        "suv"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "GE"
+    }
+  },
+  {
+    "id": "suburban_ch_019",
+    "description": "Famille banlieue Suisse, budget 1200CHF",
+    "inputs": {
+      "country": "ch",
+      "budget": 1200,
+      "km": 15000,
+      "trips": 5,
+      "charging": "fast",
+      "criteria": "comfort",
+      "body": [
+        "berline"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "GE"
+    }
+  },
+  {
+    "id": "suburban_ch_020",
+    "description": "Famille banlieue Suisse, budget 1200CHF",
+    "inputs": {
+      "country": "ch",
+      "budget": 1200,
+      "km": 15000,
+      "trips": 5,
+      "charging": "fast",
+      "criteria": "space",
+      "body": [
+        "berline"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "GE"
+    }
+  },
+  {
+    "id": "suburban_ch_021",
+    "description": "Famille banlieue Suisse, budget 1200CHF",
+    "inputs": {
+      "country": "ch",
+      "budget": 1200,
+      "km": 15000,
+      "trips": 5,
+      "charging": "fast",
+      "criteria": "safety",
+      "body": [
+        "berline"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "GE"
+    }
+  },
+  {
+    "id": "suburban_ch_022",
+    "description": "Famille banlieue Suisse, budget 1200CHF",
+    "inputs": {
+      "country": "ch",
+      "budget": 1200,
+      "km": 15000,
+      "trips": 5,
+      "charging": "fast",
+      "criteria": "comfort",
+      "body": [
+        "compact",
+        "berline"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "GE"
+    }
+  },
+  {
+    "id": "suburban_ch_023",
+    "description": "Famille banlieue Suisse, budget 1200CHF",
+    "inputs": {
+      "country": "ch",
+      "budget": 1200,
+      "km": 15000,
+      "trips": 5,
+      "charging": "fast",
+      "criteria": "space",
+      "body": [
+        "compact",
+        "berline"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "GE"
+    }
+  },
+  {
+    "id": "suburban_ch_024",
+    "description": "Famille banlieue Suisse, budget 1200CHF",
+    "inputs": {
+      "country": "ch",
+      "budget": 1200,
+      "km": 15000,
+      "trips": 5,
+      "charging": "fast",
+      "criteria": "safety",
+      "body": [
+        "compact",
+        "berline"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "GE"
+    }
+  },
+  {
+    "id": "suburban_ch_025",
+    "description": "Famille banlieue Suisse, budget 1800CHF",
+    "inputs": {
+      "country": "ch",
+      "budget": 1800,
+      "km": 15000,
+      "trips": 5,
+      "charging": "fast",
+      "criteria": "comfort",
+      "body": [
+        "suv"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "GE"
+    }
+  },
+  {
+    "id": "suburban_ch_026",
+    "description": "Famille banlieue Suisse, budget 1800CHF",
+    "inputs": {
+      "country": "ch",
+      "budget": 1800,
+      "km": 15000,
+      "trips": 5,
+      "charging": "fast",
+      "criteria": "space",
+      "body": [
+        "suv"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "GE"
+    }
+  },
+  {
+    "id": "suburban_ch_027",
+    "description": "Famille banlieue Suisse, budget 1800CHF",
+    "inputs": {
+      "country": "ch",
+      "budget": 1800,
+      "km": 15000,
+      "trips": 5,
+      "charging": "fast",
+      "criteria": "safety",
+      "body": [
+        "suv"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "GE"
+    }
+  },
+  {
+    "id": "suburban_ch_028",
+    "description": "Famille banlieue Suisse, budget 1800CHF",
+    "inputs": {
+      "country": "ch",
+      "budget": 1800,
+      "km": 15000,
+      "trips": 5,
+      "charging": "fast",
+      "criteria": "comfort",
+      "body": [
+        "berline"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "GE"
+    }
+  },
+  {
+    "id": "suburban_ch_029",
+    "description": "Famille banlieue Suisse, budget 1800CHF",
+    "inputs": {
+      "country": "ch",
+      "budget": 1800,
+      "km": 15000,
+      "trips": 5,
+      "charging": "fast",
+      "criteria": "space",
+      "body": [
+        "berline"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "GE"
+    }
+  },
+  {
+    "id": "suburban_ch_030",
+    "description": "Famille banlieue Suisse, budget 1800CHF",
+    "inputs": {
+      "country": "ch",
+      "budget": 1800,
+      "km": 15000,
+      "trips": 5,
+      "charging": "fast",
+      "criteria": "safety",
+      "body": [
+        "berline"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "GE"
+    }
+  },
+  {
+    "id": "suburban_ch_031",
+    "description": "Famille banlieue Suisse, budget 1800CHF",
+    "inputs": {
+      "country": "ch",
+      "budget": 1800,
+      "km": 15000,
+      "trips": 5,
+      "charging": "fast",
+      "criteria": "comfort",
+      "body": [
+        "compact",
+        "berline"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "GE"
+    }
+  },
+  {
+    "id": "suburban_ch_032",
+    "description": "Famille banlieue Suisse, budget 1800CHF",
+    "inputs": {
+      "country": "ch",
+      "budget": 1800,
+      "km": 15000,
+      "trips": 5,
+      "charging": "fast",
+      "criteria": "space",
+      "body": [
+        "compact",
+        "berline"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "GE"
+    }
+  },
+  {
+    "id": "suburban_ch_033",
+    "description": "Famille banlieue Suisse, budget 1800CHF",
+    "inputs": {
+      "country": "ch",
+      "budget": 1800,
+      "km": 15000,
+      "trips": 5,
+      "charging": "fast",
+      "criteria": "safety",
+      "body": [
+        "compact",
+        "berline"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "GE"
+    }
+  },
+  {
+    "id": "commuter_de_034",
+    "description": "Commuter Allemagne, charge none",
+    "inputs": {
+      "country": "de",
+      "budget": 500,
+      "km": 25000,
+      "trips": 20,
+      "charging": "none",
+      "criteria": "economy",
+      "body": [
+        "berline"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "BY"
+    }
+  },
+  {
+    "id": "commuter_de_035",
+    "description": "Commuter Allemagne, charge slow",
+    "inputs": {
+      "country": "de",
+      "budget": 500,
+      "km": 25000,
+      "trips": 20,
+      "charging": "slow",
+      "criteria": "economy",
+      "body": [
+        "berline"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "BY"
+    }
+  },
+  {
+    "id": "commuter_de_036",
+    "description": "Commuter Allemagne, charge fast",
+    "inputs": {
+      "country": "de",
+      "budget": 500,
+      "km": 25000,
+      "trips": 20,
+      "charging": "fast",
+      "criteria": "economy",
+      "body": [
+        "berline"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "BY"
+    }
+  },
+  {
+    "id": "commuter_de_037",
+    "description": "Commuter Allemagne, charge none",
+    "inputs": {
+      "country": "de",
+      "budget": 800,
+      "km": 25000,
+      "trips": 20,
+      "charging": "none",
+      "criteria": "economy",
+      "body": [
+        "berline"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "BY"
+    }
+  },
+  {
+    "id": "commuter_de_038",
+    "description": "Commuter Allemagne, charge slow",
+    "inputs": {
+      "country": "de",
+      "budget": 800,
+      "km": 25000,
+      "trips": 20,
+      "charging": "slow",
+      "criteria": "economy",
+      "body": [
+        "berline"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "BY"
+    }
+  },
+  {
+    "id": "commuter_de_039",
+    "description": "Commuter Allemagne, charge fast",
+    "inputs": {
+      "country": "de",
+      "budget": 800,
+      "km": 25000,
+      "trips": 20,
+      "charging": "fast",
+      "criteria": "economy",
+      "body": [
+        "berline"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "BY"
+    }
+  },
+  {
+    "id": "commuter_de_040",
+    "description": "Commuter Allemagne, charge none",
+    "inputs": {
+      "country": "de",
+      "budget": 1200,
+      "km": 25000,
+      "trips": 20,
+      "charging": "none",
+      "criteria": "economy",
+      "body": [
+        "berline"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "BY"
+    }
+  },
+  {
+    "id": "commuter_de_041",
+    "description": "Commuter Allemagne, charge slow",
+    "inputs": {
+      "country": "de",
+      "budget": 1200,
+      "km": 25000,
+      "trips": 20,
+      "charging": "slow",
+      "criteria": "economy",
+      "body": [
+        "berline"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "BY"
+    }
+  },
+  {
+    "id": "commuter_de_042",
+    "description": "Commuter Allemagne, charge fast",
+    "inputs": {
+      "country": "de",
+      "budget": 1200,
+      "km": 25000,
+      "trips": 20,
+      "charging": "fast",
+      "criteria": "economy",
+      "body": [
+        "berline"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "BY"
+    }
+  },
+  {
+    "id": "pro_high_km_043",
+    "description": "Pro haut km fr, budget 800",
+    "inputs": {
+      "country": "fr",
+      "budget": 800,
+      "km": 40000,
+      "trips": 50,
+      "charging": "fast",
+      "criteria": "comfort",
+      "body": [
+        "berline",
+        "suv"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": null
+    }
+  },
+  {
+    "id": "pro_high_km_044",
+    "description": "Pro haut km fr, budget 1200",
+    "inputs": {
+      "country": "fr",
+      "budget": 1200,
+      "km": 40000,
+      "trips": 50,
+      "charging": "fast",
+      "criteria": "comfort",
+      "body": [
+        "berline",
+        "suv"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": null
+    }
+  },
+  {
+    "id": "pro_high_km_045",
+    "description": "Pro haut km be, budget 800",
+    "inputs": {
+      "country": "be",
+      "budget": 800,
+      "km": 40000,
+      "trips": 50,
+      "charging": "fast",
+      "criteria": "comfort",
+      "body": [
+        "berline",
+        "suv"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": null
+    }
+  },
+  {
+    "id": "pro_high_km_046",
+    "description": "Pro haut km be, budget 1200",
+    "inputs": {
+      "country": "be",
+      "budget": 1200,
+      "km": 40000,
+      "trips": 50,
+      "charging": "fast",
+      "criteria": "comfort",
+      "body": [
+        "berline",
+        "suv"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": null
+    }
+  },
+  {
+    "id": "pro_high_km_047",
+    "description": "Pro haut km nl, budget 800",
+    "inputs": {
+      "country": "nl",
+      "budget": 800,
+      "km": 40000,
+      "trips": 50,
+      "charging": "fast",
+      "criteria": "comfort",
+      "body": [
+        "berline",
+        "suv"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": null
+    }
+  },
+  {
+    "id": "pro_high_km_048",
+    "description": "Pro haut km nl, budget 1200",
+    "inputs": {
+      "country": "nl",
+      "budget": 1200,
+      "km": 40000,
+      "trips": 50,
+      "charging": "fast",
+      "criteria": "comfort",
+      "body": [
+        "berline",
+        "suv"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": null
+    }
+  },
+  {
+    "id": "young_driver_049",
+    "description": "Jeune conducteur fr, budget 300",
+    "inputs": {
+      "country": "fr",
+      "budget": 300,
+      "km": 12000,
+      "trips": 2,
+      "charging": "none",
+      "criteria": "economy",
+      "body": [
+        "compact"
+      ],
+      "age": "18-25",
+      "urban": true,
+      "dept": null
+    }
+  },
+  {
+    "id": "young_driver_050",
+    "description": "Jeune conducteur fr, budget 300",
+    "inputs": {
+      "country": "fr",
+      "budget": 300,
+      "km": 12000,
+      "trips": 2,
+      "charging": "none",
+      "criteria": "safety",
+      "body": [
+        "compact"
+      ],
+      "age": "18-25",
+      "urban": true,
+      "dept": null
+    }
+  },
+  {
+    "id": "young_driver_051",
+    "description": "Jeune conducteur ch, budget 300",
+    "inputs": {
+      "country": "ch",
+      "budget": 300,
+      "km": 12000,
+      "trips": 2,
+      "charging": "none",
+      "criteria": "economy",
+      "body": [
+        "compact"
+      ],
+      "age": "18-25",
+      "urban": true,
+      "dept": null
+    }
+  },
+  {
+    "id": "young_driver_052",
+    "description": "Jeune conducteur ch, budget 300",
+    "inputs": {
+      "country": "ch",
+      "budget": 300,
+      "km": 12000,
+      "trips": 2,
+      "charging": "none",
+      "criteria": "safety",
+      "body": [
+        "compact"
+      ],
+      "age": "18-25",
+      "urban": true,
+      "dept": null
+    }
+  },
+  {
+    "id": "young_driver_053",
+    "description": "Jeune conducteur fr, budget 500",
+    "inputs": {
+      "country": "fr",
+      "budget": 500,
+      "km": 12000,
+      "trips": 2,
+      "charging": "none",
+      "criteria": "economy",
+      "body": [
+        "compact"
+      ],
+      "age": "18-25",
+      "urban": true,
+      "dept": null
+    }
+  },
+  {
+    "id": "young_driver_054",
+    "description": "Jeune conducteur fr, budget 500",
+    "inputs": {
+      "country": "fr",
+      "budget": 500,
+      "km": 12000,
+      "trips": 2,
+      "charging": "none",
+      "criteria": "safety",
+      "body": [
+        "compact"
+      ],
+      "age": "18-25",
+      "urban": true,
+      "dept": null
+    }
+  },
+  {
+    "id": "young_driver_055",
+    "description": "Jeune conducteur ch, budget 500",
+    "inputs": {
+      "country": "ch",
+      "budget": 500,
+      "km": 12000,
+      "trips": 2,
+      "charging": "none",
+      "criteria": "economy",
+      "body": [
+        "compact"
+      ],
+      "age": "18-25",
+      "urban": true,
+      "dept": null
+    }
+  },
+  {
+    "id": "young_driver_056",
+    "description": "Jeune conducteur ch, budget 500",
+    "inputs": {
+      "country": "ch",
+      "budget": 500,
+      "km": 12000,
+      "trips": 2,
+      "charging": "none",
+      "criteria": "safety",
+      "body": [
+        "compact"
+      ],
+      "age": "18-25",
+      "urban": true,
+      "dept": null
+    }
+  },
+  {
+    "id": "senior_057",
+    "description": "Senior fr, budget 500, faible km",
+    "inputs": {
+      "country": "fr",
+      "budget": 500,
+      "km": 6000,
+      "trips": 0,
+      "charging": "slow",
+      "criteria": "comfort",
+      "body": [
+        "compact",
+        "berline"
+      ],
+      "age": "65+",
+      "urban": true,
+      "dept": null
+    }
+  },
+  {
+    "id": "senior_058",
+    "description": "Senior ch, budget 500, faible km",
+    "inputs": {
+      "country": "ch",
+      "budget": 500,
+      "km": 6000,
+      "trips": 0,
+      "charging": "slow",
+      "criteria": "comfort",
+      "body": [
+        "compact",
+        "berline"
+      ],
+      "age": "65+",
+      "urban": true,
+      "dept": null
+    }
+  },
+  {
+    "id": "senior_059",
+    "description": "Senior fr, budget 800, faible km",
+    "inputs": {
+      "country": "fr",
+      "budget": 800,
+      "km": 6000,
+      "trips": 0,
+      "charging": "slow",
+      "criteria": "comfort",
+      "body": [
+        "compact",
+        "berline"
+      ],
+      "age": "65+",
+      "urban": true,
+      "dept": null
+    }
+  },
+  {
+    "id": "senior_060",
+    "description": "Senior ch, budget 800, faible km",
+    "inputs": {
+      "country": "ch",
+      "budget": 800,
+      "km": 6000,
+      "trips": 0,
+      "charging": "slow",
+      "criteria": "comfort",
+      "body": [
+        "compact",
+        "berline"
+      ],
+      "age": "65+",
+      "urban": true,
+      "dept": null
+    }
+  },
+  {
+    "id": "edge_minimal_budget",
+    "description": "Budget minimal",
+    "inputs": {
+      "country": "fr",
+      "budget": 200,
+      "km": 5000,
+      "trips": 0,
+      "charging": "none",
+      "criteria": "economy",
+      "body": [],
+      "age": "36-50",
+      "urban": true,
+      "dept": null
+    }
+  },
+  {
+    "id": "edge_maximal_budget",
+    "description": "Budget maximal",
+    "inputs": {
+      "country": "ch",
+      "budget": 3000,
+      "km": 30000,
+      "trips": 50,
+      "charging": "fast",
+      "criteria": "performance",
+      "body": [
+        "suv",
+        "berline"
+      ],
+      "age": "36-50",
+      "urban": false,
+      "dept": "GE"
+    }
+  },
+  {
+    "id": "edge_no_filters",
+    "description": "Aucun filtre carrosserie ni critère",
+    "inputs": {
+      "country": "fr",
+      "budget": 800,
+      "km": 15000,
+      "trips": 5,
+      "charging": "slow",
+      "criteria": null,
+      "body": [],
+      "age": "36-50",
+      "urban": false,
+      "dept": null
+    }
+  },
+  {
+    "id": "edge_all_filters",
+    "description": "Tous les filtres possibles cumulés",
+    "inputs": {
+      "country": "fr",
+      "budget": 1200,
+      "km": 20000,
+      "trips": 10,
+      "charging": "fast",
+      "criteria": "safety",
+      "body": [
+        "compact",
+        "berline",
+        "suv",
+        "pickup"
+      ],
+      "age": "36-50",
+      "urban": true,
+      "dept": "75"
+    }
+  }
+]
