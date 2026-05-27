@@ -75,6 +75,36 @@ export function carMatchesSegs(
 }
 
 /**
+ * Version catalog-aware de carMatchesSegs (Palier 3c).
+ *
+ * Source : v64.0.4 ligne 20842 (`carMatchesSegs_v609`).
+ *
+ * Logique : si une entry catalog existe avec des segments, utilise-les
+ * (set des seg combinés à partir de entry.seg + entry.bodies[*].seg).
+ * Sinon fallback sur `car.seg` direct (legacy DB).
+ *
+ * @param car                Véhicule
+ * @param requestedSegs      Segments demandés
+ * @param carSegsFromCatalogFn Fonction du module catalog (passée pour éviter
+ *                              dépendance circulaire si besoin)
+ */
+export function carMatchesSegs_v609(
+  car: Vehicle,
+  requestedSegs: readonly Segment[],
+  carSegsFromCatalogFn: (c: Vehicle) => Set<string> | null,
+): boolean {
+  if (!requestedSegs || requestedSegs.length === 0) return true;
+  const catSegs = carSegsFromCatalogFn(car);
+  if (catSegs && catSegs.size > 0) {
+    for (const s of requestedSegs) {
+      if (catSegs.has(s)) return true;
+    }
+    return false;
+  }
+  return (car.seg ?? []).some((s) => requestedSegs.includes(s));
+}
+
+/**
  * Étend les segments selon le strict matching v62.13.
  *
  * Source : v64.0.4 ligne 21324 (`expandSegments_v62_13`).
