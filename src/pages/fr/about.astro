@@ -1,0 +1,227 @@
+---
+/**
+ * Page À propos — `/fr/about` et `/en/about`.
+ *
+ * Source : spec annexe A section 3.
+ *
+ * Structure :
+ *   1. Header
+ *   2. Hero (H1 + sous-titre)
+ *   3. Section "Notre mission"
+ *   4. Section "Le fondateur" — photo placeholder + bio + LinkedIn
+ *   5. Section "Notre histoire" — timeline
+ *   6. Section "Nos valeurs" — 4 valeurs
+ *   7. Section "Contact et collaboration" — 3 CTAs
+ *   8. Footer
+ *
+ * Photo + LinkedIn de Jérémie : à fournir par toi plus tard, placeholder
+ * gris pour l'instant.
+ */
+import BaseLayout from '../../components/layouts/BaseLayout.astro';
+import Header from '../../components/molecules/Header.astro';
+import Footer from '../../components/molecules/Footer.astro';
+import Icon from '../../components/atoms/Icon.vue';
+import { getLangFromUrl, useT } from '../../i18n';
+
+export const prerender = true;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useT(lang);
+
+// Timeline milestones (clé du dictionnaire → libellé)
+const milestones = [
+  { year: '2025', key: 'milestone_2025' as const },
+  { year: 'Jan 2026', key: 'milestone_2026_01' as const },
+  { year: 'Jun 2026', key: 'milestone_2026_06' as const },
+  { year: 'Sep 2026', key: 'milestone_2026_09' as const },
+  { year: '2027', key: 'milestone_2027' as const },
+];
+---
+<BaseLayout
+  lang={lang}
+  title={t('meta.about_title')}
+  description={t('meta.about_description')}
+>
+  <Header lang={lang} currentPath={Astro.url.pathname} />
+
+  <main>
+    <!-- HERO -->
+    <section class="bg-teal-900 text-white py-16 sm:py-24">
+      <div class="max-w-5xl mx-auto px-4 sm:px-8 text-center">
+        <h1
+          class="text-3xl sm:text-5xl font-semibold leading-tight mb-4"
+          style="font-family: var(--font-display, serif);"
+        >
+          {t('about.hero.title')}
+        </h1>
+        <p class="text-lg sm:text-xl text-white/90 max-w-3xl mx-auto">
+          {t('about.hero.subtitle')}
+        </p>
+      </div>
+    </section>
+
+    <!-- MISSION -->
+    <section class="py-16 sm:py-20 bg-white">
+      <div class="max-w-3xl mx-auto px-4 sm:px-8 text-center">
+        <h2
+          class="text-3xl sm:text-4xl font-semibold mb-6 text-gray-900"
+          style="font-family: var(--font-display, serif);"
+        >
+          {t('about.mission.section_title')}
+        </h2>
+        <p class="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
+          {t('about.mission.paragraph_1')}
+        </p>
+        <p class="text-base sm:text-lg text-gray-700 leading-relaxed italic">
+          {t('about.mission.paragraph_2')}
+        </p>
+      </div>
+    </section>
+
+    <!-- LE FONDATEUR -->
+    <section class="py-16 sm:py-24" style="background: var(--color-bg, #fafaf9);">
+      <div class="max-w-5xl mx-auto px-4 sm:px-8">
+        <h2
+          class="text-3xl sm:text-4xl font-semibold text-center mb-12 text-gray-900"
+          style="font-family: var(--font-display, serif);"
+        >
+          {t('about.founder.section_title')}
+        </h2>
+
+        <div class="flex flex-col md:flex-row gap-8 items-start">
+          <!-- Photo placeholder gris -->
+          <div class="flex-shrink-0 w-full md:w-64">
+            <div
+              class="w-full aspect-square rounded-2xl bg-gray-200 flex items-center justify-center"
+              role="img"
+              aria-label={t('about.founder.photo_placeholder_alt')}
+            >
+              <Icon name="help" size={48} class="text-gray-400" aria-hidden="true" />
+            </div>
+          </div>
+
+          <!-- Bio -->
+          <div class="flex-grow">
+            <h3 class="text-2xl font-semibold mb-1 text-gray-900">
+              {t('about.founder.name')}
+            </h3>
+            <p class="text-sm font-medium text-teal-700 mb-4">
+              {t('about.founder.title')}
+            </p>
+            <p class="text-base text-gray-700 leading-relaxed mb-4">
+              {t('about.founder.bio')}
+            </p>
+            <p class="text-base text-gray-700 leading-relaxed italic mb-4">
+              {t('about.founder.commitment')}
+            </p>
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 text-teal-700 hover:text-teal-900 font-medium underline"
+            >
+              <Icon name="external" size={16} aria-hidden="true" />
+              {t('about.founder.linkedin_label')}
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HISTOIRE / TIMELINE -->
+    <section class="py-16 sm:py-24 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-8">
+        <h2
+          class="text-3xl sm:text-4xl font-semibold text-center mb-12 text-gray-900"
+          style="font-family: var(--font-display, serif);"
+        >
+          {t('about.history.section_title')}
+        </h2>
+
+        <ol class="border-l-2 border-teal-700 pl-6 space-y-6">
+          {milestones.map(({ year, key }) => (
+            <li class="relative">
+              <span
+                class="absolute -left-[34px] w-4 h-4 rounded-full bg-teal-700 ring-4 ring-white"
+                aria-hidden="true"
+              ></span>
+              <p class="text-sm font-semibold text-teal-700">{year}</p>
+              <p class="text-base text-gray-700 mt-1">
+                {t(`about.history.${key}` as 'about.history.milestone_2025')}
+              </p>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+
+    <!-- VALEURS -->
+    <section class="py-16 sm:py-24" style="background: var(--color-bg, #fafaf9);">
+      <div class="max-w-6xl mx-auto px-4 sm:px-8">
+        <h2
+          class="text-3xl sm:text-4xl font-semibold text-center mb-12 text-gray-900"
+          style="font-family: var(--font-display, serif);"
+        >
+          {t('about.values.section_title')}
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {(['independence', 'transparency', 'rigor', 'european'] as const).map((key) => (
+            <article class="bg-white rounded-xl p-6 border border-gray-200">
+              <h3 class="text-lg font-semibold mb-2 text-gray-900">
+                {t(`about.values.${key}_title` as 'about.values.independence_title')}
+              </h3>
+              <p class="text-sm text-gray-700 leading-relaxed">
+                {t(`about.values.${key}_desc` as 'about.values.independence_desc')}
+              </p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & COLLABORATION -->
+    <section class="py-16 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-8 text-center">
+        <h2
+          class="text-3xl font-semibold mb-4 text-gray-900"
+          style="font-family: var(--font-display, serif);"
+        >
+          {t('about.contact_cta.section_title')}
+        </h2>
+        <p class="text-base text-gray-700 mb-8">
+          {t('about.contact_cta.intro')}
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <a
+            href={`/${lang}/contact`}
+            class="inline-flex items-center justify-center px-5 py-3 min-h-[44px]
+                   bg-teal-700 hover:bg-teal-800 text-white font-medium rounded-lg
+                   focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-teal-500"
+          >
+            {t('about.contact_cta.general')}
+          </a>
+          <a
+            href={`/${lang}/contact?topic=press`}
+            class="inline-flex items-center justify-center px-5 py-3 min-h-[44px]
+                   border-2 border-teal-700 text-teal-700 hover:bg-teal-50 font-medium rounded-lg
+                   focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500"
+          >
+            {t('about.contact_cta.press')}
+          </a>
+          <a
+            href="mailto:partnerships@carpiq.eu"
+            class="inline-flex items-center justify-center px-5 py-3 min-h-[44px]
+                   text-teal-700 hover:text-teal-900 font-medium underline rounded-lg
+                   focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500"
+          >
+            {t('about.contact_cta.partnerships')}
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer lang={lang} />
+</BaseLayout>

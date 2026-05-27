@@ -1,0 +1,209 @@
+---
+/**
+ * Page méthodologie — `/fr/methodology` et `/en/methodology`.
+ *
+ * Source : spec annexe A section 2.
+ *
+ * Structure (top → bottom) :
+ *   1. Header
+ *   2. Hero (H1 + sous-titre)
+ *   3. Section "Notre approche" — 3 principes en cards
+ *   4. Section "Sources de données"
+ *   5. Section "Algorithmes TCO" — accordions
+ *   6. Section "Validation académique"
+ *   7. Section CTAs
+ *   8. Footer
+ *
+ * URL canonique : /methodology (uniforme FR/EN — décision projet, malgré
+ * la spec qui suggérait /fr/methodologie).
+ */
+import BaseLayout from '../../components/layouts/BaseLayout.astro';
+import Header from '../../components/molecules/Header.astro';
+import Footer from '../../components/molecules/Footer.astro';
+import Accordion from '../../components/molecules/Accordion.vue';
+import Icon from '../../components/atoms/Icon.vue';
+import { getLangFromUrl, useT } from '../../i18n';
+
+export const prerender = true;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useT(lang);
+---
+<BaseLayout
+  lang={lang}
+  title={t('meta.methodology_title')}
+  description={t('meta.methodology_description')}
+>
+  <Header lang={lang} currentPath={Astro.url.pathname} />
+
+  <main>
+    <!-- HERO -->
+    <section class="bg-teal-900 text-white py-16 sm:py-24">
+      <div class="max-w-5xl mx-auto px-4 sm:px-8 text-center">
+        <h1
+          class="text-3xl sm:text-5xl font-semibold leading-tight mb-4"
+          style="font-family: var(--font-display, serif);"
+        >
+          {t('methodology.hero.title')}
+        </h1>
+        <p class="text-lg sm:text-xl text-white/90 max-w-3xl mx-auto">
+          {t('methodology.hero.subtitle')}
+        </p>
+      </div>
+    </section>
+
+    <!-- NOTRE APPROCHE -->
+    <section class="py-16 sm:py-24 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-8">
+        <h2
+          class="text-3xl sm:text-4xl font-semibold text-center mb-12 text-gray-900"
+          style="font-family: var(--font-display, serif);"
+        >
+          {t('methodology.approach.section_title')}
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {([1, 2, 3] as const).map((n) => (
+            <article class="bg-gray-50 rounded-xl p-6 border border-gray-200">
+              <div
+                class="w-12 h-12 rounded-full bg-teal-50 border-2 border-teal-700
+                       flex items-center justify-center
+                       text-lg font-bold text-teal-700 mb-4"
+                aria-hidden="true"
+              >
+                {n}
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-900">
+                {t(`methodology.approach.principle_${n}.title` as 'methodology.approach.principle_1.title')}
+              </h3>
+              <p class="text-base text-gray-700 leading-relaxed">
+                {t(`methodology.approach.principle_${n}.description` as 'methodology.approach.principle_1.description')}
+              </p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- SOURCES DE DONNÉES -->
+    <section class="py-16 sm:py-24" style="background: var(--color-bg, #fafaf9);">
+      <div class="max-w-5xl mx-auto px-4 sm:px-8">
+        <h2
+          class="text-3xl sm:text-4xl font-semibold text-center mb-4 text-gray-900"
+          style="font-family: var(--font-display, serif);"
+        >
+          {t('methodology.sources.section_title')}
+        </h2>
+        <p class="text-center text-base sm:text-lg text-gray-700 max-w-3xl mx-auto mb-12">
+          {t('methodology.sources.intro')}
+        </p>
+
+        <dl class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+          {(['price', 'consumption', 'maintenance', 'depreciation', 'tax'] as const).map((key) => (
+            <div class="bg-white rounded-lg p-5 border border-gray-200">
+              <dt class="font-semibold text-gray-900 mb-1">
+                {t(`methodology.sources.${key}_label` as 'methodology.sources.price_label')}
+              </dt>
+              <dd class="text-base text-gray-700">
+                {t(`methodology.sources.${key}_desc` as 'methodology.sources.price_desc')}
+              </dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+    </section>
+
+    <!-- ALGORITHMES TCO -->
+    <section class="py-16 sm:py-24 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-8">
+        <h2
+          class="text-3xl sm:text-4xl font-semibold text-center mb-4 text-gray-900"
+          style="font-family: var(--font-display, serif);"
+        >
+          {t('methodology.algorithms.section_title')}
+        </h2>
+        <p class="text-center text-base sm:text-lg text-gray-700 max-w-2xl mx-auto mb-10">
+          {t('methodology.algorithms.intro')}
+        </p>
+
+        <div class="border-t border-gray-200">
+          <Accordion client:load title={t('methodology.algorithms.price_title')}>
+            {t('methodology.algorithms.price_body')}
+          </Accordion>
+          <Accordion client:load title={t('methodology.algorithms.depreciation_title')}>
+            {t('methodology.algorithms.depreciation_body')}
+          </Accordion>
+          <Accordion client:load title={t('methodology.algorithms.fuel_title')}>
+            {t('methodology.algorithms.fuel_body')}
+          </Accordion>
+          <Accordion client:load title={t('methodology.algorithms.maintenance_title')}>
+            {t('methodology.algorithms.maintenance_body')}
+          </Accordion>
+          <Accordion client:load title={t('methodology.algorithms.insurance_title')}>
+            {t('methodology.algorithms.insurance_body')}
+          </Accordion>
+          <Accordion client:load title={t('methodology.algorithms.tax_title')}>
+            {t('methodology.algorithms.tax_body')}
+          </Accordion>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALIDATION ACADÉMIQUE -->
+    <section class="py-16 sm:py-24" style="background: var(--color-bg, #fafaf9);">
+      <div class="max-w-3xl mx-auto px-4 sm:px-8 text-center">
+        <h2
+          class="text-3xl sm:text-4xl font-semibold mb-6 text-gray-900"
+          style="font-family: var(--font-display, serif);"
+        >
+          {t('methodology.academic.section_title')}
+        </h2>
+        <p class="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
+          {t('methodology.academic.paragraph_1')}
+        </p>
+        <p class="text-base sm:text-lg text-gray-700 leading-relaxed mb-8">
+          {t('methodology.academic.paragraph_2')}
+        </p>
+        <button
+          type="button"
+          disabled
+          aria-disabled="true"
+          class="inline-flex items-center gap-2 px-5 py-3 rounded-lg
+                 bg-gray-100 text-gray-500 cursor-not-allowed
+                 border border-gray-300"
+          title={t('methodology.academic.cta_unavailable')}
+        >
+          <Icon name="external" size={16} aria-hidden="true" />
+          <span>{t('methodology.academic.cta_label')}</span>
+          <span class="text-xs italic">({t('methodology.academic.cta_unavailable')})</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- CTAs FINAUX -->
+    <section class="py-12 bg-white border-t border-gray-200">
+      <div class="max-w-4xl mx-auto px-4 sm:px-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a
+          href={`/${lang}/contact`}
+          class="inline-flex items-center justify-center gap-2
+                 border-2 border-teal-700 text-teal-700 hover:bg-teal-50
+                 font-medium rounded-lg px-5 py-3 min-h-[44px]
+                 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500"
+        >
+          {t('methodology.cta_section.see_sources')}
+        </a>
+        <a
+          href={`/${lang}/trouver-ma-voiture`}
+          class="inline-flex items-center justify-center gap-2
+                 bg-teal-700 hover:bg-teal-800 text-white
+                 font-medium rounded-lg px-5 py-3 min-h-[44px]
+                 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-teal-500"
+        >
+          {t('methodology.cta_section.start_analysis')}
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <Footer lang={lang} />
+</BaseLayout>

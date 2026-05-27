@@ -4,24 +4,26 @@ import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import vue from '@astrojs/vue';
 import sitemap from '@astrojs/sitemap';
+import vercel from '@astrojs/vercel';
 
 /**
  * Configuration Astro CarPIQ V2.
  *
- * i18n natif Astro (depuis Astro 4) :
- *   - Langues actuelles : FR, EN
- *   - Préfixe URL : /fr/, /en/
- *   - Default locale : FR (fallback si Accept-Language non-supporté)
- *   - prefixDefaultLocale = true : forcer le préfixe même pour la default
- *     locale, plus prévisible et SEO-friendly (cf. spec consolidée section 4.5)
- *   - routing.redirectToDefaultLocale = true : / redirige vers /fr/ par défaut
+ * Mode `output: 'static'` ne permet pas les API routes. Pour le formulaire
+ * de contact (Livrable 4), on bascule en `output: 'server'` avec l'adapter
+ * Vercel : tout est pré-rendu statiquement par défaut (`prerender = true`
+ * implicite via le `prerender = true` dans chaque page), sauf les API routes
+ * qui tournent en serverless functions Vercel.
  *
- * Langues à venir (post-Phase 2) : DE, NL, ES, IT, PT (spec section 4.5).
+ * Toutes les pages existantes (/fr/, /en/, etc.) restent statiques. Seule
+ * `src/pages/api/contact.ts` tournera côté serveur.
  *
- * @see https://docs.astro.build/en/guides/internationalization/
+ * @see https://docs.astro.build/en/guides/integrations-guide/vercel/
  */
 export default defineConfig({
   site: 'https://carpiq.eu',
+  output: 'server',
+  adapter: vercel(),
 
   i18n: {
     defaultLocale: 'fr',

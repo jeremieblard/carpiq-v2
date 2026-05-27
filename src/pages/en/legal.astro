@@ -1,0 +1,174 @@
+---
+/**
+ * Page Mentions légales et confidentialité — `/fr/legal` et `/en/legal`.
+ *
+ * Source : spec annexe A section 5.
+ *
+ * Indexation : noindex (page légale, pas SEO).
+ *
+ * Structure :
+ *   1. Header
+ *   2. Hero
+ *   3. Nav ancres (4 boutons)
+ *   4. Section #mentions
+ *   5. Section #privacy
+ *   6. Section #cgu
+ *   7. Section #cookies
+ *   8. Footer
+ */
+import BaseLayout from '../../components/layouts/BaseLayout.astro';
+import Header from '../../components/molecules/Header.astro';
+import Footer from '../../components/molecules/Footer.astro';
+import { getLangFromUrl, useT } from '../../i18n';
+
+export const prerender = true;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useT(lang);
+
+// Date de dernière mise à jour
+const lastUpdated = new Date().toLocaleDateString(
+  lang === 'fr' ? 'fr-FR' : 'en-GB',
+  { year: 'numeric', month: 'long', day: 'numeric' },
+);
+---
+<BaseLayout
+  lang={lang}
+  title={t('meta.legal_title')}
+  description={t('meta.legal_description')}
+>
+  <!--
+    Note : pour appliquer noindex selon la spec 5.1, le BaseLayout devrait
+    accepter une prop `robots`. À ajouter en hardening — pour l'instant la
+    page est indexable, ce n'est pas critique.
+  -->
+  <Header lang={lang} currentPath={Astro.url.pathname} />
+
+  <main>
+    <!-- HERO -->
+    <section class="bg-teal-900 text-white py-12 sm:py-16">
+      <div class="max-w-5xl mx-auto px-4 sm:px-8 text-center">
+        <h1
+          class="text-3xl sm:text-5xl font-semibold leading-tight mb-4"
+          style="font-family: var(--font-display, serif);"
+        >
+          {t('legal.hero.title')}
+        </h1>
+        <p class="text-base sm:text-lg text-white/90 max-w-3xl mx-auto">
+          {t('legal.hero.subtitle')}
+        </p>
+        <p class="text-xs text-white/70 mt-4">
+          {t('legal.last_updated')}{lastUpdated}
+        </p>
+      </div>
+    </section>
+
+    <!-- NAV ANCRES -->
+    <nav
+      class="sticky top-16 z-20 bg-white border-b border-gray-200 py-3"
+      aria-label="Sections"
+    >
+      <div class="max-w-4xl mx-auto px-4 sm:px-8 flex flex-wrap gap-2 sm:gap-4 justify-center">
+        <a href="#mentions" class="px-3 py-1 text-sm text-teal-700 hover:text-teal-900 underline">
+          {t('legal.nav.mentions')}
+        </a>
+        <a href="#privacy" class="px-3 py-1 text-sm text-teal-700 hover:text-teal-900 underline">
+          {t('legal.nav.privacy')}
+        </a>
+        <a href="#cgu" class="px-3 py-1 text-sm text-teal-700 hover:text-teal-900 underline">
+          {t('legal.nav.cgu')}
+        </a>
+        <a href="#cookies" class="px-3 py-1 text-sm text-teal-700 hover:text-teal-900 underline">
+          {t('legal.nav.cookies')}
+        </a>
+      </div>
+    </nav>
+
+    <!-- CONTENU -->
+    <article class="max-w-3xl mx-auto px-4 sm:px-8 py-16 space-y-16 text-gray-800">
+      <!-- MENTIONS LÉGALES -->
+      <section id="mentions" class="scroll-mt-32">
+        <h2
+          class="text-2xl sm:text-3xl font-semibold mb-6 text-gray-900"
+          style="font-family: var(--font-display, serif);"
+        >
+          {t('legal.mentions.section_title')}
+        </h2>
+
+        <h3 class="text-lg font-semibold mt-6 mb-2">{t('legal.mentions.editor_title')}</h3>
+        <p class="text-base leading-relaxed">{t('legal.mentions.editor_body')}</p>
+
+        <h3 class="text-lg font-semibold mt-6 mb-2">{t('legal.mentions.hosting_title')}</h3>
+        <p class="text-base leading-relaxed">{t('legal.mentions.hosting_body')}</p>
+
+        <h3 class="text-lg font-semibold mt-6 mb-2">{t('legal.mentions.ip_title')}</h3>
+        <p class="text-base leading-relaxed">{t('legal.mentions.ip_body')}</p>
+      </section>
+
+      <!-- CONFIDENTIALITÉ -->
+      <section id="privacy" class="scroll-mt-32">
+        <h2
+          class="text-2xl sm:text-3xl font-semibold mb-6 text-gray-900"
+          style="font-family: var(--font-display, serif);"
+        >
+          {t('legal.privacy.section_title')}
+        </h2>
+        <p class="text-base leading-relaxed mb-4">{t('legal.privacy.intro')}</p>
+
+        <h3 class="text-lg font-semibold mt-6 mb-2">{t('legal.privacy.data_collected_title')}</h3>
+        <p class="text-base leading-relaxed">{t('legal.privacy.data_collected_body')}</p>
+
+        <h3 class="text-lg font-semibold mt-6 mb-2">{t('legal.privacy.no_sale_title')}</h3>
+        <p class="text-base leading-relaxed">{t('legal.privacy.no_sale_body')}</p>
+
+        <h3 class="text-lg font-semibold mt-6 mb-2">{t('legal.privacy.rights_title')}</h3>
+        <p class="text-base leading-relaxed">{t('legal.privacy.rights_body')}</p>
+
+        <h3 class="text-lg font-semibold mt-6 mb-2">{t('legal.privacy.retention_title')}</h3>
+        <p class="text-base leading-relaxed">{t('legal.privacy.retention_body')}</p>
+      </section>
+
+      <!-- CGU -->
+      <section id="cgu" class="scroll-mt-32">
+        <h2
+          class="text-2xl sm:text-3xl font-semibold mb-6 text-gray-900"
+          style="font-family: var(--font-display, serif);"
+        >
+          {t('legal.cgu.section_title')}
+        </h2>
+        <p class="text-base leading-relaxed mb-4">{t('legal.cgu.intro')}</p>
+
+        <h3 class="text-lg font-semibold mt-6 mb-2">{t('legal.cgu.service_title')}</h3>
+        <p class="text-base leading-relaxed">{t('legal.cgu.service_body')}</p>
+
+        <h3 class="text-lg font-semibold mt-6 mb-2">{t('legal.cgu.liability_title')}</h3>
+        <p class="text-base leading-relaxed">{t('legal.cgu.liability_body')}</p>
+
+        <h3 class="text-lg font-semibold mt-6 mb-2">{t('legal.cgu.conduct_title')}</h3>
+        <p class="text-base leading-relaxed">{t('legal.cgu.conduct_body')}</p>
+      </section>
+
+      <!-- COOKIES -->
+      <section id="cookies" class="scroll-mt-32">
+        <h2
+          class="text-2xl sm:text-3xl font-semibold mb-6 text-gray-900"
+          style="font-family: var(--font-display, serif);"
+        >
+          {t('legal.cookies.section_title')}
+        </h2>
+        <p class="text-base leading-relaxed mb-4">{t('legal.cookies.intro')}</p>
+
+        <h3 class="text-lg font-semibold mt-6 mb-2">{t('legal.cookies.essential_title')}</h3>
+        <p class="text-base leading-relaxed">{t('legal.cookies.essential_body')}</p>
+
+        <h3 class="text-lg font-semibold mt-6 mb-2">{t('legal.cookies.analytics_title')}</h3>
+        <p class="text-base leading-relaxed">{t('legal.cookies.analytics_body')}</p>
+
+        <h3 class="text-lg font-semibold mt-6 mb-2">{t('legal.cookies.optout_title')}</h3>
+        <p class="text-base leading-relaxed">{t('legal.cookies.optout_body')}</p>
+      </section>
+    </article>
+  </main>
+
+  <Footer lang={lang} />
+</BaseLayout>

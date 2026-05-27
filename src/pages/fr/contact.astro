@@ -1,0 +1,168 @@
+---
+/**
+ * Page Contact — `/fr/contact` et `/en/contact`.
+ *
+ * Source : spec annexe A section 4.
+ *
+ * Structure :
+ *   1. Header
+ *   2. Hero (H1 + sous-titre)
+ *   3. Section "Comment pouvons-nous aider ?" — 3 boutons thématiques
+ *   4. Section principale (desktop : 2 colonnes ; mobile : empilé)
+ *      - Colonne gauche : Formulaire ContactForm
+ *      - Colonne droite : Coordonnées
+ *   5. Footer
+ *
+ * Cette page reste pré-rendue statiquement (`prerender = true`). Seule
+ * l'API route `/api/contact` tourne côté serveur (Vercel function).
+ */
+import BaseLayout from '../../components/layouts/BaseLayout.astro';
+import Header from '../../components/molecules/Header.astro';
+import Footer from '../../components/molecules/Footer.astro';
+import ContactForm from '../../components/organisms/ContactForm.vue';
+import Icon from '../../components/atoms/Icon.vue';
+import { getLangFromUrl, useT } from '../../i18n';
+
+export const prerender = true;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useT(lang);
+---
+<BaseLayout
+  lang={lang}
+  title={t('meta.contact_title')}
+  description={t('meta.contact_description')}
+>
+  <Header lang={lang} currentPath={Astro.url.pathname} />
+
+  <main>
+    <!-- HERO -->
+    <section class="bg-teal-900 text-white py-12 sm:py-16">
+      <div class="max-w-5xl mx-auto px-4 sm:px-8 text-center">
+        <h1
+          class="text-3xl sm:text-5xl font-semibold leading-tight mb-4"
+          style="font-family: var(--font-display, serif);"
+        >
+          {t('contact.hero.title')}
+        </h1>
+        <p class="text-lg text-white/90 max-w-3xl mx-auto">
+          {t('contact.hero.subtitle')}
+        </p>
+      </div>
+    </section>
+
+    <!-- 3 TOPICS -->
+    <section class="py-12 bg-white">
+      <div class="max-w-5xl mx-auto px-4 sm:px-8">
+        <h2
+          class="text-2xl sm:text-3xl font-semibold text-center mb-8 text-gray-900"
+          style="font-family: var(--font-display, serif);"
+        >
+          {t('contact.topics.section_title')}
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {(['support', 'press', 'partnerships'] as const).map((topic) => (
+            <article
+              class="bg-gray-50 rounded-xl p-5 border border-gray-200"
+            >
+              <h3 class="text-lg font-semibold mb-2 text-gray-900">
+                {t(`contact.topics.${topic}_title` as 'contact.topics.support_title')}
+              </h3>
+              <p class="text-sm text-gray-700">
+                {t(`contact.topics.${topic}_desc` as 'contact.topics.support_desc')}
+              </p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULAIRE + COORDONNÉES -->
+    <section class="py-12 sm:py-16" style="background: var(--color-bg, #fafaf9);">
+      <div class="max-w-6xl mx-auto px-4 sm:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <!-- Formulaire (2 colonnes desktop) -->
+          <div class="lg:col-span-2">
+            <h2
+              class="text-2xl sm:text-3xl font-semibold mb-6 text-gray-900"
+              style="font-family: var(--font-display, serif);"
+            >
+              {t('contact.section_form')}
+            </h2>
+
+            <ContactForm client:load lang={lang} />
+          </div>
+
+          <!-- Coordonnées (1 colonne desktop) -->
+          <aside class="lg:col-span-1">
+            <h2
+              class="text-xl font-semibold mb-6 text-gray-900"
+              style="font-family: var(--font-display, serif);"
+            >
+              {t('contact.coordinates.section_title')}
+            </h2>
+
+            <dl class="space-y-5">
+              <div>
+                <dt class="text-sm font-medium text-gray-900 flex items-center gap-2">
+                  <Icon name="external" size={14} aria-hidden="true" />
+                  {t('contact.coordinates.email_general')}
+                </dt>
+                <dd class="mt-1">
+                  <a href="mailto:contact@carpiq.eu" class="text-teal-700 hover:text-teal-900 underline text-sm">
+                    contact@carpiq.eu
+                  </a>
+                </dd>
+              </div>
+
+              <div>
+                <dt class="text-sm font-medium text-gray-900 flex items-center gap-2">
+                  <Icon name="external" size={14} aria-hidden="true" />
+                  {t('contact.coordinates.email_press')}
+                </dt>
+                <dd class="mt-1">
+                  <a href="mailto:press@carpiq.eu" class="text-teal-700 hover:text-teal-900 underline text-sm">
+                    press@carpiq.eu
+                  </a>
+                </dd>
+              </div>
+
+              <div>
+                <dt class="text-sm font-medium text-gray-900 flex items-center gap-2">
+                  <Icon name="external" size={14} aria-hidden="true" />
+                  {t('contact.coordinates.email_partnerships')}
+                </dt>
+                <dd class="mt-1">
+                  <a href="mailto:partnerships@carpiq.eu" class="text-teal-700 hover:text-teal-900 underline text-sm">
+                    partnerships@carpiq.eu
+                  </a>
+                </dd>
+              </div>
+
+              <div class="pt-3 border-t border-gray-200">
+                <dt class="text-sm font-medium text-gray-900">
+                  {t('contact.coordinates.response_label')}
+                </dt>
+                <dd class="text-sm text-gray-700 mt-1">
+                  {t('contact.coordinates.response_value')}
+                </dd>
+              </div>
+
+              <div>
+                <dt class="text-sm font-medium text-gray-900">
+                  {t('contact.coordinates.location_label')}
+                </dt>
+                <dd class="text-sm text-gray-700 mt-1">
+                  {t('contact.coordinates.location_value')}
+                </dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer lang={lang} />
+</BaseLayout>
