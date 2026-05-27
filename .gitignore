@@ -25,3 +25,6 @@ pnpm-debug.log*
 
 # Lighthouse CI local artifacts
 .lighthouseci/
+
+# Lighthouse CI local artifacts
+.lighthouseci/

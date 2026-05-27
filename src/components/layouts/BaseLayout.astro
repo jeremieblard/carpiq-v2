@@ -7,7 +7,11 @@ interface Props {
   lang?: string;
 }
 
-const { title, description = 'CarPIQ — Comparateur automobile européen indépendant', lang = 'fr' } = Astro.props;
+const { 
+  title, 
+  description = 'CarPIQ vous aide à choisir la voiture qui correspond à votre usage et votre budget, sans publicité ni partenariat commercial.', 
+  lang = 'fr' 
+} = Astro.props;
 ---
 <!DOCTYPE html>
 <html lang={lang}>
@@ -18,9 +22,26 @@ const { title, description = 'CarPIQ — Comparateur automobile européen indép
   <meta name="description" content={description} />
   <title>{title}</title>
   
+  <!-- Fonts : preconnect + preload + display=swap pour éliminer render-blocking -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    rel="preload"
+    as="style"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+  >
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+    media="print"
+    onload="this.media='all'"
+  >
+  <noscript>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+    >
+  </noscript>
 </head>
 <body>
   <slot />

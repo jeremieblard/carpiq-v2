@@ -1,17 +1,20 @@
 ---
-
+import BaseLayout from '../components/layouts/BaseLayout.astro';
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout
+  title="CarPIQ — Comparateur automobile européen indépendant"
+  description="CarPIQ vous aide à choisir la voiture qui correspond vraiment à votre usage et à votre budget, sans publicité ni partenariat commercial."
+>
+  <main class="max-w-4xl mx-auto p-8">
+    <h1 class="text-5xl mb-4">CarPIQ V2</h1>
+    <p class="text-lg mb-8">Bienvenue sur la version 2 en construction.</p>
+    
+    <ul class="space-y-2">
+      <li>
+        <a href="/tokens" class="text-teal-700 underline hover:text-teal-900">
+          Voir les design tokens
+        </a>
+      </li>
+    </ul>
+  </main>
+</BaseLayout>
