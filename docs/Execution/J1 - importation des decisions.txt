@@ -1,0 +1,42 @@
+$ mkdir -p docs/adr docs/specs
+cp /c/Users/XPS/Downloads/carpiq-v2-phase0/docs/adr/* docs/adr/
+cp /c/Users/XPS/Downloads/carpiq-v2-phase0/docs/orchestration.md docs/
+cp /c/Users/XPS/Downloads/carpiq-v2-phase0/docs/specs/* docs/specs/
+
+git add docs/
+git commit -m "docs: import phase 0 decisions (ADRs) and V2 specifications"
+git push -u origin main
+cp: cannot stat '/c/Users/XPS/Downloads/carpiq-v2-phase0/docs/adr/*': No such file or directory
+cp: cannot stat '/c/Users/XPS/Downloads/carpiq-v2-phase0/docs/orchestration.md': No such file or directory
+cp: cannot stat '/c/Users/XPS/Downloads/carpiq-v2-phase0/docs/specs/*': No such file or directory
+warning: in the working copy of 'docs/adr/ADR-001-framework-astro.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/adr/ADR-002-hosting-vercel.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/adr/ADR-003-design-system.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/adr/ADR-004-migration-hybride.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/adr/ADR-005-i18n-fr-only.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/adr/ADR-007-analytics.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/orchestration.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/specs/carpiq-spec-v2-annexe-a.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/specs/carpiq-spec-v2-annexe-b.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/specs/carpiq-spec-v2-consolidee.md', LF will be replaced by CRLF the next time Git touches it
+[main (root-commit) 2534e27] docs: import phase 0 decisions (ADRs) and V2 specifications
+ 10 files changed, 5601 insertions(+)
+ create mode 100644 docs/adr/ADR-001-framework-astro.md
+ create mode 100644 docs/adr/ADR-002-hosting-vercel.md
+ create mode 100644 docs/adr/ADR-003-design-system.md
+ create mode 100644 docs/adr/ADR-004-migration-hybride.md
+ create mode 100644 docs/adr/ADR-005-i18n-fr-only.md
+ create mode 100644 docs/adr/ADR-007-analytics.md
+ create mode 100644 docs/orchestration.md
+ create mode 100644 docs/specs/carpiq-spec-v2-annexe-a.md
+ create mode 100644 docs/specs/carpiq-spec-v2-annexe-b.md
+ create mode 100644 docs/specs/carpiq-spec-v2-consolidee.md
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (15/15), 68.55 KiB | 7.62 MiB/s, done.
+Total 15 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/jeremieblard/carpiq-v2.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
