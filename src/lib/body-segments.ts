@@ -118,9 +118,9 @@ const AWD_NAME_REGEX = /\b(awd|4x4|4wd|xc60|outland)\b/;
  *
  * Source : v64.0.4 ligne 20773.
  *
- * Note : `carHasAWD_v609` (qui priorise l'info catalogue) sera ajouté en Palier 3c
- * quand on aura le mécanisme de chargement du catalogue. Pour l'instant, V2
- * utilise uniquement la version legacy basée sur le nom et les pros.
+ * Version legacy : utilise uniquement le nom et les pros (sans catalog).
+ * Pour la version catalog-aware (priorise les données drivetrains du catalog),
+ * voir `carHasAWD_v609` plus bas.
  */
 export function carHasAWD(car: Vehicle): boolean {
   const allPros = [
@@ -130,6 +130,27 @@ export function carHasAWD(car: Vehicle): boolean {
   if (AWD_KEYWORDS.some((kw) => allPros.includes(kw))) return true;
   const name = (car.name ?? '').toLowerCase();
   return AWD_NAME_REGEX.test(name);
+}
+
+/**
+ * Détecte AWD avec priorité au catalog (Palier 3c).
+ *
+ * Source : v64.0.4 ligne 20812 (`carHasAWD_v609`).
+ *
+ * Logique :
+ *   1. Si une entry catalog existe avec drivetrains : utilise cette info
+ *      (true si au moins un dt a awd=true, false sinon)
+ *   2. Sinon fallback sur `carHasAWD` (legacy nom + pros)
+ *
+ * Importé séparément pour éviter dépendance circulaire dans certaines passes.
+ */
+export function carHasAWD_v609(
+  car: Vehicle,
+  carHasAWDFromCatalogFn: (c: Vehicle) => boolean | null,
+): boolean {
+  const fromCat = carHasAWDFromCatalogFn(car);
+  if (fromCat !== null) return fromCat;
+  return carHasAWD(car);
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
