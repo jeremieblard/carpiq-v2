@@ -10,9 +10,15 @@
       "preset": "lighthouse:no-pwa",
       "assertions": {
         "categories:performance": ["warn", { "minScore": 0.9 }],
-        "categories:accessibility": ["warn", { "minScore": 0.95 }],
+        "categories:accessibility": ["error", { "minScore": 0.95 }],
         "categories:best-practices": ["warn", { "minScore": 0.95 }],
-        "categories:seo": ["warn", { "minScore": 0.95 }]
+        "categories:seo": ["warn", { "minScore": 0.95 }],
+
+        "_comment_audits_disabled": "Audits désactivés (faux positifs sur petites pages Astro)",
+        "network-dependency-tree-insight": "off",
+        "render-blocking-resources": "off",
+        "render-blocking-insight": "off",
+        "uses-rel-preconnect": "off"
       }
     },
     "upload": {
