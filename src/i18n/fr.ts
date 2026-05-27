@@ -4,7 +4,7 @@
  * Conventions :
  *   - Clés en camelCase ou snake_case selon contexte
  *   - Organisation par scope (common, nav, home, methodology, about, etc.)
- *   - Contenu conforme à la spec annexe A sections 1-5
+ *   - Contenu conforme à la spec annexe A sections 1-5 + glossaire Livrable 5
  */
 
 const fr = {
@@ -31,6 +31,9 @@ const fr = {
     legal_title: 'Mentions légales et confidentialité | CarPIQ',
     legal_description:
       'Mentions légales, politique de confidentialité, conditions générales et gestion des cookies CarPIQ.',
+    glossary_title: 'Glossaire automobile CarPIQ : TCO, dépréciation, WLTP…',
+    glossary_description:
+      "Tous les termes clés pour comprendre le vrai coût d'une voiture en Europe : TCO, dépréciation, WLTP, bonus/malus, BEV, PHEV, segments et carrosseries.",
   },
 
   nav: {
@@ -54,7 +57,7 @@ const fr = {
   },
 
   // ───────────────────────────────────────────────────────────────────────────
-  // HOME (Livrable 3)
+  // HOME
   // ───────────────────────────────────────────────────────────────────────────
   home: {
     hero: {
@@ -129,7 +132,7 @@ const fr = {
   },
 
   // ───────────────────────────────────────────────────────────────────────────
-  // METHODOLOGY (spec annexe A section 2.5)
+  // METHODOLOGY
   // ───────────────────────────────────────────────────────────────────────────
   methodology: {
     hero: {
@@ -163,8 +166,7 @@ const fr = {
       price_desc:
         'Constructeurs (catalogues officiels), DAT (Allemagne), L’Argus (France)',
       consumption_label: 'Consommation réelle',
-      consumption_desc:
-        'Spritmonitor.de (3M utilisateurs européens)',
+      consumption_desc: 'Spritmonitor.de (3M utilisateurs européens)',
       maintenance_label: "Coûts d'entretien",
       maintenance_desc: 'ADAC Cost Calculator (référence européenne)',
       depreciation_label: 'Dépréciation',
@@ -212,7 +214,7 @@ const fr = {
   },
 
   // ───────────────────────────────────────────────────────────────────────────
-  // ABOUT (spec annexe A section 3.4)
+  // ABOUT
   // ───────────────────────────────────────────────────────────────────────────
   about: {
     hero: {
@@ -271,7 +273,7 @@ const fr = {
   },
 
   // ───────────────────────────────────────────────────────────────────────────
-  // CONTACT (spec annexe A section 4.4)
+  // CONTACT
   // ───────────────────────────────────────────────────────────────────────────
   contact: {
     hero: {
@@ -329,7 +331,7 @@ const fr = {
   },
 
   // ───────────────────────────────────────────────────────────────────────────
-  // LEGAL (spec annexe A section 5.3 — contenu RGPD/CGU générique)
+  // LEGAL
   // ───────────────────────────────────────────────────────────────────────────
   legal: {
     hero: {
@@ -404,7 +406,81 @@ const fr = {
   },
 
   // ───────────────────────────────────────────────────────────────────────────
-  // TOKENS / COMPONENTS (Livrables 1-2)
+  // GLOSSARY (Livrable 5) — 15 termes automobile / TCO / Europe
+  // ───────────────────────────────────────────────────────────────────────────
+  glossary: {
+    hero: {
+      title: 'Glossaire automobile',
+      subtitle:
+        "Les 15 termes essentiels pour comprendre le vrai coût d'une voiture en Europe.",
+    },
+    nav_label: 'Naviguer par lettre',
+    entries: {
+      tco: {
+        title: 'TCO — Coût Total de Possession',
+        body: "Le TCO (Total Cost of Ownership) est la somme de toutes les dépenses liées à la possession d'un véhicule sur sa durée d'usage : prix d'achat, dépréciation, carburant ou énergie, assurance, entretien et fiscalité. C'est l'indicateur central de CarPIQ, exprimé en euros par mois pour faciliter la comparaison entre modèles. Il révèle régulièrement que la voiture la moins chère à l'achat n'est pas la moins chère à l'usage.",
+      },
+      depreciation: {
+        title: 'Dépréciation',
+        body: "Perte de valeur d'un véhicule au fil du temps. Composante généralement majoritaire du TCO sur les premières années : un véhicule neuf peut perdre 20-30 % de sa valeur dès la première année, puis se stabilise sur une courbe décroissante. La dépréciation dépend du modèle, du marché national, du kilométrage et de l'état. CarPIQ modélise cette courbe par paliers à 1, 2, 5, 7 et 10 ans à partir de données de revente certifiées.",
+      },
+      wltp: {
+        title: 'WLTP',
+        body: "Worldwide Harmonised Light Vehicles Test Procedure. Norme européenne d'homologation pour mesurer la consommation et les émissions de CO₂ des véhicules légers, en vigueur depuis 2017. Plus représentative que l'ancienne norme NEDC, mais reste sous-estimée par rapport à la consommation réelle (en moyenne 15-25 % en dessous). CarPIQ utilise la consommation Spritmonitor (réelle utilisateurs) plutôt que WLTP pour ses calculs.",
+      },
+      spritmonitor: {
+        title: 'Spritmonitor',
+        body: "Plateforme allemande où plus de 3 millions d'automobilistes européens renseignent leurs consommations réelles. Source de référence pour CarPIQ : elle reflète l'usage réel sur le terrain, climat européen inclus, contrairement à WLTP qui est mesurée en laboratoire. Spritmonitor permet de capter les écarts entre constructeurs et entre motorisations dans les conditions réelles de conduite.",
+      },
+      adac: {
+        title: 'ADAC',
+        body: "Allgemeiner Deutscher Automobil-Club. Plus grand automobile-club d'Europe (21 millions de membres). Publie chaque année le ADAC Cost Calculator, référence européenne pour les coûts d'entretien par marque, modèle et catégorie. CarPIQ utilise ces données pour estimer l'entretien et les réparations, en les modulant selon l'âge et le kilométrage cumulé du véhicule.",
+      },
+      bev: {
+        title: 'BEV — Véhicule 100 % électrique',
+        body: "Battery Electric Vehicle. Véhicule propulsé uniquement par un moteur électrique, alimenté par une batterie rechargeable sur secteur ou borne. Pas de moteur thermique, pas d'émissions directes de CO₂. Coût d'usage généralement plus bas que thermique (carburant, entretien), mais prix d'achat plus élevé et dépréciation parfois plus forte. Exemples : Renault 5 E-Tech, Tesla Model Y, Volkswagen ID.4.",
+      },
+      phev: {
+        title: 'PHEV — Véhicule hybride rechargeable',
+        body: "Plug-in Hybrid Electric Vehicle. Combinaison d'un moteur thermique et d'un moteur électrique avec batterie rechargeable sur secteur (autonomie électrique typique : 40-80 km). Permet une utilisation 100 % électrique pour les trajets courts et thermique pour les longs. Intérêt fortement dépendant de l'usage réel : un PHEV jamais rechargé consomme plus qu'un thermique équivalent à cause du surpoids de la batterie.",
+      },
+      hev: {
+        title: 'HEV — Véhicule hybride (non rechargeable)',
+        body: "Hybrid Electric Vehicle. Hybride classique : moteur thermique principal assisté par un moteur électrique alimenté par une petite batterie rechargée par récupération d'énergie au freinage. Pas de prise de recharge. Consommation réduite (15-25 %) par rapport à un thermique équivalent, surtout en ville. Exemples : Toyota Yaris Hybrid, Honda Jazz e:HEV.",
+      },
+      mhev: {
+        title: 'MHEV — Hybride léger',
+        body: "Mild Hybrid Electric Vehicle. Système 48V qui assiste un moteur thermique sans pouvoir rouler en électrique pur. Réduit légèrement la consommation (5-10 %) en ville et facilite le démarrage. Souvent présent en option d'entrée de gamme sur les véhicules thermiques modernes.",
+      },
+      body_type: {
+        title: 'Carrosserie',
+        body: "Type morphologique d'un véhicule, déterminant sa silhouette et son usage typique. Catégories principales : citadine (compacte, urbain), berline (3 volumes, longues distances), break (espace de chargement), SUV (rehaussé, polyvalent), monospace (intérieur modulable, familial), coupé (sportif 2 portes). La carrosserie influence directement le confort, la consommation et le prix.",
+      },
+      segment: {
+        title: 'Segment',
+        body: "Classification européenne des véhicules par taille et positionnement, allant de A (mini-citadine, ex : Fiat 500) à F (grande routière premium, ex : Mercedes Classe S), avec sous-segments J (SUV) et M (monospace). Permet une comparaison cohérente entre concurrents. CarPIQ utilise les segments pour proposer des alternatives pertinentes à un modèle donné.",
+      },
+      malus: {
+        title: 'Malus écologique',
+        body: "Taxe à l'achat ou à l'immatriculation appliquée aux véhicules les plus émetteurs de CO₂. Le barème varie selon les pays : en France, le malus 2026 démarre à 113 g CO₂/km et peut dépasser 60 000 € pour les véhicules les plus polluants. En Suisse, il existe sous forme de taxe sur les véhicules à moteur cantonale. Cette taxe pèse sur le TCO et favorise les motorisations sobres.",
+      },
+      bonus: {
+        title: 'Bonus écologique',
+        body: "Aide financière à l'achat de véhicules à faibles émissions, principalement BEV neufs et parfois PHEV ou occasions récentes. Montants et conditions variables selon les pays et années : en France, le bonus BEV 2026 peut atteindre 4 000 €. En Suisse, il n'existe pas au niveau fédéral mais certains cantons proposent des aides. À déduire du prix d'achat pour évaluer le vrai coût d'un véhicule.",
+      },
+      ice: {
+        title: 'ICE — Moteur thermique',
+        body: "Internal Combustion Engine. Désigne les motorisations à combustion interne classiques (essence, diesel). Représente encore la majorité du parc européen mais sa part de marché des ventes neuves diminue au profit des motorisations électrifiées. Coût d'usage très dépendant du prix du carburant. CarPIQ traite l'essence et le diesel séparément vu leurs écarts de prix et de fiscalité.",
+      },
+      monthly_cost: {
+        title: 'Coût de revient mensuel',
+        body: "Indicateur synthétique exprimé en euros par mois, obtenu en divisant le TCO total prévu sur une durée de détention donnée (typiquement 5 ans) par le nombre de mois. Permet une lecture immédiate du coût et une comparaison directe avec un crédit ou une LLD. À ne pas confondre avec la mensualité d'un crédit, qui ne couvre que l'achat et pas les coûts d'usage.",
+      },
+    },
+  },
+
+  // ───────────────────────────────────────────────────────────────────────────
+  // TOKENS / COMPONENTS
   // ───────────────────────────────────────────────────────────────────────────
   tokens: {
     title: 'Design Tokens CarPIQ V2',
