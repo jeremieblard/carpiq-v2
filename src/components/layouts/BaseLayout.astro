@@ -1,18 +1,40 @@
 ---
+/**
+ * BaseLayout V2 — layout de base avec support i18n.
+ *
+ * Changements vs v1 :
+ *   - `lang` est maintenant **requis** (calculé par la page depuis l'URL)
+ *   - Ajout des balises `<link rel="alternate" hreflang>` pour SEO
+ *   - URL canonique générée automatiquement depuis Astro.url
+ *
+ * Cf. spec consolidée section 4.5 (i18n) :
+ *   - hreflang tags sur chaque page pour signaler les équivalents linguistiques
+ *   - URL canoniques pour éviter le contenu dupliqué
+ */
 import '../../styles/global.css';
+import { LANGUAGES, DEFAULT_LANG, type Lang, pathInLang } from '../../i18n';
 
 interface Props {
   title: string;
   description?: string;
-  lang?: string;
+  lang: Lang;
 }
 
-const { 
-  title, 
-  description = 'CarPIQ vous aide à choisir la voiture qui correspond à votre usage et votre budget, sans publicité ni partenariat commercial.', 
-  lang = 'fr' 
-} = Astro.props;
+const { title, description, lang } = Astro.props;
+
+// URL canonique de la page courante
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+
+// URLs alternatives par langue pour les balises hreflang
+const alternateUrls = LANGUAGES.map((altLang) => ({
+  lang: altLang,
+  url: new URL(pathInLang(Astro.url.pathname, altLang), Astro.site ?? Astro.url).toString(),
+}));
+
+// x-default = la default locale
+const xDefaultUrl = new URL(pathInLang(Astro.url.pathname, DEFAULT_LANG), Astro.site ?? Astro.url).toString();
 ---
+
 <!DOCTYPE html>
 <html lang={lang}>
 <head>
@@ -21,7 +43,14 @@ const {
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="description" content={description} />
   <title>{title}</title>
-  
+
+  <!-- Canonical et hreflang (spec section 4.5) -->
+  <link rel="canonical" href={canonicalUrl} />
+  {alternateUrls.map(({ lang: altLang, url }) => (
+    <link rel="alternate" hreflang={altLang} href={url} />
+  ))}
+  <link rel="alternate" hreflang="x-default" href={xDefaultUrl} />
+
   <!-- Fonts : preconnect + preload + display=swap pour éliminer render-blocking -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

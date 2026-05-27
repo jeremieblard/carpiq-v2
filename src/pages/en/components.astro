@@ -1,0 +1,261 @@
+---
+import BaseLayout from '../../components/layouts/BaseLayout.astro';
+import Header from '../../components/molecules/Header.astro';
+import Footer from '../../components/molecules/Footer.astro';
+import Button from '../../components/atoms/Button.vue';
+import Input from '../../components/atoms/Input.vue';
+import Badge from '../../components/atoms/Badge.vue';
+import Icon from '../../components/atoms/Icon.vue';
+import Card from '../../components/atoms/Card.astro';
+import { getLangFromUrl, useT } from '../../i18n';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useT(lang);
+
+const iconNames = [
+  'arrow', 'arrow-left',
+  'check', 'close', 'loader',
+  'chevron-down', 'chevron-up', 'chevron-left', 'chevron-right',
+  'menu', 'search',
+  'alert', 'info', 'help', 'external',
+  'plus', 'minus',
+  'car', 'euro', 'zap', 'fuel', 'settings',
+] as const;
+
+// Options pays traduites via le dictionnaire
+const countryOptions = [
+  { value: 'fr', label: t('countries.fr') },
+  { value: 'be', label: t('countries.be') },
+  { value: 'ch', label: t('countries.ch') },
+  { value: 'de', label: t('countries.de') },
+  { value: 'nl', label: t('countries.nl') },
+  { value: 'it', label: t('countries.it') },
+  { value: 'es', label: t('countries.es') },
+];
+---
+<BaseLayout
+  lang={lang}
+  title={`${t('components.title')} — ${t('common.site_name')}`}
+  description={t('components.intro')}
+>
+  <Header lang={lang} currentPath={Astro.url.pathname} />
+
+  <main class="max-w-6xl mx-auto p-8">
+    <h1 class="text-5xl mb-2">{t('components.title')}</h1>
+    <p style="color: var(--color-muted)" class="mb-12">
+      {t('components.intro')}
+    </p>
+
+    <!-- BUTTON -->
+    <section class="mb-16">
+      <h2 class="text-3xl mb-2 text-teal-700">{t('components.section_button')}</h2>
+      <p class="text-sm mb-6" style="color: var(--color-muted)">
+        {t('components.section_button_desc')}
+      </p>
+
+      <h3 class="text-lg font-semibold mb-3 mt-8">{t('components.variants')}</h3>
+      <div class="flex flex-wrap items-start gap-4 p-6 rounded-lg" style="background: var(--color-bg)">
+        <Button client:load variant="primary" label={t('components.button_primary')} icon="arrow" />
+        <Button client:load variant="secondary" label={t('components.button_secondary')} />
+        <Button client:load variant="ghost" label={t('components.button_ghost')} />
+      </div>
+
+      <h3 class="text-lg font-semibold mb-3 mt-8">{t('components.sizes')}</h3>
+      <div class="flex flex-wrap items-center gap-4 p-6 rounded-lg" style="background: var(--color-bg)">
+        <Button client:load size="sm" label={t('components.button_small')} />
+        <Button client:load size="md" label={t('components.button_medium')} />
+        <Button client:load size="lg" label={t('components.button_large')} icon="arrow" />
+      </div>
+
+      <h3 class="text-lg font-semibold mb-3 mt-8">{t('components.states')}</h3>
+      <div class="flex flex-wrap items-center gap-4 p-6 rounded-lg" style="background: var(--color-bg)">
+        <Button client:load label={t('components.button_normal')} />
+        <Button client:load label={t('components.button_disabled')} disabled />
+        <Button client:load label={t('components.button_loading')} loading />
+      </div>
+
+      <h3 class="text-lg font-semibold mb-3 mt-8">{t('components.with_icons')}</h3>
+      <div class="flex flex-wrap items-center gap-4 p-6 rounded-lg" style="background: var(--color-bg)">
+        <Button client:load label={t('components.button_next')} icon="arrow" iconPosition="right" />
+        <Button client:load label={t('components.button_prev')} icon="arrow-left" iconPosition="left" variant="secondary" />
+        <Button client:load label={t('components.button_validate')} icon="check" iconPosition="left" />
+        <Button client:load label={t('components.button_close')} icon="close" iconPosition="left" variant="ghost" />
+      </div>
+
+      <h3 class="text-lg font-semibold mb-3 mt-8">{t('components.full_width')}</h3>
+      <div class="p-6 rounded-lg" style="background: var(--color-bg)">
+        <Button client:load label={t('components.button_fullwidth')} fullWidth icon="arrow" />
+      </div>
+    </section>
+
+    <!-- INPUT -->
+    <section class="mb-16">
+      <h2 class="text-3xl mb-2 text-teal-700">{t('components.section_input')}</h2>
+      <p class="text-sm mb-6" style="color: var(--color-muted)">
+        {t('components.section_input_desc')}
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 rounded-lg" style="background: var(--color-bg)">
+        <Input
+          client:load
+          name="email"
+          type="email"
+          label={t('components.input_email_label')}
+          placeholder="jean.dupont@example.com"
+          help={t('components.input_email_help')}
+        />
+        <Input
+          client:load
+          name="budget"
+          type="number"
+          label={t('components.input_budget_label')}
+          placeholder="500"
+          help={t('components.input_budget_help')}
+        />
+        <Input
+          client:load
+          name="country"
+          type="select"
+          label={t('components.input_country_label')}
+          placeholder={t('components.input_country_placeholder')}
+          options={countryOptions}
+          required
+        />
+        <Input
+          client:load
+          name="email-err"
+          type="email"
+          label={t('components.input_email_label')}
+          modelValue="invalide"
+          error={t('components.input_email_error')}
+        />
+        <Input
+          client:load
+          name="locked"
+          label={t('components.input_disabled_label')}
+          modelValue={t('components.input_disabled_value')}
+          disabled
+        />
+        <Input
+          client:load
+          name="ref"
+          label={t('components.input_ref_label')}
+          modelValue="CARPIQ-2026-001"
+          readonly
+          help={t('components.input_ref_help')}
+        />
+      </div>
+    </section>
+
+    <!-- BADGE -->
+    <section class="mb-16">
+      <h2 class="text-3xl mb-2 text-teal-700">{t('components.section_badge')}</h2>
+      <p class="text-sm mb-6" style="color: var(--color-muted)">
+        {t('components.section_badge_desc')}
+      </p>
+
+      <h3 class="text-lg font-semibold mb-3 mt-8">{t('components.variants')}</h3>
+      <div class="flex flex-wrap items-center gap-3 p-6 rounded-lg" style="background: var(--color-bg)">
+        <Badge client:load variant="default">{t('components.badge_default')}</Badge>
+        <Badge client:load variant="primary">{t('components.badge_recommended')}</Badge>
+        <Badge client:load variant="accent">{t('components.badge_new')}</Badge>
+        <Badge client:load variant="success" icon="check">{t('components.badge_validated')}</Badge>
+        <Badge client:load variant="warning" icon="alert">{t('components.badge_warning')}</Badge>
+        <Badge client:load variant="error" icon="alert">{t('components.badge_error')}</Badge>
+      </div>
+
+      <h3 class="text-lg font-semibold mb-3 mt-8">{t('components.sizes')}</h3>
+      <div class="flex flex-wrap items-center gap-3 p-6 rounded-lg" style="background: var(--color-bg)">
+        <Badge client:load variant="primary" size="sm">{t('components.badge_small')}</Badge>
+        <Badge client:load variant="primary" size="md">{t('components.badge_medium')}</Badge>
+      </div>
+
+      <h3 class="text-lg font-semibold mb-3 mt-8">{t('components.with_icons')}</h3>
+      <div class="flex flex-wrap items-center gap-3 p-6 rounded-lg" style="background: var(--color-bg)">
+        <Badge client:load variant="primary" icon="zap">{t('components.badge_electric')}</Badge>
+        <Badge client:load variant="accent" icon="fuel">{t('components.badge_petrol')}</Badge>
+        <Badge client:load variant="success" icon="check">{t('components.badge_verified')}</Badge>
+        <Badge client:load variant="default" icon="info">{t('components.badge_info')}</Badge>
+      </div>
+    </section>
+
+    <!-- ICON -->
+    <section class="mb-16">
+      <h2 class="text-3xl mb-2 text-teal-700">{t('components.section_icon')}</h2>
+      <p class="text-sm mb-6" style="color: var(--color-muted)">
+        {t('components.section_icon_desc_pre')} {iconNames.length} {t('components.section_icon_desc_post')}
+      </p>
+
+      <h3 class="text-lg font-semibold mb-3 mt-8">{t('components.catalog')}</h3>
+      <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3 p-6 rounded-lg" style="background: var(--color-bg)">
+        {iconNames.map((n) => (
+          <div class="flex flex-col items-center gap-2 p-3 bg-white border border-gray-200 rounded-lg">
+            <Icon client:load name={n} size={24} />
+            <span class="text-xs text-gray-600">{n}</span>
+          </div>
+        ))}
+      </div>
+
+      <h3 class="text-lg font-semibold mb-3 mt-8">{t('components.sizes')}</h3>
+      <div class="flex items-center gap-6 p-6 rounded-lg" style="background: var(--color-bg)">
+        <Icon client:load name="arrow" size={12} />
+        <Icon client:load name="arrow" size={16} />
+        <Icon client:load name="arrow" size={24} />
+        <Icon client:load name="arrow" size={32} />
+        <Icon client:load name="arrow" size={48} />
+        <Icon client:load name="arrow" size={64} />
+      </div>
+    </section>
+
+    <!-- CARD -->
+    <section class="mb-16">
+      <h2 class="text-3xl mb-2 text-teal-700">{t('components.section_card')}</h2>
+      <p class="text-sm mb-6" style="color: var(--color-muted)">
+        {t('components.section_card_desc')}
+      </p>
+
+      <h3 class="text-lg font-semibold mb-3 mt-8">{t('components.variants')}</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <Card variant="default">
+          <h4 class="text-lg font-semibold mb-2">{t('components.card_default_title')}</h4>
+          <p class="text-sm text-gray-600">{t('components.card_default_desc')}</p>
+        </Card>
+        <Card variant="elevated">
+          <h4 class="text-lg font-semibold mb-2">{t('components.card_elevated_title')}</h4>
+          <p class="text-sm text-gray-600">{t('components.card_elevated_desc')}</p>
+        </Card>
+        <Card variant="outlined">
+          <h4 class="text-lg font-semibold mb-2">{t('components.card_outlined_title')}</h4>
+          <p class="text-sm text-gray-600">{t('components.card_outlined_desc')}</p>
+        </Card>
+      </div>
+
+      <h3 class="text-lg font-semibold mb-3 mt-8">{t('components.paddings')}</h3>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <Card padding="none">
+          <div class="bg-teal-50 p-2">
+            <p class="text-sm">{t('components.card_padding_none')}</p>
+          </div>
+        </Card>
+        <Card padding="sm">
+          <p class="text-sm">{t('components.card_padding_sm')}</p>
+        </Card>
+        <Card padding="md">
+          <p class="text-sm">{t('components.card_padding_md')}</p>
+        </Card>
+        <Card padding="lg">
+          <p class="text-sm">{t('components.card_padding_lg')}</p>
+        </Card>
+      </div>
+    </section>
+
+    <p class="text-center text-sm mt-16" style="color: var(--color-muted)">
+      {t('components.footer_label')} ·
+      <a href={`/${lang}/`} class="text-teal-700 underline hover:text-teal-900">{t('nav.home')}</a>
+      ·
+      <a href={`/${lang}/tokens`} class="text-teal-700 underline hover:text-teal-900">{t('nav.tokens')}</a>
+    </p>
+  </main>
+
+  <Footer lang={lang} />
+</BaseLayout>

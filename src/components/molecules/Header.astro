@@ -1,0 +1,65 @@
+---
+/**
+ * Header — header global de l'app.
+ *
+ * Composition :
+ *   - Logo (lien vers /[lang]/)
+ *   - NavBar (liens institutionnels, mobile-first)
+ *   - LanguageSwitcher (FR/EN)
+ *
+ * En .astro car le composant lui-même est statique ; les sous-composants
+ * Vue interactifs (NavBar, LanguageSwitcher) sont hydratés via `client:load`.
+ *
+ * Le composant est conscient de la langue (passée en prop par la page)
+ * et résout les libellés + URLs en fonction.
+ */
+import NavBar from './NavBar.vue';
+import LanguageSwitcher from './LanguageSwitcher.vue';
+import { useT, type Lang } from '../../i18n';
+import type { NavItem } from './NavBar.vue';
+
+interface Props {
+  lang: Lang;
+  currentPath: string;
+}
+
+const { lang, currentPath } = Astro.props;
+const t = useT(lang);
+
+const navItems: NavItem[] = [
+  { label: t('nav.home'), href: `/${lang}/`, current: currentPath === `/${lang}/` },
+  { label: t('nav.tokens'), href: `/${lang}/tokens`, current: currentPath === `/${lang}/tokens` },
+  { label: t('nav.components'), href: `/${lang}/components`, current: currentPath === `/${lang}/components` },
+];
+---
+
+<header
+  class="border-b border-gray-200 bg-white sticky top-0 z-30"
+  role="banner"
+>
+  <div class="max-w-6xl mx-auto px-4 sm:px-8 h-16 flex items-center justify-between gap-4">
+    <!-- Logo -->
+    <a
+      href={`/${lang}/`}
+      class="flex items-center gap-2 text-2xl font-semibold text-teal-700
+             focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 rounded-lg"
+      style="font-family: var(--font-display, serif);"
+    >
+      {t('common.site_name')}
+    </a>
+
+    <!-- Nav + LanguageSwitcher -->
+    <div class="flex items-center gap-2">
+      <NavBar
+        client:load
+        lang={lang}
+        items={navItems}
+      />
+      <LanguageSwitcher
+        client:load
+        lang={lang}
+        currentPath={currentPath}
+      />
+    </div>
+  </div>
+</header>

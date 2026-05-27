@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../../components/layouts/BaseLayout.astro';
+import Header from '../../components/molecules/Header.astro';
+import Footer from '../../components/molecules/Footer.astro';
+import { getLangFromUrl, useT } from '../../i18n';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useT(lang);
+---
+<BaseLayout
+  lang={lang}
+  title={`${t('home.title')} — ${t('common.tagline')}`}
+  description={t('meta.home_description')}
+>
+  <Header lang={lang} currentPath={Astro.url.pathname} />
+
+  <main class="max-w-4xl mx-auto p-8">
+    <h1 class="text-5xl mb-4">{t('home.title')}</h1>
+    <p class="text-lg mb-8" style="color: var(--color-muted)">
+      {t('home.subtitle')}
+    </p>
+
+    <ul class="space-y-2">
+      <li>
+        <a href={`/${lang}/tokens`} class="text-teal-700 underline hover:text-teal-900">
+          {t('home.cta_tokens')}
+        </a>
+      </li>
+      <li>
+        <a href={`/${lang}/components`} class="text-teal-700 underline hover:text-teal-900">
+          {t('home.cta_explore')}
+        </a>
+      </li>
+    </ul>
+  </main>
+
+  <Footer lang={lang} />
+</BaseLayout>
