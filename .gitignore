@@ -28,3 +28,8 @@ pnpm-debug.log*
 
 # Lighthouse CI local artifacts
 .lighthouseci/
+
+# Build artifacts
+.vercel/
+dist/
+node_modules/

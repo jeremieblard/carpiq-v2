@@ -15,8 +15,7 @@ const en: Dictionary = {
     home_title: 'CarPIQ: independent European car comparison platform',
     home_description:
       'Calculate the real monthly cost of a car in 3 minutes. Transparent methodology, no advertising, no commercial bias. 7 European countries.',
-    methodology_title:
-      'CarPIQ methodology: how we calculate car TCO',
+    methodology_title: 'CarPIQ methodology: how we calculate car TCO',
     methodology_description:
       'Discover our transparent methodology: data sources, TCO algorithms, IMD academic validation. Rigorous approach for informed decisions.',
     about_title: 'About CarPIQ: who we are',
@@ -28,6 +27,9 @@ const en: Dictionary = {
     legal_title: 'Legal notice and privacy | CarPIQ',
     legal_description:
       'Legal notice, privacy policy, terms of service and cookie management for CarPIQ.',
+    glossary_title: 'CarPIQ automotive glossary: TCO, depreciation, WLTP…',
+    glossary_description:
+      'All the key terms to understand the true cost of a car in Europe: TCO, depreciation, WLTP, eco bonus/penalty, BEV, PHEV, segments and body types.',
   },
 
   nav: {
@@ -277,8 +279,7 @@ const en: Dictionary = {
     field_subject: 'Subject',
     placeholder_subject: 'In a few words…',
     field_message: 'Your message',
-    placeholder_message:
-      'Describe your request (minimum 50 characters)…',
+    placeholder_message: 'Describe your request (minimum 50 characters)…',
     help_message: 'Minimum 50 characters, maximum 5000.',
     topic_support: 'User support',
     topic_press: 'Press and media',
@@ -382,6 +383,80 @@ const en: Dictionary = {
     last_updated: 'Last updated: ',
   },
 
+  // ───────────────────────────────────────────────────────────────────────────
+  // GLOSSARY
+  // ───────────────────────────────────────────────────────────────────────────
+  glossary: {
+    hero: {
+      title: 'Automotive glossary',
+      subtitle:
+        'The 15 essential terms to understand the true cost of a car in Europe.',
+    },
+    nav_label: 'Browse by letter',
+    entries: {
+      tco: {
+        title: 'TCO — Total Cost of Ownership',
+        body: 'TCO is the sum of all expenses related to owning a vehicle over its usage period: purchase price, depreciation, fuel or energy, insurance, maintenance and taxation. It is the central indicator of CarPIQ, expressed in euros per month to facilitate comparison between models. It regularly reveals that the cheapest car to buy is not the cheapest to own.',
+      },
+      depreciation: {
+        title: 'Depreciation',
+        body: 'Loss of value of a vehicle over time. Usually the largest component of TCO in the first years: a new vehicle can lose 20-30% of its value in the first year, then stabilise on a decreasing curve. Depreciation depends on the model, the national market, mileage and condition. CarPIQ models this curve in steps at 1, 2, 5, 7 and 10 years based on certified resale data.',
+      },
+      wltp: {
+        title: 'WLTP',
+        body: 'Worldwide Harmonised Light Vehicles Test Procedure. European homologation standard for measuring fuel consumption and CO₂ emissions of light vehicles, in force since 2017. More representative than the previous NEDC standard, but still underestimates real-world consumption (typically by 15-25%). CarPIQ uses Spritmonitor consumption (real user data) rather than WLTP for its calculations.',
+      },
+      spritmonitor: {
+        title: 'Spritmonitor',
+        body: 'German platform where more than 3 million European drivers report their real-world fuel consumption. CarPIQ’s reference source: it reflects actual on-the-road usage, European climate included, unlike WLTP which is measured in a lab. Spritmonitor captures gaps between manufacturers and powertrains under real driving conditions.',
+      },
+      adac: {
+        title: 'ADAC',
+        body: 'Allgemeiner Deutscher Automobil-Club. The largest motoring club in Europe (21 million members). Publishes the ADAC Cost Calculator each year, the European reference for maintenance costs by brand, model and category. CarPIQ uses this data to estimate maintenance and repairs, modulating it according to vehicle age and cumulative mileage.',
+      },
+      bev: {
+        title: 'BEV — Battery Electric Vehicle',
+        body: 'Vehicle powered only by an electric motor, fed by a battery rechargeable from the grid or a charging station. No combustion engine, no direct CO₂ emissions. Generally lower running costs (energy, maintenance), but higher purchase price and sometimes faster depreciation. Examples: Renault 5 E-Tech, Tesla Model Y, Volkswagen ID.4.',
+      },
+      phev: {
+        title: 'PHEV — Plug-in Hybrid Electric Vehicle',
+        body: 'Combination of a combustion engine and an electric motor with a battery rechargeable from the grid (typical electric range: 40-80 km). Allows 100% electric use for short trips and combustion for long ones. The benefit depends heavily on actual usage: a PHEV that is never recharged consumes more than an equivalent ICE vehicle due to the battery weight.',
+      },
+      hev: {
+        title: 'HEV — Hybrid Electric Vehicle (non plug-in)',
+        body: 'Classic hybrid: main combustion engine assisted by an electric motor powered by a small battery recharged through regenerative braking. No charging plug. Reduces consumption by 15-25% compared to an equivalent ICE, especially in city driving. Examples: Toyota Yaris Hybrid, Honda Jazz e:HEV.',
+      },
+      mhev: {
+        title: 'MHEV — Mild Hybrid Electric Vehicle',
+        body: '48V system that assists a combustion engine without being able to drive on electricity alone. Slightly reduces consumption (5-10%) in city driving and helps with start-up. Often available as an entry-level option on modern combustion vehicles.',
+      },
+      body_type: {
+        title: 'Body type',
+        body: 'Morphological type of a vehicle, defining its silhouette and typical usage. Main categories: city car (compact, urban), saloon (three-box, long distances), estate (cargo space), SUV (raised, versatile), MPV (modular interior, family), coupé (sporty 2-door). Body type directly influences comfort, fuel consumption and price.',
+      },
+      segment: {
+        title: 'Segment',
+        body: 'European classification of vehicles by size and positioning, ranging from A (mini city car, e.g. Fiat 500) to F (large premium saloon, e.g. Mercedes S-Class), with sub-segments J (SUV) and M (MPV). Enables consistent comparison between competitors. CarPIQ uses segments to propose relevant alternatives to a given model.',
+      },
+      malus: {
+        title: 'Eco penalty (malus)',
+        body: 'Purchase or registration tax applied to the most CO₂-emitting vehicles. The scale varies by country: in France, the 2026 penalty starts at 113 g CO₂/km and can exceed €60,000 for the most polluting vehicles. In Switzerland, it exists as a cantonal vehicle tax. This tax weighs on the TCO and favours fuel-efficient powertrains.',
+      },
+      bonus: {
+        title: 'Eco bonus',
+        body: 'Financial aid for the purchase of low-emission vehicles, mainly new BEVs and sometimes PHEVs or recent used vehicles. Amounts and conditions vary by country and year: in France, the BEV bonus in 2026 can reach €4,000. In Switzerland, there is no federal bonus but some cantons offer aid. To be deducted from the purchase price to assess the true cost of a vehicle.',
+      },
+      ice: {
+        title: 'ICE — Internal Combustion Engine',
+        body: 'Refers to classic internal combustion powertrains (petrol, diesel). Still represents the majority of the European fleet, but its share of new sales is declining in favour of electrified powertrains. Running cost is highly dependent on fuel price. CarPIQ treats petrol and diesel separately given their differences in price and taxation.',
+      },
+      monthly_cost: {
+        title: 'Monthly cost',
+        body: 'Synthetic indicator expressed in euros per month, obtained by dividing the total TCO projected over a given holding period (typically 5 years) by the number of months. Enables immediate reading of the cost and direct comparison with a loan or a long-term lease. Not to be confused with a loan instalment, which only covers the purchase and not running costs.',
+      },
+    },
+  },
+
   tokens: {
     title: 'CarPIQ V2 Design Tokens',
     intro: 'Visual reference of the tokens defined in global.css',
@@ -424,8 +499,7 @@ const en: Dictionary = {
     section_input_desc:
       'Text or select field with label, help and error state.',
     section_badge: 'Badge',
-    section_badge_desc:
-      '6 semantic variants × 2 sizes. Optional icon.',
+    section_badge_desc: '6 semantic variants × 2 sizes. Optional icon.',
     section_icon: 'Icon',
     section_icon_desc_pre: 'Lightweight wrapper around lucide-vue-next.',
     section_icon_desc_post: 'mapped icons.',

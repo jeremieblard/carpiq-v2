@@ -1,0 +1,120 @@
+---
+/**
+ * Page Glossaire — `/fr/glossary` et `/en/glossary`.
+ *
+ * Source : orchestration.md Livrable 5 ("10-15 entrées, structure type wiki").
+ *
+ * Choix : page unique avec ancres (Option A). 15 termes définis dans le
+ * dictionnaire i18n (`fr.ts` + `en.ts`, section `glossary.entries`).
+ *
+ * Structure :
+ *   1. Header (Livrable 2)
+ *   2. Hero (H1 + sous-titre)
+ *   3. Sommaire : 15 liens d'ancres en grille
+ *   4. Liste des 15 entrées (h2 ancré + texte de définition)
+ *   5. Footer (Livrable 2)
+ *
+ * SEO : Schema.org `DefinedTermSet` ajouté dans le <head> via le slot
+ * `head` du BaseLayout — TODO en hardening, BaseLayout ne supporte pas
+ * encore les slots head custom.
+ */
+import BaseLayout from '../../components/layouts/BaseLayout.astro';
+import Header from '../../components/molecules/Header.astro';
+import Footer from '../../components/molecules/Footer.astro';
+import { getLangFromUrl, useT } from '../../i18n';
+
+export const prerender = true;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useT(lang);
+
+/**
+ * Liste des 15 entrées dans l'ordre alphabétique des titres.
+ * L'ordre est défini ici (pas dans le dictionnaire) pour pouvoir le
+ * faire varier sans toucher au contenu.
+ *
+ * Chaque entrée est référencée par une clé qui sert aussi de slug d'ancre.
+ */
+const entryKeys = [
+  'adac',
+  'bev',
+  'body_type',
+  'bonus',
+  'depreciation',
+  'hev',
+  'ice',
+  'malus',
+  'mhev',
+  'monthly_cost',
+  'phev',
+  'segment',
+  'spritmonitor',
+  'tco',
+  'wltp',
+] as const;
+---
+<BaseLayout
+  lang={lang}
+  title={t('meta.glossary_title')}
+  description={t('meta.glossary_description')}
+>
+  <Header lang={lang} currentPath={Astro.url.pathname} />
+
+  <main>
+    <!-- HERO -->
+    <section class="bg-teal-900 text-white py-12 sm:py-16">
+      <div class="max-w-5xl mx-auto px-4 sm:px-8 text-center">
+        <h1
+          class="text-3xl sm:text-5xl font-semibold leading-tight mb-4"
+          style="font-family: var(--font-display, serif);"
+        >
+          {t('glossary.hero.title')}
+        </h1>
+        <p class="text-lg text-white/90 max-w-3xl mx-auto">
+          {t('glossary.hero.subtitle')}
+        </p>
+      </div>
+    </section>
+
+    <!-- SOMMAIRE D'ANCRES -->
+    <nav
+      class="sticky top-16 z-20 bg-white border-b border-gray-200 py-4"
+      aria-label={t('glossary.nav_label')}
+    >
+      <div class="max-w-5xl mx-auto px-4 sm:px-8">
+        <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-3 gap-y-1.5">
+          {entryKeys.map((key) => (
+            <li>
+              <a
+                href={`#${key.replace(/_/g, '-')}`}
+                class="block text-sm text-teal-700 hover:text-teal-900 underline underline-offset-2
+                       focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 rounded"
+              >
+                {t(`glossary.entries.${key}.title` as 'glossary.entries.tco.title')}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ENTRÉES -->
+    <article class="max-w-3xl mx-auto px-4 sm:px-8 py-12 sm:py-16 space-y-10 text-gray-800">
+      {entryKeys.map((key) => (
+        <section id={key.replace(/_/g, '-')} class="scroll-mt-40">
+          <h2
+            class="text-2xl sm:text-3xl font-semibold mb-3 text-gray-900"
+            style="font-family: var(--font-display, serif);"
+          >
+            {t(`glossary.entries.${key}.title` as 'glossary.entries.tco.title')}
+          </h2>
+          <p class="text-base sm:text-lg leading-relaxed">
+            {t(`glossary.entries.${key}.body` as 'glossary.entries.tco.body')}
+          </p>
+        </section>
+      ))}
+    </article>
+  </main>
+
+  <Footer lang={lang} />
+</BaseLayout>
