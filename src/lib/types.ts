@@ -10,6 +10,12 @@
  * - TripsCategory : 4 valeurs (short, mixed, long, vlong)
  * - KmCategory : 4 valeurs (u10, m20, m35, o35)
  * - Country : 9 pays (fr, be, nl, ch, de, es, it, pt, lu)
+ * - Urban : "city" | "rural" | null (string V1, pas booléen)
+ * - AgeRange : 8 clés AGE_INS V1 (u22, u26, u30, "30", "40", "45", "60", "70")
+ *
+ * Note historique : le Palier 1 avait défini par erreur `urban: boolean` et
+ * `AgeRange = '18-25'|'26-35'|...`. Le Palier 2 a corrigé ces deux types
+ * après inspection directe de v64.0.4.
  */
 
 // ============================================================
@@ -39,8 +45,30 @@ export type Pref = 'cost' | 'ratio' | 'premium' | 'sport' | 'eco' | 'family';
 /** Pays supportés (lecture COUNTRY_ENERGY V1). */
 export type Country = 'fr' | 'be' | 'nl' | 'ch' | 'de' | 'es' | 'it' | 'pt' | 'lu';
 
-/** Tranche d'âge du conducteur (impact sur l'assurance). */
-export type AgeRange = '18-25' | '26-35' | '36-50' | '51-65' | '65+';
+/**
+ * Type d'urbanité de la zone de résidence du conducteur.
+ * Vocabulaire V1 confirmé par v64.0.4 : `st.urban` est une string ou null,
+ * jamais un booléen. `urbanMod` teste `=== "city"` strictement.
+ */
+export type Urban = 'city' | 'rural' | null;
+
+/**
+ * Tranche d'âge du conducteur (clés `AGE_INS`).
+ * Vocabulaire V1 confirmé par v64.0.4 : exactement ces 8 clés string + null.
+ */
+export type AgeRange =
+  | 'u22'
+  | 'u26'
+  | 'u30'
+  | '30'
+  | '40'
+  | '45'
+  | '60'
+  | '70'
+  | null;
+
+/** Code département FR (ex: "75", "92") ou null/string libre pour autres pays. */
+export type DeptCode = string | null;
 
 /** Powertrains apparaissant comme clés dans CONS V1.
  *  Notez que PHEV est ABSENT : V1 le sépare en pon (mode électrique) et
@@ -146,29 +174,34 @@ export interface UserState {
   charging: Charging | null;
   body: BodySelection[];
   pref: Pref | null;
-  urban: boolean;
-  age: AgeRange | null;
-  dept: string | null;
+  urban: Urban;
+  age: AgeRange;
+  dept: DeptCode;
 }
 
 // ============================================================
 // Inputs explicites aux fonctions métier
 // ============================================================
 
-/** Inputs purs pour `calcTco`. Pas de dépendance à un état global.
- *  Note : V1 lit `st.trips`, `st.charging`, `st.urban` en globale via `fuelCost`.
- *  V2 les passe explicitement.
+/**
+ * Inputs purs pour `calcTco`. Pas de dépendance à un état global.
+ *
+ * Note : V1 lit `st.trips`, `st.charging`, `st.urban`, `st.dept`, `st.age`,
+ * `activeCountry` en globales. V2 les passe explicitement pour rendre la
+ * fonction pure et testable.
  */
 export interface TcoInputs {
   pt: Powertrain;
   newP: number;
   brand: string;
-  age: number;             // 0 (neuf) à 10
+  age: number;             // 0 (neuf) à 10 — âge du véhicule
   km: number;              // km annuels réels (issus de KMM[KmCategory])
   trips: TripsCategory;    // pour fuelCost
   charging: Charging;      // pour fuelCost (BEV/PHEV)
-  urban: boolean;          // pour fuelCost (urbanMod)
-  country: Country;        // pour fuelCost (getFP/getEP)
+  urban: Urban;            // pour fuelCost (urbanMod)
+  dept: DeptCode;          // pour bevWinterPen
+  country: Country;        // pour fuelCost (getFP/getEP/getEPU)
+  driverAge: AgeRange;     // pour insMod (modulation maint)
 }
 
 /** Inputs explicites pour `recommend` (équivalent V2 de getRec). */
@@ -179,9 +212,9 @@ export interface RecInputs {
   charging: Charging;
   body: BodySelection[];
   pref: Pref | null;
-  urban: boolean;
-  age: AgeRange | null;
-  dept: string | null;
+  urban: Urban;
+  age: AgeRange;
+  dept: DeptCode;
   country: Country;
 }
 
@@ -189,7 +222,17 @@ export interface RecInputs {
 // Outputs des fonctions métier
 // ============================================================
 
-/** Résultat du calcul TCO pour un véhicule donné. */
+/** Résultat du calcul TCO pour un véhicule donné.
+ *
+ *   - purchP : prix d'achat (€) au moment du snapshot d'âge
+ *   - saleP  : prix de revente projeté à age+5 ans
+ *   - depr5  : dépréciation sur 5 ans (purchP - saleP)
+ *   - yf     : yearly fuel/energy cost (€/an)
+ *   - maint  : entretien annuel (€/an)
+ *   - rep    : provision réparations annuelles (€/an, incl. fapRisk Diesel)
+ *   - mo     : coût mensuel total (€/mois) = (depr5 + 5×(yf+maint+rep)) / 60
+ *   - risk   : risque de panne en % (BPROB[pt][idx])
+ */
 export interface TcoResult {
   /** Prix d'achat estimé à l'âge demandé (€/CHF). */
   purchP: number;
@@ -205,7 +248,7 @@ export interface TcoResult {
   rep: number;
   /** Coût mensuel équivalent total. */
   mo: number;
-  /** Indice de risque de panne (0 à 1+, plus haut = plus risqué). */
+  /** Indice de risque de panne (% à l'âge donné, plus haut = plus risqué). */
   risk: number;
 }
 
