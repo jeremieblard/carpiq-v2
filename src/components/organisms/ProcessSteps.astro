@@ -1,0 +1,66 @@
+---
+/**
+ * ProcessSteps — section "Comment ça marche" en 3 étapes.
+ *
+ * Source : spec annexe A section 1.5 (3 étapes : Critères, Analyse, Reco).
+ *
+ * Structure :
+ *   - Titre de section
+ *   - 3 colonnes (desktop) / 3 lignes (mobile)
+ *   - Chaque étape : numéro stylisé + titre + description courte
+ *
+ * Le composant prend les 3 étapes en prop pour rester réutilisable (la page
+ * d'accueil passe les libellés traduits via le dictionnaire i18n).
+ */
+export interface Step {
+  /** Titre court de l'étape (h3). */
+  title: string;
+  /** Description courte (1-2 phrases). */
+  description: string;
+}
+
+export interface Props {
+  /** Titre de la section (h2). */
+  sectionTitle: string;
+  /** Les 3 étapes (mais le composant accepte n'importe quelle longueur). */
+  steps: Step[];
+}
+
+const { sectionTitle, steps } = Astro.props;
+---
+
+<section class="py-16 sm:py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-8">
+    <h2
+      class="text-3xl sm:text-4xl font-semibold text-center mb-12 text-gray-900"
+      style="font-family: var(--font-display, serif);"
+    >
+      {sectionTitle}
+    </h2>
+
+    <ol class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+      {steps.map((step, idx) => (
+        <li class="flex flex-col items-center text-center">
+          <!-- Cercle avec numéro -->
+          <div
+            class="w-16 h-16 rounded-full bg-teal-50 border-2 border-teal-700
+                   flex items-center justify-center
+                   text-2xl font-bold text-teal-700
+                   mb-4"
+            aria-hidden="true"
+          >
+            {idx + 1}
+          </div>
+
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">
+            {step.title}
+          </h3>
+
+          <p class="text-base text-gray-700 max-w-xs">
+            {step.description}
+          </p>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>

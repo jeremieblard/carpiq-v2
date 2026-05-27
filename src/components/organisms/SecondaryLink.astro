@@ -1,0 +1,48 @@
+---
+/**
+ * SecondaryLink — lien tertiaire stylé.
+ *
+ * Source : spec annexe A section 1.5, "Je ne sais pas par où commencer →
+ * Guide-moi".
+ *
+ * Lien moins prominent qu'un CTA primaire, utilisé pour les chemins
+ * alternatifs (Guide-moi quand on hésite entre les 2 CTAs principaux).
+ *
+ * Statique en .astro car pas d'interactivité. La flèche est inline SVG
+ * pour éviter de charger Icon.vue (1 SVG simple, pas besoin).
+ */
+export interface Props {
+  /** Texte du lien. */
+  label: string;
+  /** URL de destination. */
+  href: string;
+}
+
+const { label, href } = Astro.props;
+---
+
+<a
+  href={href}
+  class="inline-flex items-center justify-center gap-2
+         text-teal-700 hover:text-teal-900
+         font-medium underline underline-offset-4 decoration-1
+         hover:decoration-2
+         px-4 py-2 rounded-lg
+         focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500"
+>
+  <span>{label}</span>
+  <svg
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+  >
+    <line x1="5" y1="12" x2="19" y2="12"></line>
+    <polyline points="12 5 19 12 12 19"></polyline>
+  </svg>
+</a>

@@ -1,37 +1,140 @@
 ---
+/**
+ * Page d'accueil — `/fr/` et `/en/`.
+ *
+ * Source : spec annexe A section 1.
+ *
+ * Cette page est identique structurellement entre FR et EN — seuls les
+ * libellés diffèrent (via le dictionnaire i18n). Donc `src/pages/en/index.astro`
+ * importe directement ce fichier ne fait que ré-exporter.
+ *
+ * Structure (top → bottom) :
+ *   1. Header (logo + nav + LanguageSwitcher)            — Livrable 2
+ *   2. HeroSection (image background + H1 + sous-titre)  — Livrable 3
+ *   3. Section CTAs (2 cartes)                           — Livrable 3
+ *   4. SecondaryLink (Guide-moi)                          — Livrable 3
+ *   5. ProcessSteps (3 étapes)                           — Livrable 3
+ *   6. ValueProps (3 arguments)                          — Livrable 3
+ *   7. MethodologyPreview                                — Livrable 3
+ *   8. Footer                                            — Livrable 2
+ *
+ * Schema.org Organization (spec 1.1) sera ajouté en ScriptJSON-LD côté head
+ * dans BaseLayout (à faire en livrable 4 ou hardening Phase 5).
+ */
 import BaseLayout from '../../components/layouts/BaseLayout.astro';
 import Header from '../../components/molecules/Header.astro';
 import Footer from '../../components/molecules/Footer.astro';
+
+import HeroSection from '../../components/organisms/HeroSection.astro';
+import CTABlock from '../../components/organisms/CTABlock.astro';
+import SecondaryLink from '../../components/organisms/SecondaryLink.astro';
+import ProcessSteps from '../../components/organisms/ProcessSteps.astro';
+import ValueProps from '../../components/organisms/ValueProps.astro';
+import MethodologyPreview from '../../components/organisms/MethodologyPreview.astro';
+
 import { getLangFromUrl, useT } from '../../i18n';
+
+// Images CTAs (le hero est référencé directement dans HeroSection)
+import ctaFindDesktop from '../../assets/illustrations/home/home-cta-find-future.webp';
+import ctaFindMobile from '../../assets/illustrations/home/home-cta-find-future-mobile.webp';
+import ctaAnalyzeDesktop from '../../assets/illustrations/home/home-cta-analyze-current.webp';
+import ctaAnalyzeMobile from '../../assets/illustrations/home/home-cta-analyze-current-mobile.webp';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useT(lang);
+
+// Étapes du process
+const steps = [
+  { title: t('home.process.step_1.title'), description: t('home.process.step_1.description') },
+  { title: t('home.process.step_2.title'), description: t('home.process.step_2.description') },
+  { title: t('home.process.step_3.title'), description: t('home.process.step_3.description') },
+];
+
+// Value props
+const valueProps = [
+  { icon: 'check' as const,    title: t('home.values.independent.title'),  description: t('home.values.independent.description') },
+  { icon: 'info' as const,     title: t('home.values.transparent.title'),  description: t('home.values.transparent.description') },
+  { icon: 'settings' as const, title: t('home.values.european.title'),     description: t('home.values.european.description') },
+];
 ---
 <BaseLayout
   lang={lang}
-  title={`${t('home.title')} — ${t('common.tagline')}`}
+  title={t('meta.home_title')}
   description={t('meta.home_description')}
 >
   <Header lang={lang} currentPath={Astro.url.pathname} />
 
-  <main class="max-w-4xl mx-auto p-8">
-    <h1 class="text-5xl mb-4">{t('home.title')}</h1>
-    <p class="text-lg mb-8" style="color: var(--color-muted)">
-      {t('home.subtitle')}
-    </p>
+  <main>
+    <!-- 1. Hero -->
+    <HeroSection
+      title={t('home.hero.title')}
+      subtitle={t('home.hero.subtitle')}
+      imageAlt={t('home.hero.image_alt')}
+    />
 
-    <ul class="space-y-2">
-      <li>
-        <a href={`/${lang}/tokens`} class="text-teal-700 underline hover:text-teal-900">
-          {t('home.cta_tokens')}
-        </a>
-      </li>
-      <li>
-        <a href={`/${lang}/components`} class="text-teal-700 underline hover:text-teal-900">
-          {t('home.cta_explore')}
-        </a>
-      </li>
-    </ul>
+    <!-- 2. Section CTAs -->
+    <section class="py-12 sm:py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-8">
+        <h2
+          class="text-2xl sm:text-3xl font-semibold text-center mb-10 text-gray-900"
+          style="font-family: var(--font-display, serif);"
+        >
+          {t('home.ctas.question')}
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-8">
+          <CTABlock
+            title={t('home.ctas.find.title')}
+            description={t('home.ctas.find.description')}
+            duration={t('home.ctas.find.duration')}
+            buttonLabel={t('home.ctas.find.button')}
+            href={`/${lang}/trouver-ma-voiture`}
+            imageDesktop={ctaFindDesktop}
+            imageMobile={ctaFindMobile}
+            imageAlt={t('home.ctas.find.image_alt')}
+          />
+
+          <CTABlock
+            title={t('home.ctas.analyze.title')}
+            description={t('home.ctas.analyze.description')}
+            duration={t('home.ctas.analyze.duration')}
+            buttonLabel={t('home.ctas.analyze.button')}
+            href={`/${lang}/garage`}
+            imageDesktop={ctaAnalyzeDesktop}
+            imageMobile={ctaAnalyzeMobile}
+            imageAlt={t('home.ctas.analyze.image_alt')}
+          />
+        </div>
+
+        <!-- 3. SecondaryLink Guide-moi -->
+        <div class="flex justify-center">
+          <SecondaryLink
+            label={t('home.ctas.hesitating')}
+            href={`/${lang}/guide-me`}
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Comment ça marche -->
+    <ProcessSteps
+      sectionTitle={t('home.process.section_title')}
+      steps={steps}
+    />
+
+    <!-- 5. Pourquoi CarPIQ -->
+    <ValueProps
+      sectionTitle={t('home.values.section_title')}
+      props={valueProps}
+    />
+
+    <!-- 6. Méthodologie preview -->
+    <MethodologyPreview
+      sectionTitle={t('home.methodology_preview.section_title')}
+      preview={t('home.methodology_preview.preview')}
+      linkLabel={t('home.methodology_preview.link')}
+      linkHref={`/${lang}/methodology`}
+    />
   </main>
 
   <Footer lang={lang} />

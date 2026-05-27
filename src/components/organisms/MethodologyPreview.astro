@@ -1,0 +1,44 @@
+---
+/**
+ * MethodologyPreview — bloc preview de la méthodologie.
+ *
+ * Source : spec annexe A section 1 (Section "Notre méthodologie" 200px).
+ *
+ * Aperçu court de la méthodologie avec un CTA vers la page dédiée
+ * (`/[lang]/methodology`). La page complète sera livrée en Livrable 4.
+ *
+ * Le but est de donner confiance au visiteur ("on a vraiment une méthodologie
+ * documentée") avant qu'il ne clique sur les CTAs principaux.
+ */
+import SecondaryLink from './SecondaryLink.astro';
+
+export interface Props {
+  /** Titre de la section. */
+  sectionTitle: string;
+  /** Texte de preview (paragraphe court). */
+  preview: string;
+  /** Label du lien vers la page méthodologie. */
+  linkLabel: string;
+  /** URL de la page méthodologie. */
+  linkHref: string;
+}
+
+const { sectionTitle, preview, linkLabel, linkHref } = Astro.props;
+---
+
+<section class="py-16 sm:py-20 bg-white">
+  <div class="max-w-3xl mx-auto px-4 sm:px-8 text-center">
+    <h2
+      class="text-3xl sm:text-4xl font-semibold mb-4 text-gray-900"
+      style="font-family: var(--font-display, serif);"
+    >
+      {sectionTitle}
+    </h2>
+
+    <p class="text-base sm:text-lg text-gray-700 mb-6 leading-relaxed">
+      {preview}
+    </p>
+
+    <SecondaryLink label={linkLabel} href={linkHref} />
+  </div>
+</section>
