@@ -1,0 +1,1828 @@
+{
+  "meta": {
+    "file": "v1_snapshot.html",
+    "file_size_bytes": 925141,
+    "script_size_bytes": 837536,
+    "script_position_in_html": [
+      87325,
+      924878
+    ],
+    "analyzed_at": "2026-05-27T09:06:20.890854+00:00"
+  },
+  "categories": {
+    "tco_engine": {
+      "label": "Algorithme TCO et calculs de cout",
+      "note": null,
+      "function_count": 16,
+      "pattern_match_count": 16,
+      "total_estimated_loc": 93,
+      "matches": [
+        {
+          "name": "home",
+          "position_in_script": 60081,
+          "absolute_position_in_html": 147406,
+          "size_chars": 68,
+          "estimated_loc": 1,
+          "snippet": "function home(){return\"socket\"===st.charging||\"maybe\"===st.charging}function phevChargeFactor(){return\"socket\"===st.charging?1:\"maybe\"===st.charging?.6:0}function fmt(n){return Math.round(n).toLocaleS"
+        },
+        {
+          "name": "phevChargeFactor",
+          "position_in_script": 60149,
+          "absolute_position_in_html": 147474,
+          "size_chars": 86,
+          "estimated_loc": 2,
+          "snippet": "function phevChargeFactor(){return\"socket\"===st.charging?1:\"maybe\"===st.charging?.6:0}function fmt(n){return Math.round(n).toLocaleString(\"fr\"===lang?\"fr-FR\":\"en-GB\")}const DEPTS_BY_COUNTRY={fr:[{c:\"0"
+        },
+        {
+          "name": "insMod",
+          "position_in_script": 71809,
+          "absolute_position_in_html": 159134,
+          "size_chars": 44,
+          "estimated_loc": 1,
+          "snippet": "function insMod(){return AGE_INS[st.age]||1}const CO2_WLTP={\"2008_ice\":128,208:115,\"208_bev_new\":0,\"208_ice\":115,\"3008_bev\":0,\"3008_hev\":126,\"3008_ice\":133,\"3008_phev\":25,\"3008h\":126,\"3008phev\":25,\"30"
+        },
+        {
+          "name": "getFP",
+          "position_in_script": 103479,
+          "absolute_position_in_html": 190804,
+          "size_chars": 43,
+          "estimated_loc": 1,
+          "snippet": "function getFP(){return getEnergyData().fp}function getEP(){return getEnergyData().ep}function getEPU(){return getEnergyData().epu}function getCountryCO2(){return getEnergyData().co2g}function getCoun"
+        },
+        {
+          "name": "getEP",
+          "position_in_script": 103522,
+          "absolute_position_in_html": 190847,
+          "size_chars": 43,
+          "estimated_loc": 1,
+          "snippet": "function getEP(){return getEnergyData().ep}function getEPU(){return getEnergyData().epu}function getCountryCO2(){return getEnergyData().co2g}function getCountryBonusBEV(){return getEnergyData().bonus_"
+        },
+        {
+          "name": "getEPU",
+          "position_in_script": 103565,
+          "absolute_position_in_html": 190890,
+          "size_chars": 45,
+          "estimated_loc": 1,
+          "snippet": "function getEPU(){return getEnergyData().epu}function getCountryCO2(){return getEnergyData().co2g}function getCountryBonusBEV(){return getEnergyData().bonus_bev||0}function getCountryBonusPHEV(){retur"
+        },
+        {
+          "name": "wltpMult",
+          "position_in_script": 104287,
+          "absolute_position_in_html": 191612,
+          "size_chars": 292,
+          "estimated_loc": 7,
+          "snippet": "function wltpMult(pt,trip){const m={ice:{short:1.2,mixed:1.05,long:.95,vlong:.88},hev:{short:.75,mixed:.92,long:1.08,vlong:1.2},phev:{short:.3,mixed:.8,long:1.8,vlong:2.5},bev:{short:1.15,mixed:1,long"
+        },
+        {
+          "name": "repairCost",
+          "position_in_script": 125100,
+          "absolute_position_in_html": 212425,
+          "size_chars": 368,
+          "estimated_loc": 9,
+          "snippet": "function repairCost(pt,brand,age){const prob=REPAIR_PROB_BY_AGE[Math.min(age,10)],lr=laborRate(brand),partsFactor=lr>100?1.6:lr>90?1.3:lr>80?1.1:1,baseCost=450*partsFactor*partsFactor,fapRisk=\"die\"==="
+        },
+        {
+          "name": "annualMaint",
+          "position_in_script": 125534,
+          "absolute_position_in_html": 212859,
+          "size_chars": 162,
+          "estimated_loc": 4,
+          "snippet": "function annualMaint(pt,brand){const base=MAINT_BASE_BY_PT[pt]||330,adblue=\"die\"===pt?35:0,laborMult=laborRate(brand)/82;return Math.round(base*laborMult+adblue)}const MAINT_MULT=[1,1,1.05,1.1,1.18,1."
+        },
+        {
+          "name": "fp",
+          "position_in_script": 125761,
+          "absolute_position_in_html": 213086,
+          "size_chars": 26,
+          "estimated_loc": 1,
+          "snippet": "function fp(){return 1.72}function insMod(){return AGE_INS[st.age]||1}function bevWinterPen(){return 1+getDd().wp/100*4/12}function urbanMod(pt){return\"city\"===st.urban?\"ice\"===pt?1.14:\"hev\"===pt?.92:"
+        },
+        {
+          "name": "bevWinterPen",
+          "position_in_script": 125831,
+          "absolute_position_in_html": 213156,
+          "size_chars": 53,
+          "estimated_loc": 1,
+          "snippet": "function bevWinterPen(){return 1+getDd().wp/100*4/12}function urbanMod(pt){return\"city\"===st.urban?\"ice\"===pt?1.14:\"hev\"===pt?.92:\"phev\"===pt?.85:\"bev\"===pt?1.02:1:1}function fuelCost(pt,trips,km){con"
+        },
+        {
+          "name": "urbanMod",
+          "position_in_script": 125884,
+          "absolute_position_in_html": 213209,
+          "size_chars": 113,
+          "estimated_loc": 2,
+          "snippet": "function urbanMod(pt){return\"city\"===st.urban?\"ice\"===pt?1.14:\"hev\"===pt?.92:\"phev\"===pt?.85:\"bev\"===pt?1.02:1:1}function fuelCost(pt,trips,km){const c=CONS[trips]||CONS.mixed,f=(home(),fp()),um=urban"
+        },
+        {
+          "name": "fuelCost",
+          "position_in_script": 125997,
+          "absolute_position_in_html": 213322,
+          "size_chars": 797,
+          "estimated_loc": 19,
+          "snippet": "function fuelCost(pt,trips,km){const c=CONS[trips]||CONS.mixed,f=(home(),fp()),um=urbanMod(pt),wm=wltpMult(pt,trips);if(\"ice\"===pt)return km/100*c.ice*WLTP.ice*wm*f*um;if(\"die\"===pt){const fp_die=.88*"
+        },
+        {
+          "name": "calcTCO",
+          "position_in_script": 127301,
+          "absolute_position_in_html": 214626,
+          "size_chars": 471,
+          "estimated_loc": 11,
+          "snippet": "function calcTCO(pt,newP,brand,age,km){const curve=DEPR[pt]||DEPR.ice,idx=Math.min(age,10),sIdx=Math.min(idx+5,10),purchP=Math.round(newP*curve[idx]),saleP=Math.round(newP*curve[sIdx]),depr5=purchP-sa"
+        },
+        {
+          "name": "purchAtAgeStatic",
+          "position_in_script": 161486,
+          "absolute_position_in_html": 248811,
+          "size_chars": 147,
+          "estimated_loc": 3,
+          "snippet": "function purchAtAgeStatic(car,age){const curve=DEPR[car.pt]||DEPR.ice;return Math.round(car.newP*curve[Math.min(age,10)]*brandDeprMult(car.brand))}window._saveCompareNote=function(vehicleId,textareaEl"
+        },
+        {
+          "name": "purchAtAge",
+          "position_in_script": 165542,
+          "absolute_position_in_html": 252867,
+          "size_chars": 1165,
+          "estimated_loc": 29,
+          "snippet": "function purchAtAge(car,age,kmOverride){const country=void 0!==activeCountry?activeCountry:\"fr\",adj=_countryPriceAdj(country),kmTotal=\"number\"==typeof kmOverride&&kmOverride>0?kmOverride:function(a){i"
+        }
+      ]
+    },
+    "recommendations": {
+      "label": "Systeme de filtres et de recommandations",
+      "note": null,
+      "function_count": 8,
+      "pattern_match_count": 8,
+      "total_estimated_loc": 9585,
+      "matches": [
+        {
+          "name": "incForCar",
+          "position_in_script": 127187,
+          "absolute_position_in_html": 214512,
+          "size_chars": 114,
+          "estimated_loc": 2,
+          "snippet": "function incForCar(car,age){return age>0?0:\"bev\"===car.pt?bevBonus(car.newP):\"phev\"===car.pt&&car.newP<=5e4?1e3:0}function calcTCO(pt,newP,brand,age,km){const curve=DEPR[pt]||DEPR.ice,idx=Math.min(age"
+        },
+        {
+          "name": "getBodySegs",
+          "position_in_script": 420857,
+          "absolute_position_in_html": 508182,
+          "size_chars": 780,
+          "estimated_loc": 19,
+          "snippet": "function getBodySegs(){if(!st.body.length)return[];const bases=st.body.filter(b=>SEG_MAP[b]),mods=st.body.filter(b=>MOD_MAP[b]);if(!bases.length)return[];let segs=new Set(bases.flatMap(b=>SEG_MAP[b]||"
+        },
+        {
+          "name": "wantsAWD",
+          "position_in_script": 421637,
+          "absolute_position_in_html": 508962,
+          "size_chars": 59,
+          "estimated_loc": 1,
+          "snippet": "function wantsAWD(){return(st.bodyMod||[]).includes(\"awd\")}function carHasAWD(car){const allPros=[...car.pf||[],...car.pe||[]].join(\" \").toLowerCase();return[\"awd\",\"4wd\",\"4x4\",\"quattro\",\"xdrive\",\"4mot"
+        },
+        {
+          "name": "carHasAWD",
+          "position_in_script": 421696,
+          "absolute_position_in_html": 509021,
+          "size_chars": 290,
+          "estimated_loc": 7,
+          "snippet": "function carHasAWD(car){const allPros=[...car.pf||[],...car.pe||[]].join(\" \").toLowerCase();return[\"awd\",\"4wd\",\"4x4\",\"quattro\",\"xdrive\",\"4motion\",\"e-awd\",\"traction intégrale\",\"integral\"].some(k=>allPr"
+        },
+        {
+          "name": "rankVehiclesByTCO",
+          "position_in_script": 427956,
+          "absolute_position_in_html": 515281,
+          "size_chars": 435,
+          "estimated_loc": 10,
+          "snippet": "function rankVehiclesByTCO(allCars,stRef,age){const scored=_applyFilters_v53(allCars,stRef,age=null==age?0:age,0).map(car=>{const purch=\"function\"==typeof purchAtAge?purchAtAge(car,age):car.newP,inc=\""
+        },
+        {
+          "name": "scorePt",
+          "position_in_script": 448122,
+          "absolute_position_in_html": 535447,
+          "size_chars": 1383,
+          "estimated_loc": 34,
+          "snippet": "function scorePt(pt){const budget=st.budget||25e3,km=getKm(),tr=st.trips||\"mixed\",h=home(),carsOfPt=(getBodySegs(),DB.filter(car=>{if(car.pt!==pt)return!1;const pp=purchAtAge(car,0),pp2=purchAtAge(car"
+        },
+        {
+          "name": "bestPt",
+          "position_in_script": 449505,
+          "absolute_position_in_html": 536830,
+          "size_chars": 522,
+          "estimated_loc": 13,
+          "snippet": "function bestPt(){const ranked=[\"ice\",\"hev\",\"phev\",\"bev\",\"die\"].sort((a,b)=>scorePt(b)-scorePt(a)),bodySegs=getBodySegs();for(const pt of ranked)if([0,2,5].some(age=>DB.some(c=>{if(c.pt!==pt)return!1;"
+        },
+        {
+          "name": "getRec",
+          "position_in_script": 457547,
+          "absolute_position_in_html": 544872,
+          "size_chars": 379990,
+          "estimated_loc": 9499,
+          "snippet": "function getRec(){const best=bestPt(),bodySegs=getBodySegs(),km=getKm(),tr=st.trips||\"mixed\",h=home(),refCar=DB.find(c=>c.pt===best&&(!bodySegs.length||c.seg.some(s=>bodySegs.includes(s)))&&(!wantsAWD"
+        }
+      ]
+    },
+    "garage_compare": {
+      "label": "Garage virtuel et comparateur",
+      "note": null,
+      "function_count": 14,
+      "pattern_match_count": 14,
+      "total_estimated_loc": 8520,
+      "matches": [
+        {
+          "name": "renderCompareSelection",
+          "position_in_script": 134901,
+          "absolute_position_in_html": 222226,
+          "size_chars": 2881,
+          "estimated_loc": 72,
+          "snippet": "function renderCompareSelection(){const body=document.getElementById(\"garage-modal-body\");if(!body)return;const card=document.querySelector(\".garage-modal-card\");card&&card.classList.remove(\"compare-w"
+        },
+        {
+          "name": "renderCompareView",
+          "position_in_script": 137782,
+          "absolute_position_in_html": 225107,
+          "size_chars": 2933,
+          "estimated_loc": 73,
+          "snippet": "function renderCompareView(){const body=document.getElementById(\"garage-modal-body\");if(!body)return;const card=document.querySelector(\".garage-modal-card\");card&&card.classList.add(\"compare-wide\");co"
+        },
+        {
+          "name": "_renderCompareSection1",
+          "position_in_script": 142329,
+          "absolute_position_in_html": 229654,
+          "size_chars": 1587,
+          "estimated_loc": 39,
+          "snippet": "function _renderCompareSection1(data,minTcoMo){const fr=\"fr\"===lang;return`<section style=\"margin-bottom:28px\">\\n    <div style=\"display:flex;gap:12px;flex-wrap:wrap\">${data.map(d=>{const isBest=d.tco"
+        },
+        {
+          "name": "_renderCompareSection2",
+          "position_in_script": 143916,
+          "absolute_position_in_html": 231241,
+          "size_chars": 1887,
+          "estimated_loc": 47,
+          "snippet": "function _renderCompareSection2(data,mainData,minTcoMo){const fr=\"fr\"===lang,bestCandidate=data.filter(d=>d.id!==mainData.id).reduce((b,c)=>!b||c.tco.mo<b.tco.mo?c:b,null);if(!bestCandidate)return\"\";c"
+        },
+        {
+          "name": "_renderCompareSection3",
+          "position_in_script": 145803,
+          "absolute_position_in_html": 233128,
+          "size_chars": 2380,
+          "estimated_loc": 59,
+          "snippet": "function _renderCompareSection3(data,minTcoMo){const fr=\"fr\"===lang,cur=data[0].cur,headerCells=data.map(d=>`<th style=\"padding:10px 8px;text-align:right;font-weight:600;font-size:12px;border-bottom:2"
+        },
+        {
+          "name": "_renderCompareSection6",
+          "position_in_script": 148183,
+          "absolute_position_in_html": 235508,
+          "size_chars": 2163,
+          "estimated_loc": 54,
+          "snippet": "function _renderCompareSection6(data){const fr=\"fr\"===lang,rows=[{key:\"pt\",lblFr:\"Motorisation\",lblEn:\"Powertrain\",get:d=>d.ptLabel},{key:\"newP\",lblFr:\"Prix neuf\",lblEn:\"New price\",get:d=>d.cur+\" \"+(d"
+        },
+        {
+          "name": "_renderCompareSection4",
+          "position_in_script": 151704,
+          "absolute_position_in_html": 239029,
+          "size_chars": 2508,
+          "estimated_loc": 62,
+          "snippet": "function _renderCompareSection4(data,minTcoMo){const fr=\"fr\"===lang,COMPONENTS=[{key:\"dep\",color:\"#147763\",lblFr:\"Dépréciation\",lblEn:\"Depreciation\"},{key:\"fuel\",color:\"#E9921A\",lblFr:\"Carburant\",lblE"
+        },
+        {
+          "name": "_renderCompareSection5",
+          "position_in_script": 154212,
+          "absolute_position_in_html": 241537,
+          "size_chars": 2386,
+          "estimated_loc": 59,
+          "snippet": "function _renderCompareSection5(data){const fr=\"fr\"===lang,xScale=v=>40+v/12*482,yScale=v=>18+170*(1-v/100),curves=data.map((d,i)=>{const color=_COMPARE_COLORS[i%_COMPARE_COLORS.length];if(!d.car||!d."
+        },
+        {
+          "name": "_renderCompareSection7",
+          "position_in_script": 156969,
+          "absolute_position_in_html": 244294,
+          "size_chars": 305250,
+          "estimated_loc": 7631,
+          "snippet": "function _renderCompareSection7(data){const fr=\"fr\"===lang,notes=_getCompareNotes(),isAuth=\"function\"==typeof isLoggedIn&&isLoggedIn(),cells=data.map(d=>((notes[d.id]||\"\").replace(/\"/g,\"&quot;\"),`<div"
+        },
+        {
+          "name": "renderGarageModal",
+          "position_in_script": 719321,
+          "absolute_position_in_html": 806646,
+          "size_chars": 1037,
+          "estimated_loc": 25,
+          "snippet": "function renderGarageModal(prefilledForm){const existing=document.getElementById(\"garage-modal\");existing&&existing.remove();const overlay=document.createElement(\"div\");overlay.id=\"garage-modal\",overl"
+        },
+        {
+          "name": "renderGarageList",
+          "position_in_script": 720625,
+          "absolute_position_in_html": 807950,
+          "size_chars": 1337,
+          "estimated_loc": 33,
+          "snippet": "function renderGarageList(){const body=document.getElementById(\"garage-modal-body\");if(!body)return;const card=document.querySelector(\".garage-modal-card\");card&&card.classList.remove(\"compare-wide\");"
+        },
+        {
+          "name": "renderGarageForm",
+          "position_in_script": 724523,
+          "absolute_position_in_html": 811848,
+          "size_chars": 5164,
+          "estimated_loc": 129,
+          "snippet": "function renderGarageForm(existing){const body=document.getElementById(\"garage-modal-body\");if(!body)return;const isEdit=!(!existing||!existing.id),brands=garageBrandList();let initBrand=\"\",initSlug=\""
+        },
+        {
+          "name": "saveGarageForm",
+          "position_in_script": 732685,
+          "absolute_position_in_html": 820010,
+          "size_chars": 2345,
+          "estimated_loc": 58,
+          "snippet": "function saveGarageForm(editId){const errEl=document.getElementById(\"gf-err\");errEl.style.display=\"none\";const brand=document.getElementById(\"gf-brand\").value,slug=document.getElementById(\"gf-model\")."
+        },
+        {
+          "name": "renderGarageDetail",
+          "position_in_script": 735030,
+          "absolute_position_in_html": 822355,
+          "size_chars": 7160,
+          "estimated_loc": 179,
+          "snippet": "function renderGarageDetail(vehicleId){const body=document.getElementById(\"garage-modal-body\");if(!body)return;const vehicle=GarageStore.get(vehicleId);if(!vehicle)return renderGarageList();const car="
+        }
+      ]
+    },
+    "questionnaire_render": {
+      "label": "Fonctions de rendu UI questionnaire (a refaire en composants Astro)",
+      "note": "Ces fonctions sont liees a la presentation actuelle. On garde la LOGIQUE qu'elles encapsulent (calculs intermediaires, etat) mais on refait le rendering en composants Astro.",
+      "function_count": 40,
+      "pattern_match_count": 40,
+      "total_estimated_loc": 4349,
+      "matches": [
+        {
+          "name": "renderCountryBtns",
+          "position_in_script": 58821,
+          "absolute_position_in_html": 146146,
+          "size_chars": 255,
+          "estimated_loc": 6,
+          "snippet": "function renderCountryBtns(){const dd=document.getElementById(\"country-dropdown\");dd&&(dd.value=activeCountry),Object.keys(COUNTRY_ENERGY).forEach(code=>{const b=document.getElementById(\"cbtn-\"+code);"
+        },
+        {
+          "name": "showGarageToast",
+          "position_in_script": 132920,
+          "absolute_position_in_html": 220245,
+          "size_chars": 58,
+          "estimated_loc": 1,
+          "snippet": "function showGarageToast({icon:icon,msg:msg,action:action}){let host=document.getElementById(\"carpiq-toast-host\");host||(host=document.createElement(\"div\"),host.id=\"carpiq-toast-host\",host.style.cssTe"
+        },
+        {
+          "name": "renderCompareSelection",
+          "position_in_script": 134901,
+          "absolute_position_in_html": 222226,
+          "size_chars": 2881,
+          "estimated_loc": 72,
+          "snippet": "function renderCompareSelection(){const body=document.getElementById(\"garage-modal-body\");if(!body)return;const card=document.querySelector(\".garage-modal-card\");card&&card.classList.remove(\"compare-w"
+        },
+        {
+          "name": "renderCompareView",
+          "position_in_script": 137782,
+          "absolute_position_in_html": 225107,
+          "size_chars": 2933,
+          "estimated_loc": 73,
+          "snippet": "function renderCompareView(){const body=document.getElementById(\"garage-modal-body\");if(!body)return;const card=document.querySelector(\".garage-modal-card\");card&&card.classList.add(\"compare-wide\");co"
+        },
+        {
+          "name": "renderSaveBanner",
+          "position_in_script": 158636,
+          "absolute_position_in_html": 245961,
+          "size_chars": 37,
+          "estimated_loc": 1,
+          "snippet": "function renderSaveBanner(){return\"\"}function garageResolveCar(vehicle){if(vehicle.gridBrand&&vehicle.gridSlug&&vehicle.gridPt)return{id:\"_garage_\"+vehicle.gridBrand+\"_\"+vehicle.gridSlug,brand:vehicle"
+        },
+        {
+          "name": "showResumeBanner",
+          "position_in_script": 483540,
+          "absolute_position_in_html": 570865,
+          "size_chars": 2460,
+          "estimated_loc": 61,
+          "snippet": "function showResumeBanner(saved){const daysAgo=Math.max(1,Math.round((Date.now()-saved.ts)/864e5)),msgs=(saved.step,{fr:{title:\"👋 Bon retour !\",sub:`Dernière visite il y a ${daysAgo} jour${daysAgo>1?\""
+        },
+        {
+          "name": "renderCurve",
+          "position_in_script": 487453,
+          "absolute_position_in_html": 574778,
+          "size_chars": 6036,
+          "estimated_loc": 150,
+          "snippet": "function renderCurve(best,refNewP,brand){const km=curveKm,pm=curveData(best,refNewP,brand,km),hRef=DB.find(c=>\"hev\"===c.pt)?.newP||refNewP,ph=\"hev\"!==best?curveData(\"hev\",hRef,\"toyota\",km):null,iRef=D"
+        },
+        {
+          "name": "render",
+          "position_in_script": 495646,
+          "absolute_position_in_html": 582971,
+          "size_chars": 909,
+          "estimated_loc": 22,
+          "snippet": "function render(){try{window.scrollTo({top:0,behavior:\"smooth\"})}catch(e){window.scrollTo(0,0)}if(saveSession(),0!==step){const b=document.getElementById(\"resume-banner\");b&&b.remove()}window.scrollTo"
+        },
+        {
+          "name": "renderIntro",
+          "position_in_script": 500100,
+          "absolute_position_in_html": 587425,
+          "size_chars": 2310,
+          "estimated_loc": 57,
+          "snippet": "function renderIntro(){app.innerHTML=`<div class=\"card\"><picture class=\"intro-hero-image\"><source media=\"(max-width:720px)\" srcset=\"/assets/illustrations/home/home-hero-mobile.webp\"><source media=\"(mi"
+        },
+        {
+          "name": "renderQ",
+          "position_in_script": 503116,
+          "absolute_position_in_html": 590441,
+          "size_chars": 320,
+          "estimated_loc": 8,
+          "snippet": "function renderQ(s){if(1!==s){if(2===s)return step=3,void render();if(3!==s)return 4===s||5===s?(step=6,void render()):6===s?st.guided&&st.guided.inferred_body&&st.guided.inferred_body.length>0?(step="
+        },
+        {
+          "name": "renderGuidedStep",
+          "position_in_script": 541499,
+          "absolute_position_in_html": 628824,
+          "size_chars": 170,
+          "estimated_loc": 4,
+          "snippet": "function renderGuidedStep(n){return 1===n?_renderGuidedStep1():2===n?_renderGuidedStep2():3===n?_renderGuidedStep3():4===n?_renderGuidedStep4():void renderGuidedResult()}function _renderGuidedStep1(){"
+        },
+        {
+          "name": "renderGuidedResult",
+          "position_in_script": 544283,
+          "absolute_position_in_html": 631608,
+          "size_chars": 1643,
+          "estimated_loc": 41,
+          "snippet": "function renderGuidedResult(){const g=st.guided,result=inferDriverFromGuided();g.inferred_driver=result.inferred,g.inference_result=result;const inferredLabel=gt(\"driver_label_\"+result.inferred),secon"
+        },
+        {
+          "name": "renderBudget",
+          "position_in_script": 545926,
+          "absolute_position_in_html": 633251,
+          "size_chars": 44,
+          "estimated_loc": 1,
+          "snippet": "function renderBudget(){return renderPref()}function renderPref(){const fr=\"fr\"===lang,cards=[{v:\"cost\",icon:\"💰\",tf:\"Meilleur coût total\",te:\"Best total cost\",tde:\"Niedrigste Gesamtkosten\",tnl:\"Laagst"
+        },
+        {
+          "name": "renderPref",
+          "position_in_script": 545970,
+          "absolute_position_in_html": 633295,
+          "size_chars": 7526,
+          "estimated_loc": 188,
+          "snippet": "function renderPref(){const fr=\"fr\"===lang,cards=[{v:\"cost\",icon:\"💰\",tf:\"Meilleur coût total\",te:\"Best total cost\",tde:\"Niedrigste Gesamtkosten\",tnl:\"Laagste totaalkosten\",tes:\"Menor coste total\",tit:"
+        },
+        {
+          "name": "renderKmTripsCharge",
+          "position_in_script": 558251,
+          "absolute_position_in_html": 645576,
+          "size_chars": 5465,
+          "estimated_loc": 136,
+          "snippet": "function renderKmTripsCharge(){const chargingOpts=[{v:\"socket\",lf:t(\"o4a\"),df:t(\"o4a_d\"),tag:t(\"o4a_tag\")},{v:\"maybe\",lf:t(\"o4b\"),df:t(\"o4b_d\")},{v:\"street\",lf:t(\"o4c\"),df:t(\"o4c_d\")}],fr=\"fr\"===lang,"
+        },
+        {
+          "name": "renderBudgetKmTrips",
+          "position_in_script": 563716,
+          "absolute_position_in_html": 651041,
+          "size_chars": 60,
+          "estimated_loc": 1,
+          "snippet": "function renderBudgetKmTrips(){return renderKmTripsCharge()}function updatePresets(v){document.querySelectorAll(\".budget-preset\").forEach(el=>{const pv=parseInt(el.textContent.replace(/\\D/g,\"\"));el.cl"
+        },
+        {
+          "name": "renderCharging",
+          "position_in_script": 563951,
+          "absolute_position_in_html": 651276,
+          "size_chars": 1048,
+          "estimated_loc": 26,
+          "snippet": "function renderCharging(){const optHtml=[{v:\"socket\",lf:t(\"o4a\"),df:t(\"o4a_d\"),tag:t(\"o4a_tag\")},{v:\"maybe\",lf:t(\"o4b\"),df:t(\"o4b_d\")},{v:\"street\",lf:t(\"o4c\"),df:t(\"o4c_d\")}].map(o=>`\\n    <div class="
+        },
+        {
+          "name": "renderBody",
+          "position_in_script": 564999,
+          "absolute_position_in_html": 652324,
+          "size_chars": 7086,
+          "estimated_loc": 177,
+          "snippet": "function renderBody(){if(\"function\"==typeof subjEnsureStyles_v63)try{subjEnsureStyles_v63()}catch(e){}const bases=[{k:\"mini\",ic:\"🚗\",fr:\"Mini citadine\",en:\"Mini city car\",sub:\"< 3.9m · Twingo, Aygo, Fi"
+        },
+        {
+          "name": "renderLocAge",
+          "position_in_script": 572085,
+          "absolute_position_in_html": 659410,
+          "size_chars": 3903,
+          "estimated_loc": 97,
+          "snippet": "function renderLocAge(){const deptOpts=getDepts().map(d=>`<option value=\"${d.c}\"${st.dept===d.c?\" selected\":\"\"}>${d.c} — ${d.n}</option>`).join(\"\");app.innerHTML=`<div class=\"card\">\\n    <div class=\"q"
+        },
+        {
+          "name": "renderSelectedCarKpi",
+          "position_in_script": 584341,
+          "absolute_position_in_html": 671666,
+          "size_chars": 6012,
+          "estimated_loc": 150,
+          "snippet": "function renderSelectedCarKpi(carId,age){selectedCarId=carId,selectedCarAge=age;const wrap=document.getElementById(\"selected-car-kpi\");if(!wrap)return;const car=getAllCarsForDropdown().find(c=>c.id==="
+        },
+        {
+          "name": "renderCustomCompare",
+          "position_in_script": 597233,
+          "absolute_position_in_html": 684558,
+          "size_chars": 9595,
+          "estimated_loc": 239,
+          "snippet": "function renderCustomCompare(recCarId,recAge){_cmpRecCarId=recCarId,_cmpRecAge=recAge=null!=recAge?recAge:0;const wrap=document.getElementById(\"custom-compare-wrap\");if(!wrap)return;const brands=_cmpB"
+        },
+        {
+          "name": "renderSelectedCarKPI",
+          "position_in_script": 606828,
+          "absolute_position_in_html": 694153,
+          "size_chars": 15979,
+          "estimated_loc": 399,
+          "snippet": "function renderSelectedCarKPI(){const wrap=document.getElementById(\"selected-car-kpi\");if(!wrap||!selectedCar)return;curveKm=getKm();const{car:car,age:age}=selectedCar,effectiveAge_d=car.genYear&&2026"
+        },
+        {
+          "name": "renderRefinePanelBody",
+          "position_in_script": 643346,
+          "absolute_position_in_html": 730671,
+          "size_chars": 5328,
+          "estimated_loc": 133,
+          "snippet": "function renderRefinePanelBody(){const stylePref=st.style_preference,tradeoff=st.age_equip_tradeoff||\"balanced\",favs=st.brand_prefs&&st.brand_prefs.favorites||[],excl=st.brand_prefs&&st.brand_prefs.ex"
+        },
+        {
+          "name": "renderRefinePanelHTML",
+          "position_in_script": 648674,
+          "absolute_position_in_html": 735999,
+          "size_chars": 446,
+          "estimated_loc": 11,
+          "snippet": "function renderRefinePanelHTML(){return`\\n    <div class=\"refine-container\" style=\"margin:30px auto;max-width:900px\">\\n      <button id=\"btn-refine\" class=\"btn-refine\" onclick=\"toggleRefinePanel()\">\\n"
+        },
+        {
+          "name": "renderResults",
+          "position_in_script": 649120,
+          "absolute_position_in_html": 736445,
+          "size_chars": 42142,
+          "estimated_loc": 1053,
+          "snippet": "function renderResults(){const fr=\"fr\"===lang,rec=getRec();mpTrack(\"results_shown\",{recommended_pt:rec.pt,budget:st.budget,km:getKm(),trips:st.trips,parking:st.home,country:activeCountry,body:st.body|"
+        },
+        {
+          "name": "renderMobileTabs",
+          "position_in_script": 701099,
+          "absolute_position_in_html": 788424,
+          "size_chars": 1358,
+          "estimated_loc": 33,
+          "snippet": "function renderMobileTabs(){const grid=document.querySelector(\".budget-compare-grid\");if(!grid)return;const cols=grid.querySelectorAll(\".bc-col\");if(!cols.length)return;const oldBar=document.getElemen"
+        },
+        {
+          "name": "showEmailCapture",
+          "position_in_script": 703830,
+          "absolute_position_in_html": 791155,
+          "size_chars": 29,
+          "estimated_loc": 1,
+          "snippet": "function showEmailCapture(){}function submitEmail(){const email=document.getElementById(\"email-input\")?.value?.trim(),consent=document.getElementById(\"email-consent\")?.checked;if(!email||!email.includ"
+        },
+        {
+          "name": "renderDepreciationChartSvg",
+          "position_in_script": 704828,
+          "absolute_position_in_html": 792153,
+          "size_chars": 3312,
+          "estimated_loc": 82,
+          "snippet": "function renderDepreciationChartSvg(points,options){if(options=options||{},!points||0===points.length)return'<div class=\"garage-empty-mini\">—</div>';const W=options.width||640,H=options.height||280,PW"
+        },
+        {
+          "name": "renderGarageModal",
+          "position_in_script": 719321,
+          "absolute_position_in_html": 806646,
+          "size_chars": 1037,
+          "estimated_loc": 25,
+          "snippet": "function renderGarageModal(prefilledForm){const existing=document.getElementById(\"garage-modal\");existing&&existing.remove();const overlay=document.createElement(\"div\");overlay.id=\"garage-modal\",overl"
+        },
+        {
+          "name": "renderGarageList",
+          "position_in_script": 720625,
+          "absolute_position_in_html": 807950,
+          "size_chars": 1337,
+          "estimated_loc": 33,
+          "snippet": "function renderGarageList(){const body=document.getElementById(\"garage-modal-body\");if(!body)return;const card=document.querySelector(\".garage-modal-card\");card&&card.classList.remove(\"compare-wide\");"
+        },
+        {
+          "name": "renderGarageForm",
+          "position_in_script": 724523,
+          "absolute_position_in_html": 811848,
+          "size_chars": 5164,
+          "estimated_loc": 129,
+          "snippet": "function renderGarageForm(existing){const body=document.getElementById(\"garage-modal-body\");if(!body)return;const isEdit=!(!existing||!existing.id),brands=garageBrandList();let initBrand=\"\",initSlug=\""
+        },
+        {
+          "name": "renderGarageDetail",
+          "position_in_script": 735030,
+          "absolute_position_in_html": 822355,
+          "size_chars": 7160,
+          "estimated_loc": 179,
+          "snippet": "function renderGarageDetail(vehicleId){const body=document.getElementById(\"garage-modal-body\");if(!body)return;const vehicle=GarageStore.get(vehicleId);if(!vehicle)return renderGarageList();const car="
+        },
+        {
+          "name": "renderTcoStackedSvg",
+          "position_in_script": 747375,
+          "absolute_position_in_html": 834700,
+          "size_chars": 3238,
+          "estimated_loc": 80,
+          "snippet": "function renderTcoStackedSvg(points,options){if(options=options||{},!points||0===points.length)return\"\";const W=options.width||640,H=options.height||280,PW=W-60-24,PH=H-24-50,cur=\"ch\"===options.countr"
+        },
+        {
+          "name": "renderTcoDonutSvg",
+          "position_in_script": 750613,
+          "absolute_position_in_html": 837938,
+          "size_chars": 1330,
+          "estimated_loc": 33,
+          "snippet": "function renderTcoDonutSvg(decomposition,options){if(options=options||{},!decomposition||!decomposition.lines)return\"\";const W=options.width||220,H=options.height||220,cx=W/2,cy=H/2,lines=decompositio"
+        },
+        {
+          "name": "showProjMethodologyModal",
+          "position_in_script": 751943,
+          "absolute_position_in_html": 839268,
+          "size_chars": 1912,
+          "estimated_loc": 47,
+          "snippet": "function showProjMethodologyModal(){const existing=document.getElementById(\"proj-method-modal\");existing&&existing.remove();const m=document.createElement(\"div\");m.id=\"proj-method-modal\",m.className=\""
+        },
+        {
+          "name": "showTcoMethodologyModal",
+          "position_in_script": 753855,
+          "absolute_position_in_html": 841180,
+          "size_chars": 2726,
+          "estimated_loc": 68,
+          "snippet": "function showTcoMethodologyModal(vehicleId){const existing=document.getElementById(\"tco-method-modal\");existing&&existing.remove();const vehicle=GarageStore.get(vehicleId),tco=vehicle?decomposeTcoMont"
+        },
+        {
+          "name": "showMethodologyPt",
+          "position_in_script": 756581,
+          "absolute_position_in_html": 843906,
+          "size_chars": 3828,
+          "estimated_loc": 95,
+          "snippet": "function showMethodologyPt(){const existing=document.getElementById(\"method-pt-modal\");existing&&existing.remove();const fr=\"fr\"===lang,preferredPt=\"function\"==typeof bestPt?bestPt():null,ptLabel={bev"
+        },
+        {
+          "name": "showMethodologyDriver",
+          "position_in_script": 760409,
+          "absolute_position_in_html": 847734,
+          "size_chars": 8056,
+          "estimated_loc": 201,
+          "snippet": "function showMethodologyDriver(){const existing=document.getElementById(\"method-driver-modal\");existing&&existing.remove();const fr=\"fr\"===lang,driver=st.pref;if(!driver)return;const driverLabels={cos"
+        },
+        {
+          "name": "renderAuthModalContent",
+          "position_in_script": 769168,
+          "absolute_position_in_html": 856493,
+          "size_chars": 2940,
+          "estimated_loc": 73,
+          "snippet": "function renderAuthModalContent(){const fr=\"fr\"===lang,user=AuthService.getUser();if(user){const email=user.email||\"\",initial=(email[0]||\"?\").toUpperCase(),since=user.created_at?new Date(user.created_"
+        },
+        {
+          "name": "renderSubjectiveSection_v63",
+          "position_in_script": 791715,
+          "absolute_position_in_html": 879040,
+          "size_chars": 6536,
+          "estimated_loc": 163,
+          "snippet": "function renderSubjectiveSection_v63(){if(\"function\"==typeof subjIsCatalogReady_v63&&!subjIsCatalogReady_v63())return\"\";const p=subjEnsureProfile_v63(),d=p.dimensions||{},eff=subjEffectiveCount_v63(p)"
+        }
+      ]
+    },
+    "i18n": {
+      "label": "Systeme d'internationalisation",
+      "note": null,
+      "function_count": 2,
+      "pattern_match_count": 4,
+      "total_estimated_loc": 26,
+      "matches": [
+        {
+          "name": "lang=\"fr\"",
+          "position_in_script": 57374,
+          "absolute_position_in_html": 144699,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "lang=\"fr\",st={pref:null,budget:2e4,km:null,trips:null,charging:null,body:[],bodyMod:[],dept:null,urban:null,age:null,relFilter:\"\",originFilter:new Set,networkFilter:\"\",style_preference:null,age_equip_"
+        },
+        {
+          "name": "t",
+          "position_in_script": 58316,
+          "absolute_position_in_html": 145641,
+          "size_chars": 53,
+          "estimated_loc": 1,
+          "snippet": "function t(k){return T[lang]&&T[lang][k]||T.fr[k]||k}const LANG_BY_COUNTRY={fr:\"fr\",lu:\"fr\",nl:\"nl\",de:\"de\",es:\"es\",it:\"it\",pt:\"fr\"};function setCountry(code){if(!COUNTRY_ENERGY[code])return;if(active"
+        },
+        {
+          "name": "setLang",
+          "position_in_script": 59076,
+          "absolute_position_in_html": 146401,
+          "size_chars": 1005,
+          "estimated_loc": 25,
+          "snippet": "function setLang(l){lang=l,document.documentElement.lang=l,mpTrack(\"select_lang\",{lang:l});const tg=document.getElementById(\"tg\");tg&&(tg.textContent=\"fr\"===l?\"Neutre · Sans pub · Gratuit\":\"de\"===l?\"N"
+        },
+        {
+          "name": "const labels=",
+          "position_in_script": 573488,
+          "absolute_position_in_html": 660813,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "const labels={fr:{fr:\"Votre département\",de:\"Ihr Departement\",nl:\"Uw departement\",en:\"Your department\",es:\"Su departamento\",it:\"Il vostro dipartimento\"},ch:{fr:\"Votre canton\",de:\"Ihr Kanton\",nl:\"Uw ka"
+        }
+      ]
+    },
+    "analytics": {
+      "label": "Tracking et analytics",
+      "note": null,
+      "function_count": 0,
+      "pattern_match_count": 2,
+      "total_estimated_loc": 0,
+      "matches": [
+        {
+          "name": "mixpanel.",
+          "position_in_script": 431250,
+          "absolute_position_in_html": 518575,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "mixpanel.track?mixpanel.track(event,props):\"undefined\"!=typeof console&&console.log(\"[mpTrack]\",event,props)}catch(e){}});const V61_AGE_VALUES={new:0,used2y:2,used5y:5,used7y:7,used10y:10},V61_AGE_TO_"
+        },
+        {
+          "name": "mixpanel.",
+          "position_in_script": 431265,
+          "absolute_position_in_html": 518590,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "mixpanel.track(event,props):\"undefined\"!=typeof console&&console.log(\"[mpTrack]\",event,props)}catch(e){}});const V61_AGE_VALUES={new:0,used2y:2,used5y:5,used7y:7,used10y:10},V61_AGE_TO_KEY={0:\"new\",2:"
+        }
+      ]
+    },
+    "storage": {
+      "label": "Persistance locale (localStorage, sessionStorage)",
+      "note": null,
+      "function_count": 0,
+      "pattern_match_count": 18,
+      "total_estimated_loc": 0,
+      "matches": [
+        {
+          "name": "localStorage.",
+          "position_in_script": 128167,
+          "absolute_position_in_html": 215492,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "localStorage.getItem(this.KEY);return raw?JSON.parse(raw):[]}catch(e){return console.warn(\"[GarageStore] read error:\",e),[]}},_write(items){try{return localStorage.setItem(this.KEY,JSON.stringify(item"
+        },
+        {
+          "name": "localStorage.",
+          "position_in_script": 128318,
+          "absolute_position_in_html": 215643,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "localStorage.setItem(this.KEY,JSON.stringify(items)),!0}catch(e){return console.warn(\"[GarageStore] write error:\",e),!1}},list(){return this._read()},get(id){return this._read().find(v=>v.id===id)||nu"
+        },
+        {
+          "name": "localStorage.",
+          "position_in_script": 156698,
+          "absolute_position_in_html": 244023,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "localStorage.getItem(COMPARE_NOTES_KEY)||\"{}\")}catch(e){return{}}}function _setCompareNote(vehicleId,note){const all=_getCompareNotes();note&&note.trim()?all[vehicleId]=note:delete all[vehicleId];try{"
+        },
+        {
+          "name": "localStorage.",
+          "position_in_script": 156898,
+          "absolute_position_in_html": 244223,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "localStorage.setItem(COMPARE_NOTES_KEY,JSON.stringify(all))}catch(e){}}function _renderCompareSection7(data){const fr=\"fr\"===lang,notes=_getCompareNotes(),isAuth=\"function\"==typeof isLoggedIn&&isLogge"
+        },
+        {
+          "name": "localStorage.",
+          "position_in_script": 162905,
+          "absolute_position_in_html": 250230,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "localStorage.setItem(\"carpiq_save_banner_dismissed_at\",String(Date.now()))}catch(e){}const el=document.getElementById(\"save-banner\");el&&el.remove(),\"function\"==typeof mpTrack&&mpTrack(\"save_banner_di"
+        },
+        {
+          "name": "localStorage.",
+          "position_in_script": 483013,
+          "absolute_position_in_html": 570338,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "localStorage.setItem(LS_KEY,JSON.stringify(payload))}catch(e){}}function loadSession(){try{const raw=localStorage.getItem(LS_KEY);if(!raw)return null;const p=JSON.parse(raw);return p&&1===p.v&&p.st?Da"
+        },
+        {
+          "name": "localStorage.",
+          "position_in_script": 483114,
+          "absolute_position_in_html": 570439,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "localStorage.getItem(LS_KEY);if(!raw)return null;const p=JSON.parse(raw);return p&&1===p.v&&p.st?Date.now()-p.ts>2592e6||p.step<2?null:p:null}catch(e){return null}}function clearSession(){try{localSto"
+        },
+        {
+          "name": "localStorage.",
+          "position_in_script": 483306,
+          "absolute_position_in_html": 570631,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "localStorage.removeItem(LS_KEY)}catch(e){}}function resumeSession(p){p&&p.st&&(Object.assign(st,p.st),p.lang&&(lang=p.lang),step=p.step,mpTrack(\"session_resumed\",{step:p.step,days_since:Math.round((Da"
+        },
+        {
+          "name": "localStorage.",
+          "position_in_script": 775488,
+          "absolute_position_in_html": 862813,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "localStorage.getItem(SAVE_BANNER_DISMISS_KEY);if(!dismissed)return!0;const ts=parseInt(dismissed,10);return(Date.now()-ts)/864e5>7}catch(e){return!0}}function dismissSaveBanner(){try{localStorage.setI"
+        },
+        {
+          "name": "localStorage.",
+          "position_in_script": 775671,
+          "absolute_position_in_html": 862996,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "localStorage.setItem(SAVE_BANNER_DISMISS_KEY,String(Date.now()))}catch(e){}const b=document.getElementById(\"save-banner\");b&&b.remove(),\"function\"==typeof mpTrack&&mpTrack(\"save_banner_dismissed\")}fun"
+        },
+        {
+          "name": "localStorage.",
+          "position_in_script": 781443,
+          "absolute_position_in_html": 868768,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "localStorage.setItem(SUBJ_LS_KEY_v63,JSON.stringify({version:1,savedAt:Date.now(),profile:profile})):localStorage.removeItem(SUBJ_LS_KEY_v63)}catch(e){}}function subjLoad_v63(){try{const raw=localStor"
+        },
+        {
+          "name": "localStorage.",
+          "position_in_script": 781544,
+          "absolute_position_in_html": 868869,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "localStorage.removeItem(SUBJ_LS_KEY_v63)}catch(e){}}function subjLoad_v63(){try{const raw=localStorage.getItem(SUBJ_LS_KEY_v63);if(!raw)return null;const obj=JSON.parse(raw);if(obj&&obj.profile&&obj.p"
+        },
+        {
+          "name": "localStorage.",
+          "position_in_script": 781634,
+          "absolute_position_in_html": 868959,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "localStorage.getItem(SUBJ_LS_KEY_v63);if(!raw)return null;const obj=JSON.parse(raw);if(obj&&obj.profile&&obj.profile.dimensions)return obj.profile}catch(e){}return null}\"undefined\"!=typeof window&&(wi"
+        },
+        {
+          "name": "localStorage.",
+          "position_in_script": 813570,
+          "absolute_position_in_html": 900895,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "localStorage.getItem(\"carpiq_anon_id\");return id||(id=\"anon_\"+_trackUuid_v64(),localStorage.setItem(\"carpiq_anon_id\",id)),id}catch(e){return window._track_v64_volatile_anon||(window._track_v64_volatil"
+        },
+        {
+          "name": "localStorage.",
+          "position_in_script": 813649,
+          "absolute_position_in_html": 900974,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "localStorage.setItem(\"carpiq_anon_id\",id)),id}catch(e){return window._track_v64_volatile_anon||(window._track_v64_volatile_anon=\"anon_vol_\"+_trackUuid_v64()),window._track_v64_volatile_anon}}function "
+        },
+        {
+          "name": "sessionStorage.",
+          "position_in_script": 813911,
+          "absolute_position_in_html": 901236,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "sessionStorage.getItem(\"carpiq_session_v64\");if(raw){const s=JSON.parse(raw);if(s&&s.id&&s.lastActivity&&now-s.lastActivity<18e5)return s.lastActivity=now,sessionStorage.setItem(\"carpiq_session_v64\",J"
+        },
+        {
+          "name": "sessionStorage.",
+          "position_in_script": 814066,
+          "absolute_position_in_html": 901391,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "sessionStorage.setItem(\"carpiq_session_v64\",JSON.stringify(s)),s.id}const fresh={id:\"sess_\"+_trackUuid_v64(),startTime:now,lastActivity:now};return sessionStorage.setItem(\"carpiq_session_v64\",JSON.str"
+        },
+        {
+          "name": "sessionStorage.",
+          "position_in_script": 814214,
+          "absolute_position_in_html": 901539,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "sessionStorage.setItem(\"carpiq_session_v64\",JSON.stringify(fresh)),fresh.id}catch(e){return window._track_v64_volatile_sess||(window._track_v64_volatile_sess=\"sess_vol_\"+_trackUuid_v64()),window._trac"
+        }
+      ]
+    },
+    "data_loading": {
+      "label": "Chargement de donnees externes",
+      "note": null,
+      "function_count": 0,
+      "pattern_match_count": 15,
+      "total_estimated_loc": 0,
+      "matches": [
+        {
+          "name": "fetch(",
+          "position_in_script": 155,
+          "absolute_position_in_html": 87480,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "fetch(\"./price_grid.json\",{cache:\"no-cache\"}).then(function(r){if(!r.ok)throw new Error(\"HTTP \"+r.status);return r.json()}).then(function(data){priceGridData=data,priceGridLoading=!1;var nModels=Objec"
+        },
+        {
+          "name": ".json()",
+          "position_in_script": 269,
+          "absolute_position_in_html": 87594,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": ".json()}).then(function(data){priceGridData=data,priceGridLoading=!1;var nModels=Object.keys(data).length;if(console.log(\"[priceGrid] loaded: \"+nModels+\" models (\"+Object.keys(data).slice(0,3).join(\","
+        },
+        {
+          "name": "fetch(",
+          "position_in_script": 8753,
+          "absolute_position_in_html": 96078,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "fetch(\"./vehicle_catalog.json\",{cache:\"no-cache\"}).then(function(r){if(!r.ok)throw new Error(\"HTTP \"+r.status);return r.json()}).then(function(data){vehicleCatalogData=data,vehicleCatalogLoading=!1;va"
+        },
+        {
+          "name": ".json()",
+          "position_in_script": 8872,
+          "absolute_position_in_html": 96197,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": ".json()}).then(function(data){vehicleCatalogData=data,vehicleCatalogLoading=!1;var n=data&&data.catalog?Object.keys(data.catalog).length:0;console.log(\"[catalog] loaded: \"+n+\" canonical models (v\"+(da"
+        },
+        {
+          "name": "fetch(",
+          "position_in_script": 9333,
+          "absolute_position_in_html": 96658,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "fetch(\"./mfr_specs_manifest.json\",{cache:\"no-cache\"}).then(function(r){return r.ok?r.json():{brands:[]}}).catch(function(){return{brands:[]}})}).then(function(manifest){if(manifest&&manifest.brands&&0"
+        },
+        {
+          "name": ".json()",
+          "position_in_script": 9417,
+          "absolute_position_in_html": 96742,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": ".json():{brands:[]}}).catch(function(){return{brands:[]}})}).then(function(manifest){if(manifest&&manifest.brands&&0!==manifest.brands.length){var promises=manifest.brands.map(function(brand){return f"
+        },
+        {
+          "name": "fetch(",
+          "position_in_script": 9616,
+          "absolute_position_in_html": 96941,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "fetch(\"./mfr_specs_\"+brand+\".json\",{cache:\"no-cache\"}).then(function(r){return r.ok?r.json():null}).then(function(data){if(data&&data.models){mfrSpecsData[brand]=data;var nMod=Object.keys(data.models)"
+        },
+        {
+          "name": ".json()",
+          "position_in_script": 9701,
+          "absolute_position_in_html": 97026,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": ".json():null}).then(function(data){if(data&&data.models){mfrSpecsData[brand]=data;var nMod=Object.keys(data.models).length;console.log(\"[mfr_specs] \"+brand+\": \"+nMod+\" models enriched (source: \"+(data"
+        },
+        {
+          "name": "fetch(",
+          "position_in_script": 163270,
+          "absolute_position_in_html": 250595,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "fetch(\"./depr_curves.json\",{cache:\"no-cache\"}).then(function(r){if(!r.ok)throw new Error(\"HTTP \"+r.status);return r.json()}).then(function(data){deprCurvesData=data,console.log(\"[deprCurves] loaded: \""
+        },
+        {
+          "name": ".json()",
+          "position_in_script": 163385,
+          "absolute_position_in_html": 250710,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": ".json()}).then(function(data){deprCurvesData=data,console.log(\"[deprCurves] loaded: \"+Object.keys(data).length+\" tiers\")}).catch(function(e){console.warn(\"[deprCurves] unavailable, using static fallba"
+        },
+        {
+          "name": "fetch(",
+          "position_in_script": 171211,
+          "absolute_position_in_html": 258536,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "fetch(\"./price_grid_q.json\",{cache:\"no-cache\"}).then(r=>{if(!r.ok)throw new Error(\"HTTP \"+r.status);return r.json()}).then(data=>{priceGridQData=data,priceGridQLoading=!1,console.log(\"[priceGridQ] loa"
+        },
+        {
+          "name": ".json()",
+          "position_in_script": 171319,
+          "absolute_position_in_html": 258644,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": ".json()}).then(data=>{priceGridQData=data,priceGridQLoading=!1,console.log(\"[priceGridQ] loaded: \"+Object.keys(data).length+\" models with p10/p50/p90\")}).catch(e=>{priceGridQLoading=!1,console.warn(\"["
+        },
+        {
+          "name": "fetch(",
+          "position_in_script": 486149,
+          "absolute_position_in_html": 573474,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "fetch(`${SB_URL}/rest/v1/sessions`,{method:\"POST\",headers:{\"Content-Type\":\"application/json\",apikey:SB_KEY,Authorization:\"Bearer \"+SB_KEY,Prefer:\"return=minimal\"},body:JSON.stringify({session_id:crypt"
+        },
+        {
+          "name": "fetch(",
+          "position_in_script": 704314,
+          "absolute_position_in_html": 791639,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "fetch(\"https://api.carpiq.eu/subscribe\",{method:\"POST\",headers:{\"Content-Type\":\"application/json\"},body:JSON.stringify({email:email,consent:!0,budget:st.budget,pt:getRec()?.pt,country:activeCountry,la"
+        },
+        {
+          "name": "fetch(",
+          "position_in_script": 817965,
+          "absolute_position_in_html": 905290,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "fetch(SUPABASE_URL+\"/rest/v1/user_behavioral_events\",{method:\"POST\",headers:{\"Content-Type\":\"application/json\",apikey:SUPABASE_PUBLISHABLE_KEY,Authorization:\"Bearer \"+SUPABASE_PUBLISHABLE_KEY,Prefer:\""
+        }
+      ]
+    },
+    "country_currency": {
+      "label": "Gestion multi-pays et devises",
+      "note": null,
+      "function_count": 8,
+      "pattern_match_count": 93,
+      "total_estimated_loc": 22,
+      "matches": [
+        {
+          "name": "setCountry",
+          "position_in_script": 58449,
+          "absolute_position_in_html": 145774,
+          "size_chars": 372,
+          "estimated_loc": 9,
+          "snippet": "function setCountry(code){if(!COUNTRY_ENERGY[code])return;if(activeCountry=code,mpTrack(\"select_country\",{country:code}),document.documentElement.setAttribute(\"data-country\",code),\"ch\"!==code&&\"be\"!=="
+        },
+        {
+          "name": "COUNTRY_ENERGY",
+          "position_in_script": 58479,
+          "absolute_position_in_html": 145804,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "COUNTRY_ENERGY[code])return;if(activeCountry=code,mpTrack(\"select_country\",{country:code}),document.documentElement.setAttribute(\"data-country\",code),\"ch\"!==code&&\"be\"!==code){const autoLang=LANG_BY_C"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 58510,
+          "absolute_position_in_html": 145835,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry=code,mpTrack(\"select_country\",{country:code}),document.documentElement.setAttribute(\"data-country\",code),\"ch\"!==code&&\"be\"!==code){const autoLang=LANG_BY_COUNTRY[code];autoLang&&setLang("
+        },
+        {
+          "name": "renderCountryBtns",
+          "position_in_script": 58821,
+          "absolute_position_in_html": 146146,
+          "size_chars": 255,
+          "estimated_loc": 6,
+          "snippet": "function renderCountryBtns(){const dd=document.getElementById(\"country-dropdown\");dd&&(dd.value=activeCountry),Object.keys(COUNTRY_ENERGY).forEach(code=>{const b=document.getElementById(\"cbtn-\"+code);"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 58917,
+          "absolute_position_in_html": 146242,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry),Object.keys(COUNTRY_ENERGY).forEach(code=>{const b=document.getElementById(\"cbtn-\"+code);b&&b.classList.toggle(\"active\",code===activeCountry)})}function setLang(l){lang=l,document.docum"
+        },
+        {
+          "name": "COUNTRY_ENERGY",
+          "position_in_script": 58944,
+          "absolute_position_in_html": 146269,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "COUNTRY_ENERGY).forEach(code=>{const b=document.getElementById(\"cbtn-\"+code);b&&b.classList.toggle(\"active\",code===activeCountry)})}function setLang(l){lang=l,document.documentElement.lang=l,mpTrack(\""
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 59059,
+          "absolute_position_in_html": 146384,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry)})}function setLang(l){lang=l,document.documentElement.lang=l,mpTrack(\"select_lang\",{lang:l});const tg=document.getElementById(\"tg\");tg&&(tg.textContent=\"fr\"===l?\"Neutre · Sans pub · Gra"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 65901,
+          "absolute_position_in_html": 153226,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry]||DEPTS_BY_COUNTRY.fr}const DD={75:{ri:1.28,wp:18,zfe:!0},92:{ri:1.25,wp:18,zfe:!0},93:{ri:1.22,wp:18,zfe:!0},94:{ri:1.22,wp:18,zfe:!0},91:{ri:1.18,wp:18,zfe:!1},77:{ri:1.15,wp:18,zfe:!1"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 71409,
+          "absolute_position_in_html": 158734,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry),brandMod=BRAND_INS[car.brand&&car.brand.toLowerCase()]||1,ptMod=PT_INS[car.pt]||1,urbanMod=\"city\"===st.urban?1.1:\"rural\"===st.urban?.9:1,coverMod=getCoverMod(age,purchasePrice),parkingM"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 71689,
+          "absolute_position_in_html": 159014,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry]||1;return 10*Math.round(base*ageMod*regionMod*brandMod*ptMod*urbanMod*parkingMod*coverMod*countryMod/10)}function insMod(){return AGE_INS[st.age]||1}const CO2_WLTP={\"2008_ice\":128,208:1"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 88732,
+          "absolute_position_in_html": 176057,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry;if(\"fr\"===country)return\"bev\"===car.pt||0===co2||co2<=123?0:co2<=150?Math.round(10*(co2-123)):co2<=190?Math.round(40*(co2-150)+270):co2<=230?Math.round(60*(co2-190)+1870):Math.round(160*"
+        },
+        {
+          "name": "COUNTRY_ENERGY",
+          "position_in_script": 100067,
+          "absolute_position_in_html": 187392,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "COUNTRY_ENERGY={fr:{fp:1.88,ep:.2664,epu:.52,co2g:56,bonus_bev:3100,bonus_phev:0,name:\"France\",flag:\"🇫🇷\",lang:\"fr\",curr:\"€\",currSym:\"€\",bonus_note:\"Prime CEE jusqu'à €4 200 (rev. modestes) / €3 100 (a"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 102626,
+          "absolute_position_in_html": 189951,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry=function(){try{const tz=Intl.DateTimeFormat().resolvedOptions().timeZone||\"\",tzMap={\"Europe/Paris\":\"fr\",\"Europe/Brussels\":\"be\",\"Europe/Bruxelles\":\"be\",\"Europe/Amsterdam\":\"nl\",\"Europe/Zur"
+        },
+        {
+          "name": "COUNTRY_ENERGY",
+          "position_in_script": 103022,
+          "absolute_position_in_html": 190347,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "COUNTRY_ENERGY[tzMap[tz]])return tzMap[tz]}catch(e){}const langMap={\"fr-fr\":\"fr\",\"fr-be\":\"be\",\"fr-ch\":\"ch\",\"fr-lu\":\"lu\",\"nl-nl\":\"nl\",\"nl-be\":\"be\",\"de-de\":\"de\",\"de-at\":\"de\",\"de-ch\":\"ch\",\"es-es\":\"es\",\"i"
+        },
+        {
+          "name": "COUNTRY_ENERGY",
+          "position_in_script": 103357,
+          "absolute_position_in_html": 190682,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "COUNTRY_ENERGY[c])return c}return\"fr\"}();function getEnergyData(){return COUNTRY_ENERGY[activeCountry]||COUNTRY_ENERGY.fr}function getFP(){return getEnergyData().fp}function getEP(){return getEnergyDa"
+        },
+        {
+          "name": "COUNTRY_ENERGY",
+          "position_in_script": 103430,
+          "absolute_position_in_html": 190755,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "COUNTRY_ENERGY[activeCountry]||COUNTRY_ENERGY.fr}function getFP(){return getEnergyData().fp}function getEP(){return getEnergyData().ep}function getEPU(){return getEnergyData().epu}function getCountryC"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 103445,
+          "absolute_position_in_html": 190770,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry]||COUNTRY_ENERGY.fr}function getFP(){return getEnergyData().fp}function getEP(){return getEnergyData().ep}function getEPU(){return getEnergyData().epu}function getCountryCO2(){return get"
+        },
+        {
+          "name": "COUNTRY_ENERGY",
+          "position_in_script": 103461,
+          "absolute_position_in_html": 190786,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "COUNTRY_ENERGY.fr}function getFP(){return getEnergyData().fp}function getEP(){return getEnergyData().ep}function getEPU(){return getEnergyData().epu}function getCountryCO2(){return getEnergyData().co2"
+        },
+        {
+          "name": "getCountryCO2",
+          "position_in_script": 103610,
+          "absolute_position_in_html": 190935,
+          "size_chars": 53,
+          "estimated_loc": 1,
+          "snippet": "function getCountryCO2(){return getEnergyData().co2g}function getCountryBonusBEV(){return getEnergyData().bonus_bev||0}function getCountryBonusPHEV(){return getEnergyData().bonus_phev||0}function getC"
+        },
+        {
+          "name": "getCountryBonusBEV",
+          "position_in_script": 103663,
+          "absolute_position_in_html": 190988,
+          "size_chars": 66,
+          "estimated_loc": 1,
+          "snippet": "function getCountryBonusBEV(){return getEnergyData().bonus_bev||0}function getCountryBonusPHEV(){return getEnergyData().bonus_phev||0}function getCountryFlag(){return getEnergyData().flag||\"🌍\"}functio"
+        },
+        {
+          "name": "getCountryBonusPHEV",
+          "position_in_script": 103729,
+          "absolute_position_in_html": 191054,
+          "size_chars": 68,
+          "estimated_loc": 1,
+          "snippet": "function getCountryBonusPHEV(){return getEnergyData().bonus_phev||0}function getCountryFlag(){return getEnergyData().flag||\"🌍\"}function getCountryLang(){return getEnergyData().lang||\"fr\"}function E(n)"
+        },
+        {
+          "name": "getCountryFlag",
+          "position_in_script": 103797,
+          "absolute_position_in_html": 191122,
+          "size_chars": 59,
+          "estimated_loc": 1,
+          "snippet": "function getCountryFlag(){return getEnergyData().flag||\"🌍\"}function getCountryLang(){return getEnergyData().lang||\"fr\"}function E(n){return(getEnergyData().currSym||\"€\")+Math.round(n).toLocaleString(\""
+        },
+        {
+          "name": "getCountryLang",
+          "position_in_script": 103856,
+          "absolute_position_in_html": 191181,
+          "size_chars": 60,
+          "estimated_loc": 1,
+          "snippet": "function getCountryLang(){return getEnergyData().lang||\"fr\"}function E(n){return(getEnergyData().currSym||\"€\")+Math.round(n).toLocaleString(\"fr-FR\")}const CONS={short:{ice:7.8,hev:4.6,pon:1.4,poff:8.6"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 130337,
+          "absolute_position_in_html": 217662,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry?activeCountry:\"fr\",annual_km:km,addedFrom:\"results_page\",resultCarId:car.id,ageAtAdd:age,tcoAtAdd:Math.round(monthly),priceAtAdd:Math.round(pp),isMain:!1}}function _refreshAllGarageButto"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 130351,
+          "absolute_position_in_html": 217676,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry:\"fr\",annual_km:km,addedFrom:\"results_page\",resultCarId:car.id,ageAtAdd:age,tcoAtAdd:Math.round(monthly),priceAtAdd:Math.round(pp),isMain:!1}}function _refreshAllGarageButtons(){document."
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 159529,
+          "absolute_position_in_html": 246854,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry?activeCountry:\"fr\")]||ptData[Object.keys(ptData)[0]];if(!cdata)return null;const a0=cdata[0]||cdata[Object.keys(cdata).sort((a,b)=>parseInt(a)-parseInt(b))[0]];if(!a0)return null;const k"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 159543,
+          "absolute_position_in_html": 246868,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry:\"fr\")]||ptData[Object.keys(ptData)[0]];if(!cdata)return null;const a0=cdata[0]||cdata[Object.keys(cdata).sort((a,b)=>parseInt(a)-parseInt(b))[0]];if(!a0)return null;const kms=Object.keys"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 160077,
+          "absolute_position_in_html": 247402,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry?activeCountry:null;let value;vehicle.country&&void 0!==activeCountry&&(activeCountry=vehicle.country);try{const vehKm=\"number\"==typeof vehicle.km&&vehicle.km>0?vehicle.km:null;value=\"fun"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 160091,
+          "absolute_position_in_html": 247416,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry:null;let value;vehicle.country&&void 0!==activeCountry&&(activeCountry=vehicle.country);try{const vehKm=\"number\"==typeof vehicle.km&&vehicle.km>0?vehicle.km:null;value=\"function\"==typeof"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 160146,
+          "absolute_position_in_html": 247471,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry&&(activeCountry=vehicle.country);try{const vehKm=\"number\"==typeof vehicle.km&&vehicle.km>0?vehicle.km:null;value=\"function\"==typeof purchAtAge?purchAtAge(car,age,vehKm):null}finally{null"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 160162,
+          "absolute_position_in_html": 247487,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry=vehicle.country);try{const vehKm=\"number\"==typeof vehicle.km&&vehicle.km>0?vehicle.km:null;value=\"function\"==typeof purchAtAge?purchAtAge(car,age,vehKm):null}finally{null!==savedCountry&"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 160364,
+          "absolute_position_in_html": 247689,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry=savedCountry)}const eDelta=getEngineDeltaLive(vehicle);return value&&eDelta&&Math.abs(eDelta)>.1&&(value=Math.round(value*(1+eDelta/100))),value}function getEngineDeltaLive(vehicle){if(!"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 165605,
+          "absolute_position_in_html": 252930,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry?activeCountry:\"fr\",adj=_countryPriceAdj(country),kmTotal=\"number\"==typeof kmOverride&&kmOverride>0?kmOverride:function(a){if(a<=0)return 0;return{1:15e3,2:25e3,3:45e3,4:6e4,5:75e3,6:9e4,"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 165619,
+          "absolute_position_in_html": 252944,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry:\"fr\",adj=_countryPriceAdj(country),kmTotal=\"number\"==typeof kmOverride&&kmOverride>0?kmOverride:function(a){if(a<=0)return 0;return{1:15e3,2:25e3,3:45e3,4:6e4,5:75e3,6:9e4,7:11e4,8:125e3"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 168528,
+          "absolute_position_in_html": 255853,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry?activeCountry:\"fr\"),pt=(car.pt||\"ice\").toLowerCase();let gridId;if(car._garageGridId)gridId=car._garageGridId;else{const key=(car.brand||\"\")+\":\"+(car.id||\"\");let slug=void 0!==AS24_MODEL"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 168542,
+          "absolute_position_in_html": 255867,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry:\"fr\"),pt=(car.pt||\"ice\").toLowerCase();let gridId;if(car._garageGridId)gridId=car._garageGridId;else{const key=(car.brand||\"\")+\":\"+(car.id||\"\");let slug=void 0!==AS24_MODEL_BASE&&AS24_MO"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 170627,
+          "absolute_position_in_html": 257952,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry?activeCountry:\"fr\",kmTotal=(\"function\"==typeof getKm?getKm():15e3)*age;if(\"function\"==typeof priceGridReady&&priceGridReady()&&void 0!==AS24_MODEL_BASE){const key=(car.brand||\"\")+\":\"+(ca"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 170641,
+          "absolute_position_in_html": 257966,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry:\"fr\",kmTotal=(\"function\"==typeof getKm?getKm():15e3)*age;if(\"function\"==typeof priceGridReady&&priceGridReady()&&void 0!==AS24_MODEL_BASE){const key=(car.brand||\"\")+\":\"+(car.id||\"\"),slug"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 445275,
+          "absolute_position_in_html": 532600,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry))return!1;if(\"dense\"===st.networkFilter&&![\"vw\",\"audi\",\"bmw\",\"mercedes\",\"toyota\",\"peugeot\",\"renault\",\"ford\",\"opel\",\"skoda\",\"seat\",\"hyundai\",\"kia\",\"volvo\",\"citroen\"].includes(car.brand&&c"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 502958,
+          "absolute_position_in_html": 590283,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry}),renderBody()}function toggleMod(k){const i=(st.bodyMod=st.bodyMod||[]).indexOf(k);-1===i?st.bodyMod.push(k):st.bodyMod.splice(i,1),renderQ(6)}function renderQ(s){if(1!==s){if(2===s)ret"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 531168,
+          "absolute_position_in_html": 618493,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry,lang:lang,pref_was_set:!!st.pref}),st.guided={active:!0,step:1,startedAt:Date.now(),stepStartedAt:Date.now(),usage_contexts:[],visual_attractions:[],dilemma_answer:null,ownership_horizon"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 532768,
+          "absolute_position_in_html": 620093,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry}),st.guided.step=5,saveSession(),renderGuidedResult()}function guidedNext(){const g=st.guided,stepDuration=Date.now()-g.stepStartedAt;if(1===g.step){if(2!==g.usage_contexts.length)return"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 533069,
+          "absolute_position_in_html": 620394,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry}),guidedGoToStep(2)}else if(2===g.step){if(g.visual_attractions.length<2)return;mpTrack(\"guided_step_2_completed\",{visual_attractions:g.visual_attractions,first_attraction:g.visual_attra"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 533346,
+          "absolute_position_in_html": 620671,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry}),guidedGoToStep(3)}else if(3===g.step){if(!g.dilemma_answer)return;mpTrack(\"guided_step_3_completed\",{dilemma_answer:g.dilemma_answer,duration_ms:stepDuration,country:activeCountry}),gu"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 533528,
+          "absolute_position_in_html": 620853,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry}),guidedGoToStep(4)}else 4===g.step&&(mpTrack(\"guided_step_4_completed\",{ownership_horizon:g.ownership_horizon,skipped:!1,duration_ms:stepDuration,country:activeCountry}),guidedGoToStep("
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 533697,
+          "absolute_position_in_html": 621022,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry}),guidedGoToStep(5))}function inferDriverFromGuided(){const g=st.guided,scores={cost:0,ratio:0,premium:0,sport:0,eco:0,family:0};g.usage_contexts.includes(\"family_weekend\")&&(scores.fami"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 539110,
+          "absolute_position_in_html": 626435,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry,lang:lang});const g=st.guided;if(g&&g._pendingOverride){const po=g._pendingOverride,isSecondary=po.secondary===v;po.inferred,mpTrack(\"guided_discovery_manual_override\",{inferred_driver:p"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 539523,
+          "absolute_position_in_html": 626848,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry,lang:lang}),g._pendingOverride=null}renderPref()}function _driverIsTop3(v,scores){return!!scores&&Object.entries(scores).sort((a,b)=>b[1]-a[1]).slice(0,3).some(([k])=>k===v)}function _gu"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 540357,
+          "absolute_position_in_html": 627682,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry,lang:lang}}function _guidedProgress(n){return`<div class=\"guided-progress\">${[1,2,3,4].map(i=>`<div class=\"guided-progress-dot${i<=n?\" filled\":\"\"}\"></div>`).join(\"\")}</div>`}function _gu"
+        },
+        {
+          "name": "COUNTRY_ENERGY",
+          "position_in_script": 572869,
+          "absolute_position_in_html": 660194,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "COUNTRY_ENERGY).map(([code,ct])=>`\\n          <button onclick=\"setCountry('${code}');renderCountryBtns();renderLocAge()\"\\n            style=\"font-size:13px;padding:5px 10px;border:1.5px solid ${code=="
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 573070,
+          "absolute_position_in_html": 660395,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry?\"var(--teal)\":\"var(--border)\"};border-radius:10px;background:${code===activeCountry?\"var(--teal-lt)\":\"var(--bg)\"};cursor:pointer;font-family:var(--font-b);color:${code===activeCountry?\"v"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 573154,
+          "absolute_position_in_html": 660479,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry?\"var(--teal-lt)\":\"var(--bg)\"};cursor:pointer;font-family:var(--font-b);color:${code===activeCountry?\"var(--teal)\":\"var(--muted)\"}\">\\n            ${ct.flag} ${ct.name}\\n          </button"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 573254,
+          "absolute_position_in_html": 660579,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry?\"var(--teal)\":\"var(--muted)\"}\">\\n            ${ct.flag} ${ct.name}\\n          </button>`).join(\"\")}\\n      </div>\\n    </div>\\n    <div style=\"margin-bottom:8px;font-size:13px;font-weigh"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 574602,
+          "absolute_position_in_html": 661927,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry]||labels.fr)[lang]||(labels[activeCountry]||labels.fr).fr})()}</div>\\n    <select class=\"dept-select${st.dept?\" sel\":\"\"}\" onchange=\"st.dept=this.value;this.classList.add('sel')\">\\n      "
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 574644,
+          "absolute_position_in_html": 661969,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry]||labels.fr).fr})()}</div>\\n    <select class=\"dept-select${st.dept?\" sel\":\"\"}\" onchange=\"st.dept=this.value;this.classList.add('sel')\">\\n      <option value=\"\">${t(\"dept_placeholder\")}<"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 579056,
+          "absolute_position_in_html": 666381,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry,{age:age}),urlLBC=`https://www.leboncoin.fr/voitures/offres?text=${carNameEncoded}&mileage=0-100000&regdate_min=${yearMin}&regdate_max=${yearMax}`,riskClr=tco.risk<4?\"var(--teal)\":tco.ri"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 612274,
+          "absolute_position_in_html": 699599,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry,{age:effectiveAge_d}),mktLabel={be:\"2dehands.be\",nl:\"Marktplaats.nl\",de:\"Mobile.de\",ch:\"AutoScout24.ch\",it:\"Subito.it\",es:\"Coches.net\",pt:\"OLX.pt\",lu:\"AutoScout24.lu\"}[activeCountry]||\"L"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 612456,
+          "absolute_position_in_html": 699781,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry]||\"LeBonCoin\",urlLBC=\"https://www.leboncoin.fr/voitures/offres?text=\"+q+\"&regdate_min=\"+yearMin+\"&regdate_max=\"+yearMax,urlMkt={be:\"https://www.2dehands.be/auto/\"+brandSlug+\"?q=\"+q,nl:\"h"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 613079,
+          "absolute_position_in_html": 700404,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry]||urlLBC,BRAND_URLS={fr:{toyota:\"https://www.toyota.fr/vehicules-neufs\",vw:\"https://www.volkswagen.fr/fr/modeles.html\",renault:\"https://www.renault.fr/vehicules/voitures-neuves.html\",peu"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 621180,
+          "absolute_position_in_html": 708505,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry]||BRAND_URLS.fr)[car.brand]||\"https://www.google.com/search?q=\"+encodeURIComponent(car.name)+\"+neuf+\"+activeCountry;return mpTrack(\"car_viewed\",{brand:car.brand,model:car.name,pt:car.pt,"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 621296,
+          "absolute_position_in_html": 708621,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry;return mpTrack(\"car_viewed\",{brand:car.brand,model:car.name,pt:car.pt,age:age,country:activeCountry,budget:st.budget}),window._kpiLinks={as:urlAS,lbc:urlMkt,brand:urlConstructeur,track:("
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 621396,
+          "absolute_position_in_html": 708721,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry,budget:st.budget}),window._kpiLinks={as:urlAS,lbc:urlMkt,brand:urlConstructeur,track:(type,url)=>{mpTrack(\"link_click\",{type:type,brand:car.brand,model:car.name,age:age,country:activeCou"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 621587,
+          "absolute_position_in_html": 708912,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry}),window.open(url,\"_blank\")}},0===age?`<div style=\"display:flex;gap:8px;margin-top:12px;flex-wrap:wrap\">\\n          <button onclick=\"window._kpiLinks.track('constructeur',window._kpiLink"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 649293,
+          "absolute_position_in_html": 736618,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry,body:st.body||[],age_bracket:st.age||null,dept:st.dept||null,urban:st.urban||null,lang:lang,completed:!0});const{best:best,bTco:bTco,iceTco:iceTco,why:why,warns:warns,localBar:localBar,b"
+        },
+        {
+          "name": "COUNTRY_ENERGY",
+          "position_in_script": 655371,
+          "absolute_position_in_html": 742696,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "COUNTRY_ENERGY[activeCountry]||COUNTRY_ENERGY.fr).currSym||\"€\",cols=scRes.map((sc,i)=>{const isBest=i===bestScIdx,scIdx=i,upRank=sc.bc?segRank(sc.bc)-neufRank:0,isNewCar=0===i,upLabel=i>0&&sc.bc&&scRe"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 655386,
+          "absolute_position_in_html": 742711,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry]||COUNTRY_ENERGY.fr).currSym||\"€\",cols=scRes.map((sc,i)=>{const isBest=i===bestScIdx,scIdx=i,upRank=sc.bc?segRank(sc.bc)-neufRank:0,isNewCar=0===i,upLabel=i>0&&sc.bc&&scRes[0].bc&&sc.bc."
+        },
+        {
+          "name": "COUNTRY_ENERGY",
+          "position_in_script": 655402,
+          "absolute_position_in_html": 742727,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "COUNTRY_ENERGY.fr).currSym||\"€\",cols=scRes.map((sc,i)=>{const isBest=i===bestScIdx,scIdx=i,upRank=sc.bc?segRank(sc.bc)-neufRank:0,isNewCar=0===i,upLabel=i>0&&sc.bc&&scRes[0].bc&&sc.bc.id===scRes[0].bc"
+        },
+        {
+          "name": "COUNTRY_ENERGY",
+          "position_in_script": 665145,
+          "absolute_position_in_html": 752470,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "COUNTRY_ENERGY[activeCountry]||COUNTRY_ENERGY.fr).currSym||\"€\",fr=\"fr\"===lang;if(view.empty||!view.topGlobal){const minBudgetSuggestion=Math.round(1.5*st.budget);return`<div style=\"background:linear-g"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 665160,
+          "absolute_position_in_html": 752485,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry]||COUNTRY_ENERGY.fr).currSym||\"€\",fr=\"fr\"===lang;if(view.empty||!view.topGlobal){const minBudgetSuggestion=Math.round(1.5*st.budget);return`<div style=\"background:linear-gradient(135deg,"
+        },
+        {
+          "name": "COUNTRY_ENERGY",
+          "position_in_script": 665176,
+          "absolute_position_in_html": 752501,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "COUNTRY_ENERGY.fr).currSym||\"€\",fr=\"fr\"===lang;if(view.empty||!view.topGlobal){const minBudgetSuggestion=Math.round(1.5*st.budget);return`<div style=\"background:linear-gradient(135deg,#9aa6ad 0%,#6c7a"
+        },
+        {
+          "name": "COUNTRY_ENERGY",
+          "position_in_script": 685394,
+          "absolute_position_in_html": 772719,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "COUNTRY_ENERGY[activeCountry]||COUNTRY_ENERGY.fr).currSym||\"€\",altPtEmoji={hev:\"⚡\",bev:\"🔋\",phev:\"🔌\",ice:\"⛽\",die:\"🛢\"}[altCar.pt]||\"🚗\",altPtLabel=ptN[altCar.pt]||altCar.pt,moLabel=\"fr\"===lang?\"par mois "
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 685409,
+          "absolute_position_in_html": 772734,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry]||COUNTRY_ENERGY.fr).currSym||\"€\",altPtEmoji={hev:\"⚡\",bev:\"🔋\",phev:\"🔌\",ice:\"⛽\",die:\"🛢\"}[altCar.pt]||\"🚗\",altPtLabel=ptN[altCar.pt]||altCar.pt,moLabel=\"fr\"===lang?\"par mois · tout compris\""
+        },
+        {
+          "name": "COUNTRY_ENERGY",
+          "position_in_script": 685425,
+          "absolute_position_in_html": 772750,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "COUNTRY_ENERGY.fr).currSym||\"€\",altPtEmoji={hev:\"⚡\",bev:\"🔋\",phev:\"🔌\",ice:\"⛽\",die:\"🛢\"}[altCar.pt]||\"🚗\",altPtLabel=ptN[altCar.pt]||altCar.pt,moLabel=\"fr\"===lang?\"par mois · tout compris\":\"per month · al"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 700097,
+          "absolute_position_in_html": 787422,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry,map={fr:\"fr\",\"fr-fr\":\"fr\",\"fr-be\":\"fr\",\"fr-ch\":\"fr\",\"fr-lu\":\"fr\",\"fr-ca\":\"fr\",en:\"en\",\"en-gb\":\"en\",\"en-us\":\"en\",\"en-au\":\"en\",\"en-ca\":\"en\",de:\"de\",\"de-de\":\"de\",\"de-at\":\"de\",\"de-ch\":\"de\",n"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 700607,
+          "absolute_position_in_html": 787932,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry){const regionalMap={\"de-ch\":\"de\",\"fr-ch\":\"fr\",\"it-ch\":\"it\",\"rm-ch\":\"de\",\"nl-be\":\"nl\",\"fr-be\":\"fr\",\"de-be\":\"de\"},regional=langs.map(l=>regionalMap[l.toLowerCase()]).find(Boolean);regional"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 704284,
+          "absolute_position_in_html": 791609,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry,lang:lang});try{fetch(\"https://api.carpiq.eu/subscribe\",{method:\"POST\",headers:{\"Content-Type\":\"application/json\"},body:JSON.stringify({email:email,consent:!0,budget:st.budget,pt:getRec("
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 704498,
+          "absolute_position_in_html": 791823,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry,lang:lang,follow_up_date:new Date(Date.now()+15552e6).toISOString()})}).catch(()=>{})}catch(e){}document.getElementById(\"email-form\").style.display=\"none\",document.getElementById(\"email-"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 725374,
+          "absolute_position_in_html": 812699,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry?activeCountry:\"fr\"),initAnnualKm=existing&&existing.annual_km||15e3;body.innerHTML=`\\n    <div class=\"garage-form-wrap\">\\n      <h3>${gT(isEdit?\"form_title_edit\":\"form_title_add\")}</h3>\\"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 725388,
+          "absolute_position_in_html": 812713,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry:\"fr\"),initAnnualKm=existing&&existing.annual_km||15e3;body.innerHTML=`\\n    <div class=\"garage-form-wrap\">\\n      <h3>${gT(isEdit?\"form_title_edit\":\"form_title_add\")}</h3>\\n\\n      <div "
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 743684,
+          "absolute_position_in_html": 831009,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry?activeCountry:null;vehicle.country&&void 0!==activeCountry&&(activeCountry=vehicle.country);const savedKm=void 0!==st?st.km:null;let result;void 0!==st&&(st.km=annualKm<12e3?\"u10\":annual"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 743698,
+          "absolute_position_in_html": 831023,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry:null;vehicle.country&&void 0!==activeCountry&&(activeCountry=vehicle.country);const savedKm=void 0!==st?st.km:null;let result;void 0!==st&&(st.km=annualKm<12e3?\"u10\":annualKm<22e3?\"m20\":"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 743743,
+          "absolute_position_in_html": 831068,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry&&(activeCountry=vehicle.country);const savedKm=void 0!==st?st.km:null;let result;void 0!==st&&(st.km=annualKm<12e3?\"u10\":annualKm<22e3?\"m20\":annualKm<35e3?\"m35\":\"o35\");try{let valueNow=\""
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 743759,
+          "absolute_position_in_html": 831084,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry=vehicle.country);const savedKm=void 0!==st?st.km:null;let result;void 0!==st&&(st.km=annualKm<12e3?\"u10\":annualKm<22e3?\"m20\":annualKm<35e3?\"m35\":\"o35\");try{let valueNow=\"function\"==typeo"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 745651,
+          "absolute_position_in_html": 832976,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry=savedCountry),null!==savedKm&&void 0!==st&&(st.km=savedKm)}return result}function projectTcoCurve(vehicle,yearsAhead){yearsAhead=yearsAhead||5;const car=garageResolveCar(vehicle);if(!car"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 745962,
+          "absolute_position_in_html": 833287,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry?activeCountry:null;vehicle.country&&void 0!==activeCountry&&(activeCountry=vehicle.country);const savedKm=void 0!==st?st.km:null;void 0!==st&&(st.km=annualKm<12e3?\"u10\":annualKm<22e3?\"m2"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 745976,
+          "absolute_position_in_html": 833301,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry:null;vehicle.country&&void 0!==activeCountry&&(activeCountry=vehicle.country);const savedKm=void 0!==st?st.km:null;void 0!==st&&(st.km=annualKm<12e3?\"u10\":annualKm<22e3?\"m20\":annualKm<35"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 746021,
+          "absolute_position_in_html": 833346,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry&&(activeCountry=vehicle.country);const savedKm=void 0!==st?st.km:null;void 0!==st&&(st.km=annualKm<12e3?\"u10\":annualKm<22e3?\"m20\":annualKm<35e3?\"m35\":\"o35\");try{for(let dy=0;dy<=yearsAhe"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 746037,
+          "absolute_position_in_html": 833362,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry=vehicle.country);const savedKm=void 0!==st?st.km:null;void 0!==st&&(st.km=annualKm<12e3?\"u10\":annualKm<22e3?\"m20\":annualKm<35e3?\"m35\":\"o35\");try{for(let dy=0;dy<=yearsAhead;dy++){const a"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 747288,
+          "absolute_position_in_html": 834613,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry=savedCountry),null!==savedKm&&void 0!==st&&(st.km=savedKm)}return points}function renderTcoStackedSvg(points,options){if(options=options||{},!points||0===points.length)return\"\";const W=o"
+        },
+        {
+          "name": "getUserCountry_v64",
+          "position_in_script": 814666,
+          "absolute_position_in_html": 901991,
+          "size_chars": 94,
+          "estimated_loc": 2,
+          "snippet": "function getUserCountry_v64(){return void 0!==activeCountry&&activeCountry?activeCountry:null}function getUserLang_v64(){if(void 0!==lang&&lang)return lang;try{return(navigator.language||\"fr\").substri"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 814712,
+          "absolute_position_in_html": 902037,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry&&activeCountry?activeCountry:null}function getUserLang_v64(){if(void 0!==lang&&lang)return lang;try{return(navigator.language||\"fr\").substring(0,5)}catch(e){return\"fr\"}}const TRACK_BUFFE"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 814727,
+          "absolute_position_in_html": 902052,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry?activeCountry:null}function getUserLang_v64(){if(void 0!==lang&&lang)return lang;try{return(navigator.language||\"fr\").substring(0,5)}catch(e){return\"fr\"}}const TRACK_BUFFER_MAX_v64=10,TR"
+        },
+        {
+          "name": "activeCountry",
+          "position_in_script": 814741,
+          "absolute_position_in_html": 902066,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "activeCountry:null}function getUserLang_v64(){if(void 0!==lang&&lang)return lang;try{return(navigator.language||\"fr\").substring(0,5)}catch(e){return\"fr\"}}const TRACK_BUFFER_MAX_v64=10,TRACK_BUFFER_FLU"
+        }
+      ]
+    },
+    "tco_constants": {
+      "label": "Constantes du modele TCO (DEPR, WLTP, CONS, KMM, etc.)",
+      "note": null,
+      "function_count": 0,
+      "pattern_match_count": 5,
+      "total_estimated_loc": 0,
+      "matches": [
+        {
+          "name": "const CONS=",
+          "position_in_script": 104005,
+          "absolute_position_in_html": 191330,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "const CONS={short:{ice:7.8,hev:4.6,pon:1.4,poff:8.6,bev:18,die:7.2},mixed:{ice:6.8,hev:5.2,pon:3,poff:7.6,bev:17,die:5.8},long:{ice:6.2,hev:5.8,pon:5.6,poff:7,bev:16,die:5},vlong:{ice:5.9,hev:6.1,pon:"
+        },
+        {
+          "name": "const DEPR=",
+          "position_in_script": 104579,
+          "absolute_position_in_html": 191904,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "const DEPR={ice:[1,.78,.66,.6,.54,.5,.46,.43,.4,.38,.35],hev:[1,.82,.72,.65,.59,.54,.5,.46,.43,.4,.38],phev:[1,.891,.762,.656,.555,.496,.443,.395,.352,.313,.278],bev:[1,.68,.54,.44,.37,.32,.28,.25,.22"
+        },
+        {
+          "name": "const BPROB=",
+          "position_in_script": 105255,
+          "absolute_position_in_html": 192580,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "const BPROB={ice:[1.2,1.8,2.4,3.1,4.2,5.8,7.5,9.8,13.2,17.1,21.5],hev:[1,1.4,1.9,2.5,3.3,4.5,5.8,7.6,10.2,13.4,17],phev:[1.5,2.2,3,3.9,5.1,6.8,8.7,11.2,14.8,18.9,23.5],bev:[.8,1.1,1.5,2,2.8,3.9,5.2,6."
+        },
+        {
+          "name": "const MAINT_MULT=",
+          "position_in_script": 125696,
+          "absolute_position_in_html": 213021,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "const MAINT_MULT=[1,1,1.05,1.1,1.18,1.28,1.42,1.6,1.82,2.1,2.45];function fp(){return 1.72}function insMod(){return AGE_INS[st.age]||1}function bevWinterPen(){return 1+getDd().wp/100*4/12}function urb"
+        },
+        {
+          "name": "const KMM=",
+          "position_in_script": 128015,
+          "absolute_position_in_html": 215340,
+          "size_chars": 0,
+          "estimated_loc": 0,
+          "snippet": "const KMM={u10:8e3,m20:15e3,m35:27e3,o35:42e3};function getKm(){return KMM[st.km]||15e3}const GarageStore={KEY:\"carpiq_garage_v1\",_read(){try{const raw=localStorage.getItem(this.KEY);return raw?JSON.p"
+        }
+      ]
+    }
+  },
+  "summary": {
+    "total_functions_identified": 88,
+    "total_estimated_loc": 22595
+  }
+}
